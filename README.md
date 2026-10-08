@@ -1,4 +1,4 @@
-# LaTeX Atelier
+# LaTeX Cookbook
 
 一个不用注册、可以本地打开的 LaTeX 学习网站。中文和 English 可随时切换。所有课程、练习、样式和渲染脚本都在压缩包里。
 
