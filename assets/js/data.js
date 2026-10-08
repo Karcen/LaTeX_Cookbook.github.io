@@ -1,16 +1,16 @@
-/* LaTeX Atelier — original bilingual learning content. */
+/* LaTeX Cookbook — original bilingual learning content. */
 window.LATEX_DATA = (() => {
   const modules = [
-    { id:'foundation', number:'01', color:'lime', icon:'layers', zh:'从零起步', en:'Foundations', descZh:'先写出第一份能编译的文档。', descEn:'Build a small document that actually compiles.', lessons:['start','structure'] },
-    { id:'math', number:'02', color:'lilac', icon:'sigma', zh:'数学排版', en:'Math typesetting', descZh:'分式、公式组、矩阵，写得准确又整齐。', descEn:'Fractions, aligned equations, and matrices.', lessons:['math-inline','math-align'] },
-    { id:'layout', number:'03', color:'peach', icon:'layout', zh:'图表与版面', en:'Figures & tables', descZh:'让图片、表格和正文各就各位。', descEn:'Give figures, tables, and text room to breathe.', lessons:['figures','tables'] },
+    { id:'foundation', number:'01', color:'lime', icon:'layers', zh:'从零起步', en:'Foundations', descZh:'先写出第一份能编译的文档。', descEn:'Build a small document that compiles.', lessons:['start','structure'] },
+    { id:'math', number:'02', color:'lilac', icon:'sigma', zh:'数学排版', en:'Math typesetting', descZh:'分式、公式组和矩阵的写法。', descEn:'Fractions, aligned equations, and matrices.', lessons:['math-inline','math-align'] },
+    { id:'layout', number:'03', color:'peach', icon:'layout', zh:'图表与版面', en:'Figures & tables', descZh:'让图片、表格和正文各就各位。', descEn:'Figures, tables, and page layout.', lessons:['figures','tables'] },
     { id:'references', number:'04', color:'blue', icon:'link', zh:'引用与文献', en:'References', descZh:'编号、交叉引用、参考文献不再手改。', descEn:'Stop maintaining numbers and citations by hand.', lessons:['crossref','citation'] },
     { id:'workflow', number:'05', color:'yellow', icon:'settings', zh:'高效写作', en:'Workflow', descZh:'用宏、模板和中文支持节省重复劳动。', descEn:'Reusable commands, templates, and Chinese typesetting.', lessons:['macros','chinese'] },
-    { id:'shipping', number:'06', color:'mint', icon:'check-circle', zh:'排错与交付', en:'Finish & export', descZh:'定位报错，整理文件，顺利交付。', descEn:'Debug common errors and package a clean project.', lessons:['debug','project'] }
+    { id:'shipping', number:'06', color:'mint', icon:'check-circle', zh:'排错与交付', en:'Finish & export', descZh:'读报错、整理项目文件。', descEn:'Debug common errors and package a clean project.', lessons:['debug','project'] }
   ];
   const lessons = [
     { id:'start', module:'foundation', minutes:6, kind:'document', title:{zh:'你的第一份 LaTeX 文档',en:'Your first LaTeX document'},
-      lead:{zh:'先别背命令。打开一个最小例子，认清导言区、正文和编译器就够了。',en:'Skip memorizing commands for now. Start with a tiny file and learn where the preamble, content, and compiler fit.'},
+      lead:{zh:'先不用背命令。打开一个最小的例子，看清导言区、正文和编译器的分工。',en:'You do not need to memorize commands yet. Start with a small file and see where the preamble, the body, and the compiler each fit.'},
       concept:{zh:'LaTeX 是一套排版系统：你写内容和结构，编译器负责排版。英文文档可从 article 开始；有中文时，推荐 XeLaTeX 搭配 ctex。',en:'LaTeX is a typesetting system. You describe content and structure; the compiler handles the page. Start with article for English, or ctex with XeLaTeX for Chinese.'},
       bullets:{zh:['\\documentclass 选择文档类型。','\\begin{document} 与 \\end{document} 圈定正文。','文档预览只是学习辅助；真正的 PDF 需要完整的 TeX 引擎编译。'],en:['\\documentclass selects the document type.','\\begin{document} and \\end{document} mark the document body.','The browser preview is for practice; producing a real PDF requires a TeX engine.']},
       code:String.raw`\documentclass{article}
@@ -23,7 +23,7 @@ Hello, LaTeX!
       tip:{zh:'动手改一下标题，再去“实验室”查看简化文档预览。',en:'Change the title, then open the simplified document preview in the lab.'},
       task:{zh:'把标题改成 “A Note on Probability”，保留文档结构。',en:'Change the title to “A Note on Probability” while keeping the document structure.'}},
     { id:'structure', module:'foundation', minutes:7, kind:'document', title:{zh:'标题、段落与文本样式',en:'Sections, paragraphs & emphasis'},
-      lead:{zh:'写作时先组织层级，再处理字体。这样后面改版式才不会牵一发动全身。',en:'Organize the document first; tweak typography later. That keeps formatting changes manageable.'},
+      lead:{zh:'写作时先组织层级，再处理字体。这样后面改版式才不会牵一发动全身。',en:'Set up the hierarchy first and adjust typography later, so formatting changes stay local.'},
       concept:{zh:'\\section、\\subsection 形成标题层级。用空行分段；粗体和斜体分别交给 \\textbf、\\emph。',en:'\\section and \\subsection create hierarchy. A blank line starts a paragraph; \\textbf and \\emph add emphasis.'},
       bullets:{zh:['不要用空格或连续回车模拟排版。','用语义命令标识标题，目录才能自动生成。','\\tableofcontents 会生成目录（通常需要重复编译）。'],en:['Do not arrange a page with spaces or repeated Enter presses.','Use section commands so the table of contents can be generated.','\\tableofcontents creates a contents page (usually after another compile).']},
       code:String.raw`\section{Background}
@@ -35,14 +35,14 @@ Use \emph{emphasis} sparingly.`,
       tip:{zh:'文档预览支持 section、subsection、textbf、emph 等常见写法。',en:'The document preview recognizes section, subsection, textbf, and emph.'},
       task:{zh:'加一个 “Methods” 小节，再写两段短文。',en:'Add a “Methods” subsection and write two short paragraphs.'}},
     { id:'math-inline', module:'math', minutes:9, kind:'math', title:{zh:'写好第一个数学公式',en:'Write your first equation'},
-      lead:{zh:'数学模式是 LaTeX 的另一套语法。分式、根号、上下标都在这里出现。',en:'Math mode has its own syntax. This is where fractions, radicals, subscripts, and superscripts live.'},
+      lead:{zh:'数学模式有自己的一套语法，分式、根号和上下标都按它的规则写。',en:'Math mode has its own syntax: fractions, radicals, subscripts, and superscripts follow its rules.'},
       concept:{zh:'行内公式用 $...$，独立公式通常用 \\[...\\]。\\frac{a}{b} 写分式，^ 和 _ 处理上下标。',en:'Use $...$ for inline math and \\[...\\] for display math. Fractions use \\frac{a}{b}; ^ and _ set superscripts and subscripts.'},
       bullets:{zh:['数学变量默认斜体；sin、log 等函数应写作 \\sin、\\log。','多字符的上标或下标要加花括号：x^{n+1}。','行内公式不要为了“显眼”全部写成独立公式。'],en:['Variables are italic by default; functions should use \\sin and \\log.','Wrap multi-character scripts in braces: x^{n+1}.','Keep short expressions inline when they belong in a sentence.']},
       code:String.raw`\frac{a+b}{2}=\sqrt{x^2+y^2}`, 
       tip:{zh:'点击示例公式，然后改动分子、分母，观察预览如何变化。',en:'Edit the numerator and denominator and watch the preview update.'},
       task:{zh:'写出二次方程求根公式：x = (-b ± √(b² − 4ac))/(2a)。',en:'Typeset the quadratic formula, including the plus/minus symbol.'}},
     { id:'math-align', module:'math', minutes:10, kind:'math', title:{zh:'对齐公式、矩阵和分段函数',en:'Aligned equations, matrices & cases'},
-      lead:{zh:'公式一多，读者最需要的是清楚的对齐关系，而不是更大的字号。',en:'When equations get longer, alignment matters more than font size.'},
+      lead:{zh:'公式多起来以后，对齐位置就成了阅读的主要障碍。',en:'Once equations run past one line, the alignment points decide how readable they are.'},
       concept:{zh:'在 aligned 环境中，用 & 标记对齐位置，\\\\ 换行。matrix、pmatrix 和 cases 负责常见的数学结构。',en:'In aligned, & marks an alignment point and \\\\ starts a new line. Matrix environments and cases handle structured expressions.'},
       bullets:{zh:['等号通常是公式组的对齐位置。','pmatrix 自动加圆括号，bmatrix 加方括号。','cases 中第一列是表达式，第二列常写条件。'],en:['Align at equals signs for multi-line derivations.','pmatrix adds parentheses; bmatrix adds brackets.','In cases, the second column usually holds a condition.']},
       code:String.raw`\begin{aligned}
@@ -54,7 +54,7 @@ f(x)&=x^2+2x+1\\
     { id:'figures', module:'layout', minutes:8, kind:'document', title:{zh:'插图与浮动体',en:'Figures & floats'},
       lead:{zh:'LaTeX 会尽量为图片找合适的位置。浮动体就是这个机制的一部分。',en:'LaTeX finds suitable places for figures. Floats are part of that layout system.'},
       concept:{zh:'加载 graphicx 后，用 \\includegraphics 插图；\\caption 添加题注。htbp 是位置偏好，不是强制坐标。',en:'Load graphicx to insert images and add captions with \\caption. Placement options such as htbp are preferences, not exact coordinates.'},
-      bullets:{zh:['图片应放在项目目录中，文件名尽量简单。','图题、标签一般放在 figure 环境里。','本网站不会加载你的真实图片；请用本地 TeX 项目编译检查。'],en:['Keep image files in your project and use simple filenames.','Place captions and labels inside the figure environment.','Use a local TeX compiler to verify real image placement.']},
+      bullets:{zh:['图片应放在项目目录中，文件名尽量简单。','图题、标签一般放在 figure 环境里。','本网站不会加载你的真实图片；请用本地 TeX 项目编译检查。'],en:['Keep image files in your project and use simple filenames.','Place captions and labels inside the figure environment.','This site does not load your image files; check the real placement in a local TeX project.']},
       code:String.raw`\usepackage{graphicx} % in the preamble
 
 \begin{figure}[htbp]
@@ -66,7 +66,7 @@ f(x)&=x^2+2x+1\\
       tip:{zh:'“htbp” 分别指 here、top、bottom、page。它们给编译器选择，而不是下死命令。',en:'h, t, b, and p mean here, top, bottom, and float page. They guide the compiler rather than lock a position.'},
       task:{zh:'把图片宽度从 .7\\textwidth 改成 .85\\textwidth。',en:'Change the image width from .7\\textwidth to .85\\textwidth.'}},
     { id:'tables', module:'layout', minutes:10, kind:'document', title:{zh:'做一张干净的表格',en:'Build a clean table'},
-      lead:{zh:'好的表格先有清楚的列，再考虑横线。学术写作里，少量规则线往往更好读。',en:'Start by making the columns clear. In academic tables, a few horizontal rules are often enough.'},
+      lead:{zh:'好的表格先有清楚的列，再考虑横线。学术写作里，少量规则线往往更好读。',en:'Make the columns clear first, then decide about rules. Academic tables usually need only a few horizontal lines.'},
       concept:{zh:'tabular 指定列格式，& 分列，\\\\ 换行。booktabs 提供更克制的三线表命令。',en:'tabular defines column alignment; & separates cells and \\\\ ends a row. booktabs provides cleaner horizontal rules.'},
       bullets:{zh:['列格式 l、c、r 对应左、中、右对齐。','使用 booktabs 之前要在导言区加载宏包。','较宽的表可考虑 tabularx，避免用空格硬撑。'],en:['Column specs l, c, and r mean left, center, and right.','Load booktabs in the preamble before using its rules.','For wider tables, consider tabularx instead of padding with spaces.']},
       code:String.raw`\usepackage{booktabs} % preamble
@@ -79,7 +79,7 @@ A & 0.42 & 0.08 \\
 B & 0.31 & 0.07 \\
 \bottomrule
 \end{tabular}`,
-      tip:{zh:'不要把每个单元格都画上边框。先让列对齐，表格自然就整齐了。',en:'Avoid putting a box around every cell. Clear alignment does most of the work.'},
+      tip:{zh:'不要把每个单元格都画上边框。先让列对齐，表格自然就整齐了。',en:'Avoid putting a box around every cell. Once the columns line up, the table looks tidy.'},
       task:{zh:'添加第三行模型 C，并为它填写估计值和标准误。',en:'Add a third row for model C with an estimate and a standard error.'}},
     { id:'crossref', module:'references', minutes:7, kind:'document', title:{zh:'编号与交叉引用',en:'Labels & cross-references'},
       lead:{zh:'章节顺序会改，图表编号也会变。让 LaTeX 处理这些编号，自己只写标签。',en:'Sections move and figure numbers change. Let LaTeX maintain the numbers and refer to stable labels.'},
@@ -117,7 +117,7 @@ A classic result \parencite{knuth1984}.
       tip:{zh:'如果学校模板已经规定 BibTeX 或 natbib，请按模板配置，不要混用两套引用命令。',en:'If your institution uses BibTeX or natbib, follow its template rather than mixing citation systems.'},
       task:{zh:'把引用键 knuth1984 改成 texbook1984，并同步修改 .bib 条目。',en:'Rename the citation key to texbook1984 in both the command and the .bib entry.'}},
     { id:'macros', module:'workflow', minutes:8, kind:'document', title:{zh:'自定义命令，少写重复代码',en:'Write less with custom commands'},
-      lead:{zh:'一篇文档里会反复出现同样的记号。给它一个名字，修改就只需改一处。',en:'If a symbol appears dozens of times, name it once. A later change then takes one edit.'},
+      lead:{zh:'一篇文档里会反复出现同样的记号。给它一个名字，修改就只需改一处。',en:'If the same symbol appears throughout a document, name it once. A later change then takes one edit.'},
       concept:{zh:'\\newcommand{\\E}{\\mathbb{E}} 可以定义期望算子。带参数的宏用 [1]、#1 接收内容。',en:'\\newcommand{\\E}{\\mathbb{E}} defines an expectation symbol. Use [1] and #1 for one-argument macros.'},
       bullets:{zh:['命令名不要和已有命令冲突。','把常用宏放在导言区或单独的 macros.tex。','宏用于表达重复语义，不必为每个字母造命令。'],en:['Avoid redefining existing commands accidentally.','Keep shared macros in the preamble or a macros.tex file.','Create macros for repeated meaning, not every single letter.']},
       code:String.raw`\usepackage{amsfonts}
@@ -145,7 +145,7 @@ A classic result \parencite{knuth1984}.
       tip:{zh:'本地完整编译推荐 TeX Live + XeLaTeX；浏览器预览只模拟部分文本结构。',en:'For full compilation, use TeX Live with XeLaTeX. The browser only previews selected document features.'},
       task:{zh:'修改标题，并添加一个带有英文术语的中文段落。',en:'Change the title and add a Chinese paragraph containing an English term.'}},
     { id:'debug', module:'shipping', minutes:10, kind:'document', title:{zh:'读懂常见报错',en:'Read common error messages'},
-      lead:{zh:'报错往往发生在某个符号附近，但真正原因可能在前几行。按顺序查，效率会高很多。',en:'The error may point to one line while its cause sits a few lines earlier. Check systematically.'},
+      lead:{zh:'报错往往指向某个符号，但真正的原因可能在前几行。',en:'The error may point to one line while the cause sits a few lines earlier, so read the lines above it.'},
       concept:{zh:'优先查花括号是否配对、环境是否结束、命令是否拼对、宏包是否加载。',en:'Check matching braces, environments, command spelling, and required packages first.'},
       bullets:{zh:['Missing $ inserted：数学符号可能跑出了数学模式。','Undefined control sequence：命令拼错，或缺宏包。','Environment ... undefined：环境没有定义，检查所需宏包。'],en:['Missing $ inserted: math notation may be outside math mode.','Undefined control sequence: a typo or missing package is likely.','Environment ... undefined: check whether its defining package is loaded.']},
       code:String.raw`% Common mistake:
@@ -162,7 +162,7 @@ The value is $x_1$.
       tip:{zh:'先找到日志里第一条实质性错误，再看附近代码。后面的报错可能只是连锁反应。',en:'Read the first meaningful error in the log. Later errors may simply cascade from it.'},
       task:{zh:'找出上面两处错误，并说出为什么会触发它们。',en:'Identify the two mistakes above and explain what triggers each one.'}},
     { id:'project', module:'shipping', minutes:7, kind:'document', title:{zh:'从练习到正式项目',en:'Turn practice into a project'},
-      lead:{zh:'准备交付前，整理目录、移除废弃文件，再在干净环境里编译一次。',en:'Before sharing, clean the folder and compile once from a fresh environment.'},
+      lead:{zh:'准备交付前，整理目录、移除废弃文件，再在干净环境里编译一次。',en:'Before sharing, tidy the folder, remove files you no longer use, and compile once in a clean environment.'},
       concept:{zh:'主文件、图片、参考文献与自定义宏各放在清晰的位置；提交的文件应足以让别人复现 PDF。',en:'Keep the main file, figures, bibliography, and macros organized. Someone else should be able to reproduce the PDF.'},
       bullets:{zh:['保持主文件名清晰，例如 main.tex。','用相对路径引用图片和子文件。','检查 .bib、图片、字体和宏包依赖是否齐全。'],en:['Use a clear main filename such as main.tex.','Use relative paths for figures and included files.','Check bibliography, figures, fonts, and package dependencies.']},
       code:String.raw`project/
@@ -198,11 +198,11 @@ The value is $x_1$.
     ['int','math','\\int_a^b',String.raw`\int_0^1 x^2\,dx`,'积分','Integral','\\, 常用于积分式中的微小间隔。','\\, adds a little spacing before the differential.'],
     ['lim','math','\\lim_{x\\to 0}',String.raw`\lim_{x\to 0}\frac{\sin x}{x}=1`,'极限','Limit','\\lim 是直立的数学运算符。','\\lim produces an upright operator.'],
     ['infty','math','\\infty',String.raw`\sum_{n=0}^{\infty}\frac{1}{2^n}=2`,'无穷大','Infinity','无穷符号常用在积分、极限与求和里。','Common in series, limits, and integrals.'],
-    ['alpha','math','\\alpha, \\beta',String.raw`\alpha+\beta=\gamma`,'希腊字母','Greek letters','注意区分小写和大写，例如 Gamma 对应 \\Gamma。','Uppercase Greek symbols may use different commands.'],
+    ['alpha','math','\\alpha, \\beta',String.raw`\alpha+\beta=\gamma`,'希腊字母','Greek letters','注意区分小写和大写，例如 Gamma 对应 \\Gamma。','Uppercase Greek letters use different commands, such as \\Gamma for Γ.'],
     ['mathbb','math','\\mathbb{R}',String.raw`x\in\mathbb{R}^n`,'黑板粗体','Blackboard bold','常用来表示集合和数域。','Common for sets and number systems.'],
     ['vec','math','\\vec{x}',String.raw`\vec{v}\cdot\vec{w}=0`,'向量','Vector','单字符向量可用 \\vec。','Places an arrow over a variable.'],
     ['hat','math','\\hat{\\theta}',String.raw`\hat{\theta}=\frac{1}{n}\sum_i X_i`,'估计量','Estimator hat','常用于统计估计量。','Often used for estimated parameters.'],
-    ['boldsymbol','math','\\boldsymbol{\\beta}',String.raw`\boldsymbol{\beta}^{\top}x`,'数学粗体','Bold math','比在数学模式里用 textbf 更合适。','Useful for bold math symbols.'],
+    ['boldsymbol','math','\\boldsymbol{\\beta}',String.raw`\boldsymbol{\beta}^{\top}x`,'数学粗体','Bold math','比在数学模式里用 textbf 更合适。','Use this instead of textbf inside math.'],
     ['cases','math','\\begin{cases}',String.raw`f(x)=\begin{cases}x^2,&x\ge0\\-x,&x<0\end{cases}`,'分段函数','Piecewise function','使用 & 分隔表达式与条件。','Separates an expression from its condition.'],
     ['pmatrix','math','\\begin{pmatrix}',String.raw`\begin{pmatrix}a&b\\c&d\end{pmatrix}`,'圆括号矩阵','Parenthesized matrix','矩阵列用 & 分隔。','Use & to separate matrix columns.'],
     ['aligned','math','\\begin{aligned}',String.raw`\begin{aligned}a&=b+c\\ &=d\end{aligned}`,'公式对齐','Align equations','以 & 指定对齐位置。','Mark alignment points with &.'],
@@ -228,7 +228,7 @@ The value is $x_1$.
     ['label','refs','\\label{...}',String.raw`\label{fig:results}`,'交叉引用标签','Cross-reference label','给可编号对象命名。','Names a numbered element.'],
     ['ref','refs','\\ref{...}',String.raw`Figure~\ref{fig:results}`,'引用编号','Reference number','自动引用对应对象的编号。','Prints the label number.'],
     ['cite','refs','\\cite{...}',String.raw`\cite{knuth1984}`,'文献引用','Citation','具体显示格式取决于文献系统。','Formatting depends on the bibliography setup.'],
-    ['newcommand','workflow','\\newcommand',String.raw`\newcommand{\E}{\mathbb{E}}`,'自定义宏','Custom macro','让重复记号保持一致。','Reuse a meaningful symbol consistently.'],
+    ['newcommand','workflow','\\newcommand',String.raw`\newcommand{\E}{\mathbb{E}}`,'自定义宏','Custom macro','让重复记号保持一致。','Reuse a repeated symbol consistently.'],
     ['input','workflow','\\input{...}',String.raw`\input{sections/introduction}`,'拆分文件','Include a file','拆分长文档，方便维护。','Split larger documents into manageable files.'],
     ['tableofcontents','workflow','\\tableofcontents',String.raw`\tableofcontents`,'自动目录','Table of contents','根据章节命令生成目录。','Generates a section-based contents page.']
   ].map(([id,category,command,example,zh,en,detailZh,detailEn])=>({id,category,command,example,title:{zh,en},detail:{zh:detailZh,en:detailEn}}));

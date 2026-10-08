@@ -1,5 +1,5 @@
 (() => {
-  const A=window.Atelier,D=A.data;
+  const A=window.Cookbook,D=A.data;
   const categories=[['all','all'],['math','math'],['document','document'],['layout','layout'],['refs','refs'],['workflow','workflow'],['favorites','favorites']];
   const input=document.getElementById('reference-search'),filters=document.getElementById('ref-filters'),grid=document.getElementById('ref-grid'),counter=document.getElementById('ref-count');
   let query=new URLSearchParams(location.search).get('q')||'',category='all';input.value=query;let timer;

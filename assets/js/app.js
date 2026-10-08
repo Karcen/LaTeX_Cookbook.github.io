@@ -1,4 +1,4 @@
-/* LaTeX Atelier — shared navigation, localization, storage, UI primitives. */
+/* LaTeX Cookbook — shared navigation, localization, storage, UI primitives. */
 (() => {
   'use strict';
   const D = window.LATEX_DATA;
@@ -10,14 +10,14 @@
     {id:'reference',href:'reference.html',zh:'命令速查',en:'Reference',icon:'search'}
   ];
   const copy = {
-    tagline:{zh:'把想法写成公式',en:'Ideas, beautifully typeset'},
+    tagline:{zh:'把想法写成公式',en:'Write your ideas as formulas'},
     home:{zh:'首页',en:'Home'},courses:{zh:'学习路径',en:'Lessons'},playground:{zh:'交互实验室',en:'Playground'},practice:{zh:'闯关练习',en:'Practice'},reference:{zh:'命令速查',en:'Reference'},
     theme:{zh:'切换主题',en:'Toggle theme'},switchToLight:{zh:'切换到浅色模式',en:'Switch to light mode'},switchToDark:{zh:'切换到深色模式',en:'Switch to dark mode'},search:{zh:'快速跳转',en:'Quick search'},searchPlaceholder:{zh:'搜索课程、页面或命令…',en:'Search lessons, pages, or commands…'},
-    footerLine:{zh:'写一行，看看它长什么样。',en:'Write a line. See how it looks.'},
+    footerLine:{zh:'写一行，看看它长什么样。',en:'Write a line and see how it looks.'},
     footerCreditBefore:{zh:'由 ',en:'Developed by '},
     footerCreditAfter:{zh:' 使用 ChatGPT 辅助开发',en:' with assistance from ChatGPT'},
-    footerNote:{zh:'纯前端 · 离线可用 · 进度仅保存在本机',en:'Static site · Offline-ready · Progress stays on this device'},
-    builtFor:{zh:'用一点好奇心，学会 LaTeX。',en:'Learn LaTeX with a little curiosity.'},
+    footerNote:{zh:'纯前端 · 离线可用 · 进度仅保存在本机',en:'No server needed · Works offline · Progress stays on this device'},
+    builtFor:{zh:'用一点好奇心，学会 LaTeX。',en:'Learn LaTeX at your own pace.'},
     continue:{zh:'继续学习',en:'Continue learning'},start:{zh:'开始学习',en:'Start learning'},explore:{zh:'查看全部课程',en:'Explore all lessons'},
     allLessons:{zh:'全部课程',en:'All lessons'},chapter:{zh:'章节',en:'Chapter'},lessons:{zh:'课时',en:'lessons'},min:{zh:'分钟',en:'min'},
     done:{zh:'已完成',en:'Completed'},markDone:{zh:'标记已学完',en:'Mark as complete'},marked:{zh:'已记下这节',en:'Lesson completed'},
@@ -32,7 +32,7 @@
     pleaseChoose:{zh:'先选一个答案。',en:'Choose an answer first.'},check:{zh:'检查答案',en:'Check answer'},nextQuestion:{zh:'下一题',en:'Next question'},retry:{zh:'重新练习',en:'Try again'},
     favorites:{zh:'已收藏',en:'Favorites'},allCommands:{zh:'全部命令',en:'All commands'},
     showAll:{zh:'查看全部',en:'View all'},finished:{zh:'已学完',en:'Completed'},
-    homeHeroEyebrow:{zh:'给好奇者的 LaTeX 学习空间',en:'A hands-on space for curious minds'},
+    homeHeroEyebrow:{zh:'动手学 LaTeX 的地方',en:'A hands-on place to learn LaTeX'},
     copyUnavailable:{zh:'无法自动复制，请手动选择代码。',en:'Clipboard unavailable. Please select the code manually.'},
     lang:{zh:'语言',en:'Language'},dark:{zh:'深色模式',en:'Dark mode'}
   };
@@ -85,12 +85,12 @@
   function pageId(){return document.body.dataset.page||'home';}
   function renderNav(){const node=document.getElementById('site-header');if(!node)return;
     const current=pageId();
-    node.innerHTML=`<div class="nav-shell container"><a class="brand" href="index.html" aria-label="LaTeX Atelier home"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>atelier</small></span></a><nav class="nav-links" aria-label="Main navigation">${PAGES.map(p=>`<a class="nav-link ${current===p.id?'is-current':''}" ${current===p.id?'aria-current="page"':''} href="${p.href}">${val(p)}</a>`).join('')}</nav><div class="nav-actions"><button id="global-search" class="icon-button" aria-label="${tr('search')}" title="${tr('search')} · /">${ico('search',19)}</button><button id="theme-toggle" class="icon-button" aria-label="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" title="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" aria-pressed="${theme==='dark'}">${ico(theme==='dark'?'sun':'moon',19)}</button><div class="lang-switch" role="group" aria-label="Language"><button class="lang-opt ${lang==='zh'?'active':''}" data-lang="zh" aria-pressed="${lang==='zh'}">中</button><button class="lang-opt ${lang==='en'?'active':''}" data-lang="en" aria-pressed="${lang==='en'}">EN</button></div></div></div>`;
+    node.innerHTML=`<div class="nav-shell container"><a class="brand" href="index.html" aria-label="LaTeX Cookbook home"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>cookbook</small></span></a><nav class="nav-links" aria-label="Main navigation">${PAGES.map(p=>`<a class="nav-link ${current===p.id?'is-current':''}" ${current===p.id?'aria-current="page"':''} href="${p.href}">${val(p)}</a>`).join('')}</nav><div class="nav-actions"><button id="global-search" class="icon-button" aria-label="${tr('search')}" title="${tr('search')} · /">${ico('search',19)}</button><button id="theme-toggle" class="icon-button" aria-label="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" title="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" aria-pressed="${theme==='dark'}">${ico(theme==='dark'?'sun':'moon',19)}</button><div class="lang-switch" role="group" aria-label="Language"><button class="lang-opt ${lang==='zh'?'active':''}" data-lang="zh" aria-pressed="${lang==='zh'}">中</button><button class="lang-opt ${lang==='en'?'active':''}" data-lang="en" aria-pressed="${lang==='en'}">EN</button></div></div></div>`;
     node.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
     document.getElementById('global-search')?.addEventListener('click',openPalette);
     document.getElementById('theme-toggle')?.addEventListener('click',()=>setTheme(theme==='light'?'dark':'light'));
   }
-  function renderFooter(){const node=document.getElementById('site-footer');if(!node)return;node.innerHTML=`<div class="container footer-main"><div><a class="brand footer-brand" href="index.html"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>atelier</small></span></a><p class="footer-sentence">${tr('footerLine')}</p></div><div class="footer-links">${PAGES.slice(1).map(p=>`<a href="${p.href}">${val(p)} ${ico('arrow',14)}</a>`).join('')}</div></div><div class="container footer-bottom"><span>© 2026 LaTeX Atelier · Learn by writing.</span><div class="footer-meta"><span class="footer-credit">${tr('footerCreditBefore')}<a class="footer-author" href="https://karcen.github.io/" target="_blank" rel="noopener noreferrer">Jiacheng Zheng</a>${tr('footerCreditAfter')}</span><span class="footer-note">${tr('footerNote')}</span></div></div>`;}
+  function renderFooter(){const node=document.getElementById('site-footer');if(!node)return;node.innerHTML=`<div class="container footer-main"><div><a class="brand footer-brand" href="index.html"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>cookbook</small></span></a><p class="footer-sentence">${tr('footerLine')}</p></div><div class="footer-links">${PAGES.slice(1).map(p=>`<a href="${p.href}">${val(p)} ${ico('arrow',14)}</a>`).join('')}</div></div><div class="container footer-bottom"><span>© 2026 LaTeX Cookbook · Learn by writing.</span><div class="footer-meta"><span class="footer-credit">${tr('footerCreditBefore')}<a class="footer-author" href="https://karcen.github.io/" target="_blank" rel="noopener noreferrer">Jiacheng Zheng</a>${tr('footerCreditAfter')}</span><span class="footer-note">${tr('footerNote')}</span></div></div>`;}
   function translateStatic(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=tr(el.dataset.i18n);});document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{el.placeholder=tr(el.dataset.i18nPlaceholder);});document.querySelectorAll('[data-zh][data-en]').forEach(el=>{el.textContent=lang==='zh'?el.dataset.zh:el.dataset.en;});}
   function setLanguage(next){if(next===lang)return;lang=next;setStorage('language',lang);renderNav();renderFooter();translateStatic();window.dispatchEvent(new CustomEvent('languagechange',{detail:{lang}}));}
   function syncThemeChrome(){const tag=document.querySelector('meta[name="theme-color"]');if(tag)tag.content=theme==='dark'?'#111d1d':'#f6f7f2';}
@@ -117,6 +117,6 @@
   function animateEntries(root=document){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const els=[...root.querySelectorAll('[data-reveal]')];const obs=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('revealed');obs.unobserve(entry.target);}}},{threshold:.09,rootMargin:'0px 0px -24px 0px'});els.forEach((el,i)=>{el.style.setProperty('--reveal-delay',`${Math.min((i%7)*45,225)}ms`);obs.observe(el);});}
   function init(){document.documentElement.dataset.theme=theme;syncThemeChrome();renderNav();renderFooter();translateStatic();document.addEventListener('keydown',e=>{const tag=(e.target.tagName||'').toLowerCase();if((e.key==='/'&& !['input','textarea'].includes(tag))||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();openPalette();} if(e.key==='Escape')closePalette();});window.addEventListener('languagechange',()=>{if(palette&&!palette.hidden){palette.remove();palette=null;openPalette();}});}
   const api={data:D,pages:PAGES,get lang(){return lang;},get theme(){return theme;},t:tr,v:val,esc,ico,getStorage,setStorage,progress,completion,isDone,toggleDone,toast,clipboard,makeCode,bindCopyButtons,highlight,typeset,texToNode,animateEntries,openPalette,setLanguage};
-  window.Atelier=api;
+  window.Cookbook=api;
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

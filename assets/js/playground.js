@@ -1,5 +1,5 @@
 (() => {
-  const A=window.Atelier,D=A.data;
+  const A=window.Cookbook,D=A.data;
   const params=new URLSearchParams(location.search);
   const lesson=D.lessons.find(l=>l.id===params.get('lesson'));
   let mode= params.get('mode')==='document'?'document':params.get('mode')==='math'?'math':lesson?.kind||A.getStorage('editorMode','math');

@@ -1,5 +1,5 @@
 (() => {
-  const A=window.Atelier,D=A.data;const sidebar=document.getElementById('lesson-sidebar'),panel=document.getElementById('lesson-panel'),topbar=document.getElementById('course-topbar');
+  const A=window.Cookbook,D=A.data;const sidebar=document.getElementById('lesson-sidebar'),panel=document.getElementById('lesson-panel'),topbar=document.getElementById('course-topbar');
   const currentId=()=>{const id=decodeURIComponent(location.hash.replace(/^#/,''));return D.lessons.some(l=>l.id===id)?id:D.lessons[0].id;};
   function draw(){const lesson=D.lessons.find(l=>l.id===currentId());const ix=D.lessons.findIndex(l=>l.id===lesson.id),module=D.modules.find(m=>m.id===lesson.module),done=A.completion();
     topbar.innerHTML=`<div class="course-overview"><div class="progress-ring" style="--pct:${done/12*100}"><span>${Math.round(done/12*100)}%</span></div><div><strong>${A.t('totalProgress')}</strong><small>${done} / 12 ${A.t('lessonComplete')}</small></div></div><a href="practice.html" class="text-link">${A.lang==='zh'?'做几道题':'Test yourself'} ${A.ico('arrow',16)}</a>`;
