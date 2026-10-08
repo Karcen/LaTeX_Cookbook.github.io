@@ -3,10 +3,10 @@ window.LATEX_DATA = (() => {
   const modules = [
     { id:'foundation', number:'01', color:'lime', icon:'layers', zh:'从零起步', en:'Foundations', descZh:'先写出第一份能编译的文档。', descEn:'Build a small document that compiles.', lessons:['start','structure'] },
     { id:'math', number:'02', color:'lilac', icon:'sigma', zh:'数学排版', en:'Math typesetting', descZh:'分式、公式组和矩阵的写法。', descEn:'Fractions, aligned equations, and matrices.', lessons:['math-inline','math-align'] },
-    { id:'layout', number:'03', color:'peach', icon:'layout', zh:'图表与版面', en:'Figures & tables', descZh:'让图片、表格和正文各就各位。', descEn:'Figures, tables, and page layout.', lessons:['figures','tables'] },
+    { id:'layout', number:'03', color:'peach', icon:'layout', zh:'图表与版面', en:'Figures & tables', descZh:'让图片、表格和正文各就各位。', descEn:'Getting figures, tables, and text to sit where you want them.', lessons:['figures','tables'] },
     { id:'references', number:'04', color:'blue', icon:'link', zh:'引用与文献', en:'References', descZh:'编号、交叉引用、参考文献不再手改。', descEn:'Stop maintaining numbers and citations by hand.', lessons:['crossref','citation'] },
     { id:'workflow', number:'05', color:'yellow', icon:'settings', zh:'高效写作', en:'Workflow', descZh:'用宏、模板和中文支持节省重复劳动。', descEn:'Reusable commands, templates, and Chinese typesetting.', lessons:['macros','chinese'] },
-    { id:'shipping', number:'06', color:'mint', icon:'check-circle', zh:'排错与交付', en:'Finish & export', descZh:'读报错、整理项目文件。', descEn:'Debug common errors and package a clean project.', lessons:['debug','project'] }
+    { id:'shipping', number:'06', color:'mint', icon:'check-circle', zh:'排错与交付', en:'Finish & export', descZh:'读报错、整理项目文件并交付。', descEn:'Debug common errors and package a clean project.', lessons:['debug','project'] }
   ];
   const lessons = [
     { id:'start', module:'foundation', minutes:6, kind:'document', title:{zh:'你的第一份 LaTeX 文档',en:'Your first LaTeX document'},
@@ -20,7 +20,7 @@ window.LATEX_DATA = (() => {
 \maketitle
 Hello, LaTeX!
 \end{document}`,
-      tip:{zh:'动手改一下标题，再去“实验室”查看简化文档预览。',en:'Change the title, then open the simplified document preview in the lab.'},
+      tip:{zh:'动手改一下标题，再去“实验室”查看简化文档预览。',en:'Change the title, then open the simplified document preview in the Playground.'},
       task:{zh:'把标题改成 “A Note on Probability”，保留文档结构。',en:'Change the title to “A Note on Probability” while keeping the document structure.'}},
     { id:'structure', module:'foundation', minutes:7, kind:'document', title:{zh:'标题、段落与文本样式',en:'Sections, paragraphs & emphasis'},
       lead:{zh:'写作时先组织层级，再处理字体。这样后面改版式才不会牵一发动全身。',en:'Set up the hierarchy first and adjust typography later, so formatting changes stay local.'},
@@ -42,7 +42,7 @@ Use \emph{emphasis} sparingly.`,
       tip:{zh:'点击示例公式，然后改动分子、分母，观察预览如何变化。',en:'Edit the numerator and denominator and watch the preview update.'},
       task:{zh:'写出二次方程求根公式：x = (-b ± √(b² − 4ac))/(2a)。',en:'Typeset the quadratic formula, including the plus/minus symbol.'}},
     { id:'math-align', module:'math', minutes:10, kind:'math', title:{zh:'对齐公式、矩阵和分段函数',en:'Aligned equations, matrices & cases'},
-      lead:{zh:'公式多起来以后，对齐位置就成了阅读的主要障碍。',en:'Once equations run past one line, the alignment points decide how readable they are.'},
+      lead:{zh:'公式多起来以后，读者最需要的是清楚的对齐。',en:'Once equations run past one line, readers depend on clear alignment.'},
       concept:{zh:'在 aligned 环境中，用 & 标记对齐位置，\\\\ 换行。matrix、pmatrix 和 cases 负责常见的数学结构。',en:'In aligned, & marks an alignment point and \\\\ starts a new line. Matrix environments and cases handle structured expressions.'},
       bullets:{zh:['等号通常是公式组的对齐位置。','pmatrix 自动加圆括号，bmatrix 加方括号。','cases 中第一列是表达式，第二列常写条件。'],en:['Align at equals signs for multi-line derivations.','pmatrix adds parentheses; bmatrix adds brackets.','In cases, the second column usually holds a condition.']},
       code:String.raw`\begin{aligned}
@@ -63,10 +63,10 @@ f(x)&=x^2+2x+1\\
   \caption{Main result}
   \label{fig:main}
 \end{figure}`,
-      tip:{zh:'“htbp” 分别指 here、top、bottom、page。它们给编译器选择，而不是下死命令。',en:'h, t, b, and p mean here, top, bottom, and float page. They guide the compiler rather than lock a position.'},
+      tip:{zh:'“htbp” 分别指 here、top、bottom、page。它们只表示偏好，编译器仍可能移动图片。',en:'h, t, b, and p mean here, top, bottom, and float page. They are preferences; the compiler can still move the figure.'},
       task:{zh:'把图片宽度从 .7\\textwidth 改成 .85\\textwidth。',en:'Change the image width from .7\\textwidth to .85\\textwidth.'}},
     { id:'tables', module:'layout', minutes:10, kind:'document', title:{zh:'做一张干净的表格',en:'Build a clean table'},
-      lead:{zh:'好的表格先有清楚的列，再考虑横线。学术写作里，少量规则线往往更好读。',en:'Make the columns clear first, then decide about rules. Academic tables usually need only a few horizontal lines.'},
+      lead:{zh:'好的表格先有清楚的列，再考虑横线。学术写作里，少量规则线往往更好读。',en:'Make the columns clear first, then decide about rules. In academic tables, a few horizontal lines usually read better.'},
       concept:{zh:'tabular 指定列格式，& 分列，\\\\ 换行。booktabs 提供更克制的三线表命令。',en:'tabular defines column alignment; & separates cells and \\\\ ends a row. booktabs provides cleaner horizontal rules.'},
       bullets:{zh:['列格式 l、c、r 对应左、中、右对齐。','使用 booktabs 之前要在导言区加载宏包。','较宽的表可考虑 tabularx，避免用空格硬撑。'],en:['Column specs l, c, and r mean left, center, and right.','Load booktabs in the preamble before using its rules.','For wider tables, consider tabularx instead of padding with spaces.']},
       code:String.raw`\usepackage{booktabs} % preamble
@@ -145,7 +145,7 @@ A classic result \parencite{knuth1984}.
       tip:{zh:'本地完整编译推荐 TeX Live + XeLaTeX；浏览器预览只模拟部分文本结构。',en:'For full compilation, use TeX Live with XeLaTeX. The browser only previews selected document features.'},
       task:{zh:'修改标题，并添加一个带有英文术语的中文段落。',en:'Change the title and add a Chinese paragraph containing an English term.'}},
     { id:'debug', module:'shipping', minutes:10, kind:'document', title:{zh:'读懂常见报错',en:'Read common error messages'},
-      lead:{zh:'报错往往指向某个符号，但真正的原因可能在前几行。',en:'The error may point to one line while the cause sits a few lines earlier, so read the lines above it.'},
+      lead:{zh:'报错往往指向某个符号，但真正的原因可能在前几行，所以先往上翻。',en:'The error may point to one line while the cause sits a few lines earlier, so read the lines above it.'},
       concept:{zh:'优先查花括号是否配对、环境是否结束、命令是否拼对、宏包是否加载。',en:'Check matching braces, environments, command spelling, and required packages first.'},
       bullets:{zh:['Missing $ inserted：数学符号可能跑出了数学模式。','Undefined control sequence：命令拼错，或缺宏包。','Environment ... undefined：环境没有定义，检查所需宏包。'],en:['Missing $ inserted: math notation may be outside math mode.','Undefined control sequence: a typo or missing package is likely.','Environment ... undefined: check whether its defining package is loaded.']},
       code:String.raw`% Common mistake:
@@ -159,7 +159,7 @@ The value is $x_1$.
 
 % Fixed:
 \frac{a}{b}`,
-      tip:{zh:'先找到日志里第一条实质性错误，再看附近代码。后面的报错可能只是连锁反应。',en:'Read the first meaningful error in the log. Later errors may simply cascade from it.'},
+      tip:{zh:'先找到日志里第一条实质性错误，再看附近代码。后面的报错可能只是连锁反应。',en:'Read the first meaningful error in the log. Later errors usually cascade from it.'},
       task:{zh:'找出上面两处错误，并说出为什么会触发它们。',en:'Identify the two mistakes above and explain what triggers each one.'}},
     { id:'project', module:'shipping', minutes:7, kind:'document', title:{zh:'从练习到正式项目',en:'Turn practice into a project'},
       lead:{zh:'准备交付前，整理目录、移除废弃文件，再在干净环境里编译一次。',en:'Before sharing, tidy the folder, remove files you no longer use, and compile once in a clean environment.'},
@@ -198,7 +198,7 @@ The value is $x_1$.
     ['int','math','\\int_a^b',String.raw`\int_0^1 x^2\,dx`,'积分','Integral','\\, 常用于积分式中的微小间隔。','\\, adds a little spacing before the differential.'],
     ['lim','math','\\lim_{x\\to 0}',String.raw`\lim_{x\to 0}\frac{\sin x}{x}=1`,'极限','Limit','\\lim 是直立的数学运算符。','\\lim produces an upright operator.'],
     ['infty','math','\\infty',String.raw`\sum_{n=0}^{\infty}\frac{1}{2^n}=2`,'无穷大','Infinity','无穷符号常用在积分、极限与求和里。','Common in series, limits, and integrals.'],
-    ['alpha','math','\\alpha, \\beta',String.raw`\alpha+\beta=\gamma`,'希腊字母','Greek letters','注意区分小写和大写，例如 Gamma 对应 \\Gamma。','Uppercase Greek letters use different commands, such as \\Gamma for Γ.'],
+    ['alpha','math','\\alpha, \\beta',String.raw`\alpha+\beta=\gamma`,'希腊字母','Greek letters','注意区分小写和大写，例如 Gamma 对应 \\Gamma。','Some uppercase Greek letters need their own command, such as \\Gamma for Γ.'],
     ['mathbb','math','\\mathbb{R}',String.raw`x\in\mathbb{R}^n`,'黑板粗体','Blackboard bold','常用来表示集合和数域。','Common for sets and number systems.'],
     ['vec','math','\\vec{x}',String.raw`\vec{v}\cdot\vec{w}=0`,'向量','Vector','单字符向量可用 \\vec。','Places an arrow over a variable.'],
     ['hat','math','\\hat{\\theta}',String.raw`\hat{\theta}=\frac{1}{n}\sum_i X_i`,'估计量','Estimator hat','常用于统计估计量。','Often used for estimated parameters.'],
