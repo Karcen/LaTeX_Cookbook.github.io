@@ -1,4 +1,4 @@
-name: Deploy LaTeX Atelier static site
+name: Deploy LaTeX Cookbook static site
 on:
   push:
     branches: [main]
@@ -20,7 +20,7 @@ jobs:
         run: python3 scripts/package-release.py --site-only
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: deliverables/LaTeX-Atelier
+          path: deliverables/LaTeX-Cookbook
   deploy:
     environment:
       name: github-pages
