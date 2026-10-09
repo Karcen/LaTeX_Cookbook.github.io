@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{algorithm}\usepackage{algpseudocode}
+\begin{document}
+\begin{algorithm}
+\caption{Compute a sample mean}\label{alg:mean}
+\begin{algorithmic}[1]
+\Require Nonempty vector $x_1,\ldots,x_n$
+\Ensure Sample mean $\bar x$
+\State $s\gets 0$
+\For{$i\gets 1$ to $n$}\State $s\gets s+x_i$\EndFor
+\State \Return $s/n$
+\end{algorithmic}
+\end{algorithm}
+Algorithm~\ref{alg:mean} uses one pass.
+\end{document}

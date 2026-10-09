@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\typeout{CHECK:symbol-xrightarrow}
+\[\xrightarrow[f]{g}\]
+\[A\xrightarrow[f]{g}B\]
+\typeout{CHECK:symbol-xleftarrow}
+\[\xleftarrow{f}\]
+\[B\xleftarrow{f}A\]
+\typeout{CHECK:symbol-iint}
+\[\iint\]
+\[\iint_D f(x,y)\,\mathrm{d}x\,\mathrm{d}y\]
+\typeout{CHECK:symbol-iiint}
+\[\iiint\]
+\[\iiint_V f\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z\]
+\typeout{CHECK:symbol-iiiint}
+\[\iiiint\]
+\[\iiiint_D f\,\mathrm{d}V\]
+\typeout{CHECK:symbol-idotsint}
+\[\idotsint\]
+\[\idotsint_D f\,\mathrm{d}x_1\cdots\mathrm{d}x_n\]
+\typeout{CHECK:symbol-operatorname-Var}
+\[\operatorname{Var}\]
+\[\operatorname{Var}(X)=\sigma^2\]
+\typeout{CHECK:symbol-operatorname-Cov}
+\[\operatorname{Cov}\]
+\[\operatorname{Cov}(X,Y)\]
+\typeout{CHECK:symbol-operatorname-argmax}
+\[\operatorname*{arg\,max}\]
+\[\operatorname*{arg\,max}_{x\in A}f(x)\]
+\typeout{CHECK:symbol-lvert}
+\[\lvert\]
+\[\lvert x\rvert\]
+\typeout{CHECK:symbol-rvert}
+\[\rvert\]
+\[\lvert x\rvert\]
+\typeout{CHECK:symbol-lVert}
+\[\lVert\]
+\[\lVert x\rVert_2\]
+\typeout{CHECK:symbol-rVert}
+\[\rVert\]
+\[\lVert x\rVert_2\]
+\typeout{CHECK:symbol-overset}
+\[\overset{!}{=}\]
+\[a\overset{!}{=}b\]
+\typeout{CHECK:symbol-underset}
+\[\underset{n\to\infty}{\longrightarrow}\]
+\[a_n\underset{n\to\infty}{\longrightarrow}a\]
+\typeout{CHECK:symbol-dfrac}
+\[\dfrac{a}{b}\]
+\[\dfrac{a+b}{c+d}\]
+\typeout{CHECK:symbol-tfrac}
+\[\tfrac{a}{b}\]
+\[1+\tfrac12\]
+\typeout{CHECK:symbol-binom}
+\[\binom{n}{k}\]
+\[\binom{n}{k}\]
+\typeout{CHECK:symbol-boxed}
+\[\boxed{x=1}\]
+\[\boxed{E=mc^2}\]
+\typeout{CHECK:symbol-text}
+\[\text{if}\]
+\[x=0\quad\text{if }y=1\]
+\end{document}

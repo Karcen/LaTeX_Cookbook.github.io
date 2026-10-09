@@ -1,23 +1,35 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#f6f7f2" />
-  <meta name="description" content="从零开始学 LaTeX：中英文切换，十二节课程，公式预览，命令速查。Learn LaTeX from scratch: twelve lessons, live preview, command reference." />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="中英文 LaTeX 交互式百科：文档类、数学、表格、参考文献、Beamer、TikZ、错误排查与完整示例。Bilingual interactive LaTeX encyclopedia.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <script>try{if(JSON.parse(localStorage.getItem('atelier:theme'))==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>LaTeX Cookbook — 中文 English interactive LaTeX course</title>
-    <script src="assets/js/math-config.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/atelier.css">
+  <title>LaTeX Atelier · 交互式百科全书</title>
+  <script src="assets/js/math-config.js"></script>
   <script defer src="assets/vendor/mathjax-tex-svg-full.js"></script>
+  <script defer src="assets/vendor/prism.js"></script>
+  <script defer src="assets/vendor/prism-latex.js"></script>
   <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/content-base.js"></script>
+  <script defer src="assets/js/content-core.js"></script>
+  <script defer src="assets/js/content-advanced.js"></script>
+  <script defer src="assets/js/content-theorems.js"></script>
+  <script defer src="assets/js/content-exercises.js"></script>
+  <script defer src="assets/js/content-symbols.js"></script>
+  <script defer src="assets/js/content-supplement.js"></script>
+  <script defer src="assets/js/catalog.js"></script>
+  <script defer src="assets/js/compilation.js"></script>
   <script defer src="assets/js/app.js"></script>
   <script defer src="assets/js/home.js"></script>
 </head>
 <body data-page="home">
-  <a class="sr-only" href="#main-content">Skip to content</a>
+  <a class="sr-only" href="#main-content" data-zh="跳转到正文" data-en="Skip to content">跳转到正文</a>
   <header id="site-header" class="site-header"></header>
   <div id="main-content"><main id="home-content" class="page-shell"></main></div>
   <footer id="site-footer" class="site-footer"></footer>

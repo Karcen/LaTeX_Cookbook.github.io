@@ -1,10 +1,10 @@
 (() => {
   const A=window.Cookbook,D=A.data;
   const params=new URLSearchParams(location.search);
-  const lesson=D.lessons.find(l=>l.id===params.get('lesson'));
+  const lesson=D.lessons.find(l=>l.id===params.get('lesson')); const sample=A.catalog.examples.find(x=>x.id===params.get('example')); const supplied=params.get('code');
   let mode= params.get('mode')==='document'?'document':params.get('mode')==='math'?'math':lesson?.kind||A.getStorage('editorMode','math');
-  let code=lesson?.code || A.getStorage('draft-'+mode,null) || D.snippets.find(s=>s.kind===mode).code;
-  let request=0,timeout;
+  let code=supplied || sample?.code || lesson?.code || A.getStorage('draft-'+mode,null) || D.snippets.find(s=>s.kind===mode).code;
+  let request=0,timeout,currentTemplate=sample?.id||'';
   const tabs=document.getElementById('mode-tabs');const work=document.getElementById('workbench');const snippets=document.getElementById('snippets');const actions=document.getElementById('workbench-actions');const info=document.getElementById('work-info');
   function inlineMarkup(raw){let s=A.esc(raw);
     s=s.replace(/\\textbf\{([^{}]*)\}/g,'<strong>$1</strong>')
@@ -61,29 +61,37 @@
     return '<article class="doc-paper">'+(out.join('')||'<p>…</p>')+'</article>';
   }
   function draw(){tabs.innerHTML=`<button type="button" class="seg-btn ${mode==='math'?'active':''}" data-mode="math" aria-pressed="${mode==='math'}">${A.ico('sigma',15)} ${A.t('math')}</button><button type="button" class="seg-btn ${mode==='document'?'active':''}" data-mode="document" aria-pressed="${mode==='document'}">${A.ico('book-open',15)} ${A.t('document')}</button>`;
-    actions.innerHTML=`<button id="reset-code" class="btn btn-outline">${A.ico('rotate',15)} ${A.t('reset')}</button><button id="copy-code" class="btn btn-outline">${A.ico('copy',15)} ${A.t('copy')}</button><button id="export-code" class="btn btn-primary">${A.ico('download',15)} ${A.t('download')}</button>`;
-    work.innerHTML=`<section class="work-panel"><div class="work-panel-bar"><span class="panel-title">${A.ico('code',16)} ${A.t('code')}</span><span class="minor">${mode==='math'?'equation.tex':'document.tex'}</span></div><div class="editor-wrap"><div class="line-numbers" id="line-numbers" aria-hidden="true">1</div><textarea id="latex-editor" class="latex-editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="LaTeX source code"></textarea></div><div class="editor-foot"><span id="editor-count">0 lines</span><span>⌘ / Ctrl + Enter ${A.lang==='zh'?'刷新':'refresh'}</span></div></section>
+    actions.innerHTML=`<label class="template-picker"><span class="sr-only">${A.lang==='zh'?'切换完整模板':'Choose a full template'}</span><select id="full-template"><option value="">${A.lang==='zh'?'完整示例模板…':'Complete templates…'}</option>${A.catalog.examples.map(x=>`<option value="${x.id}" ${currentTemplate===x.id?'selected':''}>${A.esc(A.v(x.title))}</option>`).join('')}</select></label><button id="reset-code" class="btn btn-outline">${A.ico('rotate',15)} ${A.t('reset')}</button><button id="copy-code" class="btn btn-outline">${A.ico('copy',15)} ${A.t('copy')}</button><button id="export-code" class="btn btn-primary">${A.ico('download',15)} ${A.t('download')}</button>`;
+    work.innerHTML=`<section class="work-panel"><div class="work-panel-bar"><span class="panel-title">${A.ico('code',16)} ${A.t('code')}</span><span class="minor">${mode==='math'?'equation.tex':'document.tex'}</span></div><div class="editor-wrap"><div class="line-numbers" id="line-numbers" aria-hidden="true">1</div><div class="editor-stack"><pre id="editor-highlight" aria-hidden="true"><code></code></pre><textarea id="latex-editor" class="latex-editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="LaTeX source code"></textarea></div></div><div class="editor-foot"><span id="bracket-match"></span><span id="editor-count">0 lines</span><span>⌘ / Ctrl + Enter ${A.lang==='zh'?'刷新':'refresh'}</span></div></section>
     <section class="work-panel"><div class="work-panel-bar"><span class="panel-title">${A.ico('spark',16)} ${A.t('preview')}</span><span class="preview-status" id="preview-status"><i class="status-dot"></i><span>${A.lang==='zh'?'等待输入':'Ready'}</span></span></div><div class="preview-canvas"><div id="live-output" class="preview-content ${mode==='document'?'is-doc':''}" aria-live="polite">…</div></div><div class="editor-foot"><span>${mode==='math'?'MathJax · SVG':'Selected LaTeX syntax'}</span><span>${A.lang==='zh'?'本机渲染':'Local render'}</span></div></section>`;
     info.innerHTML=`${A.ico('info',18)} <span>${mode==='math'?(A.lang==='zh'?'公式由 MathJax 在浏览器本地渲染。支持分式、矩阵、对齐等常见数学语法。':'Math is rendered locally with MathJax. Try fractions, matrices, and aligned expressions.'):A.t('limited')}</span>`;
     snippets.innerHTML=D.snippets.filter(s=>s.kind===mode).map(s=>`<button class="snippet-btn" data-snippet="${s.id}">${A.ico('code',14)} ${A.v(s.label)}</button>`).join('');
     document.getElementById('latex-editor').value=code;
+    document.getElementById('full-template').addEventListener('change',e=>{const x=A.catalog.examples.find(x=>x.id===e.target.value);if(!x)return;currentTemplate=x.id;persistCode();mode='document';A.setStorage('editorMode',mode);code=x.code;persistCode();draw();});
     tabs.querySelectorAll('[data-mode]').forEach(btn=>btn.addEventListener('click',()=>{if(mode===btn.dataset.mode)return;persistCode();mode=btn.dataset.mode;A.setStorage('editorMode',mode);code=A.getStorage('draft-'+mode,null)||D.snippets.find(s=>s.kind===mode).code;draw();}));
-    document.getElementById('reset-code').addEventListener('click',()=>{code=D.snippets.find(s=>s.kind===mode).code;editor.value=code;persistCode();scheduleRender(true);A.toast(A.lang==='zh'?'已恢复默认示例':'Default example restored');});
+    document.getElementById('reset-code').addEventListener('click',()=>{code=(mode==='document'&&A.catalog.examples.find(x=>x.id===currentTemplate)?.code)||D.snippets.find(s=>s.kind===mode).code;editor.value=code;persistCode();scheduleRender(true);A.toast(A.lang==='zh'?'已恢复默认示例':'Default example restored');});
     document.getElementById('copy-code').addEventListener('click',()=>A.clipboard(editor.value));
     document.getElementById('export-code').addEventListener('click',exportTex);
     snippets.querySelectorAll('[data-snippet]').forEach(btn=>btn.addEventListener('click',()=>{code=D.snippets.find(s=>s.id===btn.dataset.snippet).code;editor.value=code;persistCode();scheduleRender(true);editor.focus();}));
     const editor=document.getElementById('latex-editor');
     editor.addEventListener('input',()=>{code=editor.value;persistCode();scheduleRender(false)});
-    editor.addEventListener('scroll',()=>{document.getElementById('line-numbers').scrollTop=editor.scrollTop});
+    editor.addEventListener('scroll',()=>{document.getElementById('line-numbers').scrollTop=editor.scrollTop;const h=document.getElementById('editor-highlight');h.scrollTop=editor.scrollTop;h.scrollLeft=editor.scrollLeft;});
+    const bracket=()=>{const match=LatexTools.match(editor.value,editor.selectionStart);document.getElementById('bracket-match').textContent=match?(match.to<0?(A.lang==='zh'?'括号未配对':'Unmatched bracket'):(A.lang==='zh'?'配对括号在第 '+match.line+' 行':'Matching bracket on line '+match.line)):'';};editor.addEventListener('click',bracket);editor.addEventListener('keyup',bracket);
+    editor.addEventListener('keydown',e=>{const p={'{':'}','[':']','(':')'};if(p[e.key]&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&editor.value[editor.selectionStart-1]!=='\\'){e.preventDefault();const start=editor.selectionStart,end=editor.selectionEnd,selection=editor.value.slice(start,end);editor.setRangeText(e.key+selection+p[e.key],start,end,'end');editor.setSelectionRange(start+1,start+1+selection.length);editor.dispatchEvent(new Event('input'));}else if('}])'.includes(e.key)&&editor.value[editor.selectionStart]===e.key){e.preventDefault();editor.setSelectionRange(editor.selectionStart+1,editor.selectionStart+1);}});
     editor.addEventListener('keydown',e=>{if(e.key==='Tab'){e.preventDefault();const s=editor.selectionStart;editor.setRangeText('  ',s,editor.selectionEnd,'end');editor.dispatchEvent(new Event('input'));}if((e.metaKey||e.ctrlKey)&&e.key==='Enter'){e.preventDefault();scheduleRender(true);}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='s'){e.preventDefault();exportTex();}});
+    const inserts=mode==='math'?[String.raw`\frac{}{}`,String.raw`\sqrt{}`,String.raw`\mathbb{}`,String.raw`\begin{aligned}
+ &= \\
+\end{aligned}`]:[String.raw`\section{}`,String.raw`\label{}`,String.raw`\begin{itemize}
+\item
+\end{itemize}`];const quick=document.getElementById('quick-inserts');quick.innerHTML=inserts.map((v,i)=>`<button data-insert="${i}">${A.esc(v.split('\n')[0])}</button>`).join('');quick.querySelectorAll('[data-insert]').forEach(b=>b.addEventListener('click',()=>{editor.setRangeText(inserts[+b.dataset.insert],editor.selectionStart,editor.selectionEnd,'end');editor.dispatchEvent(new Event('input'));editor.focus();}));
     scheduleRender(true);
   }
   function persistCode(){A.setStorage('draft-'+mode,code);}
-  function lineCount(){const ed=document.getElementById('latex-editor');if(!ed)return;const count=ed.value.split('\n').length;document.getElementById('line-numbers').textContent=Array.from({length:count},(_,i)=>i+1).join('\n');document.getElementById('editor-count').textContent=`${count} ${A.lang==='zh'?'行':'lines'} · ${ed.value.length} ${A.lang==='zh'?'字符':'chars'}`;}
+  function lineCount(){const ed=document.getElementById('latex-editor');if(!ed)return;const high=document.querySelector('#editor-highlight code');if(high){high.innerHTML=window.Prism?Prism.highlight(ed.value+'\n',Prism.languages.latex,'latex'):A.esc(ed.value+'\n');}const count=ed.value.split('\n').length;document.getElementById('line-numbers').textContent=Array.from({length:count},(_,i)=>i+1).join('\n');document.getElementById('editor-count').textContent=`${count} ${A.lang==='zh'?'行':'lines'} · ${ed.value.length} ${A.lang==='zh'?'字符':'chars'}`;}
   function setStatus(text,isError=false){const node=document.querySelector('#preview-status');if(node)node.innerHTML=`<i class="status-dot ${isError?'error':''}"></i><span>${A.esc(text)}</span>`;}
   function scheduleRender(instant){clearTimeout(timeout);lineCount();if(instant)render();else timeout=setTimeout(render,320);}
   async function render(){const current=++request;const output=document.getElementById('live-output');if(!output)return;
-    const value=document.getElementById('latex-editor').value;
+    const value=document.getElementById('latex-editor').value;const warnings=LatexTools.diagnose(value,A.lang);const diag=document.getElementById('source-diagnostics');if(diag){diag.innerHTML=warnings.length?'<strong>'+ (A.lang==='zh'?'源码提示（启发式检查）':'Source hints (heuristic checks)')+'</strong><ul>'+warnings.map(w=>'<li>'+A.esc(w)+'</li>').join('')+'</ul>':'<span>'+ (A.lang==='zh'?'未检出括号、环境顺序或常见宏包组合问题。':'No brace, environment-order, or common package-combination issues detected.')+'</span>';}
     if(!value.trim()){output.textContent=A.lang==='zh'?'在左边输入 LaTeX':'Type LaTeX on the left';setStatus(A.lang==='zh'?'等待输入':'Waiting for input');return;}
     setStatus(A.lang==='zh'?'正在排版…':'Rendering…');
     if(mode==='math'){
@@ -98,14 +106,14 @@
         // Remove old MathJax internals before writing a new document preview.
         if(window.MathJax)window.MathJax.typesetClear([output]);output.innerHTML=docHtml(value);
         if(window.MathJax)await A.typeset(output);
-        if(current!==request)return;setStatus(A.lang==='zh'?'简化预览已更新':'Preview updated');}
+        if(current!==request)return;setStatus(A.lang==='zh'?'教学预览已更新':'Preview updated');}
       catch(e){if(current!==request)return;output.innerHTML=`<div class="preview-error">${A.esc(e.message||String(e))}</div>`;setStatus(A.lang==='zh'?'排版出错':'Render error',true);}
     }
   }
   function exportTex(){
     let tex=document.getElementById('latex-editor').value;
     if(mode==='math'){
-      tex=['\\documentclass{article}','\\usepackage{amsmath,amssymb}','\\begin{document}','\\[',tex,'\\]','\\end{document}',''].join('\n');
+      tex=['\\documentclass{article}','\\usepackage{amsmath,amssymb,mathrsfs,bm}','\\begin{document}','\\[',tex,'\\]','\\end{document}',''].join('\n');
     } else if(!/\\begin\{document\}/.test(tex)){
       // Keep package declarations above the document body when exporting a partial example.
       const preamble=[],body=[];
@@ -113,7 +121,7 @@
         if(/^\s*\\(?:usepackage|newcommand|renewcommand|setlength|addbibresource)(?:\[|\{)/.test(line))preamble.push(line);
         else body.push(line);
       }
-      tex=['\\documentclass{article}','\\usepackage{amsmath,amssymb}',...preamble,'\\begin{document}',...body,'\\end{document}',''].join('\n');
+      tex=['\\documentclass{article}','\\usepackage{amsmath,amssymb,mathrsfs,bm}',...preamble,'\\begin{document}',...body,'\\end{document}',''].join('\n');
     }
     const blob=new Blob([tex],{type:'text/x-tex;charset=utf-8'});
     const href=URL.createObjectURL(blob),link=document.createElement('a');

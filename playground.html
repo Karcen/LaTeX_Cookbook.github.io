@@ -1,25 +1,39 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#f6f7f2" />
-  <meta name="description" content="A LaTeX editor in the browser: live math preview, a simplified document preview, example templates, and .tex export." />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="中英文 LaTeX 交互式百科：文档类、数学、表格、参考文献、Beamer、TikZ、错误排查与完整示例。Bilingual interactive LaTeX encyclopedia.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <script>try{if(JSON.parse(localStorage.getItem('atelier:theme'))==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>交互实验室 · Playground | LaTeX Cookbook</title>
-    <script src="assets/js/math-config.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/atelier.css">
+  <title>LaTeX 实验室 · Playground | LaTeX Atelier</title>
+  <script src="assets/js/math-config.js"></script>
   <script defer src="assets/vendor/mathjax-tex-svg-full.js"></script>
+  <script defer src="assets/vendor/prism.js"></script>
+  <script defer src="assets/vendor/prism-latex.js"></script>
   <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/content-base.js"></script>
+  <script defer src="assets/js/content-core.js"></script>
+  <script defer src="assets/js/content-advanced.js"></script>
+  <script defer src="assets/js/content-theorems.js"></script>
+  <script defer src="assets/js/content-exercises.js"></script>
+  <script defer src="assets/js/content-symbols.js"></script>
+  <script defer src="assets/js/content-supplement.js"></script>
+  <script defer src="assets/js/catalog.js"></script>
+  <script defer src="assets/js/compilation.js"></script>
   <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/latex-tools.js"></script>
+  <script defer src="assets/js/character-lab.js"></script>
   <script defer src="assets/js/playground.js"></script>
 </head>
 <body data-page="playground">
-  <a class="sr-only" href="#main-content">Skip to content</a>
+  <a class="sr-only" href="#main-content" data-zh="跳转到正文" data-en="Skip to content">跳转到正文</a>
   <header id="site-header" class="site-header"></header>
-  <div id="main-content"><main class="page-shell container"><section class="inner-hero inner-hero-tight"><div class="eyebrow">THE PLAYGROUND / LIVE RENDER</div><h1 data-zh="写一行，立刻看到结果。" data-en="Write a line and see the result.">写一行，立刻看到结果。</h1><p data-zh="左边改代码，右边看效果。挑一个示例开始，也可以直接粘贴自己的公式。支持导出 .tex 文件。" data-en="Edit on the left, preview on the right. Start with a snippet or paste your own formula, then export the .tex source.">左边改代码，右边看效果。挑一个示例开始，也可以直接粘贴自己的公式。支持导出 .tex 文件。</p></section><div class="workbench-top"><div id="mode-tabs" class="segmented" role="group" aria-label="Editor mode"></div><div id="workbench-actions" class="playground-actions"></div></div><div id="workbench" class="workbench"></div><div class="snippet-header"><h3 data-zh="从一个例子开始" data-en="Start with an example">从一个例子开始</h3><span class="overline">QUICK START</span></div><div id="snippets" class="snippet-grid"></div><div id="work-info" class="work-info" role="note"></div></main></div>
+  <div id="main-content"><main class="page-shell container"><section class="inner-hero"><h1 data-zh="在源码里做一次实验。" data-en="Experiment with the source.">在源码里做一次实验。</h1><p data-zh="编辑代码、切换示例并导出 .tex。数学公式实时渲染，文档结构提供教学预览。" data-en="Edit source, switch examples, and export .tex files. Render mathematics live or inspect document structure in a teaching preview.">编辑代码、切换示例并导出 .tex。数学公式实时渲染，文档结构提供教学预览。</p></section><div class="workbench-top"><div id="mode-tabs" class="segmented"></div><div id="workbench-actions" class="playground-actions"></div></div><div id="quick-inserts" class="quick-inserts"></div><div id="workbench" class="workbench"></div><div id="source-diagnostics" class="source-diagnostics" role="status"></div><div class="snippet-header"><h2 data-zh="快速示例" data-en="Quick examples">快速示例</h2></div><div id="snippets" class="snippet-grid"></div><div id="work-info" class="work-info" role="note"></div><section id="character-lab" class="character-lab"></section></main></div>
   <footer id="site-footer" class="site-footer"></footer>
 </body>
 </html>

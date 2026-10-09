@@ -1,0 +1,13 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\begin{document}
+\begin{frame}{A stable explanation}
+\begin{itemize}
+\item<1-> Define $x$.
+\item<2-> Compute $f(x)$.
+\item<3-> Interpret the result.
+\end{itemize}
+\uncover<2->{This line reserves its height on every overlay.}
+\only<3>{This line exists only on overlay three.}
+\end{frame}
+\end{document}

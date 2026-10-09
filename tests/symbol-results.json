@@ -1,0 +1,12 @@
+{
+  "records": 285,
+  "formulaChecks": 570,
+  "passed": 570,
+  "method": "All rendered fragments and usage examples compiled with pdfLaTeX in three documents using only the declared package dependencies.",
+  "groups": {
+    "LaTeXcore": 240,
+    "amsmath": 20,
+    "amssymb": 25
+  },
+  "evidence": "tests/symbol-compilation"
+}

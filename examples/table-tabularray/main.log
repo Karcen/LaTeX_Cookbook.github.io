@@ -1,0 +1,184 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.14)  9 OCT 2026 07:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tabularray/tabularray.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count270
+\l__pdf_internal_box=\box52
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count271
+\l__tblr_c_int=\count272
+\l__tblr_r_int=\count273
+\l__tblr_d_dim=\dimen142
+\l__tblr_h_dim=\dimen143
+\l__tblr_o_dim=\dimen144
+\l__tblr_p_dim=\dimen145
+\l__tblr_q_dim=\dimen146
+\l__tblr_r_dim=\dimen147
+\l__tblr_s_dim=\dimen148
+\l__tblr_t_dim=\dimen149
+\l__tblr_v_dim=\dimen150
+\l__tblr_w_dim=\dimen151
+\l__tblr_a_box=\box53
+\l__tblr_b_box=\box54
+\l__tblr_c_box=\box55
+\l__tblr_d_box=\box56
+\g__tblr_table_count_int=\count274
+\c@rownum=\count275
+\c@colnum=\count276
+\c@rowcount=\count277
+\c@colcount=\count278
+\abovesep=\dimen152
+\belowsep=\dimen153
+\leftsep=\dimen154
+\rightsep=\dimen155
+\g_tblr_level_int=\count279
+\g__tblr_data_row_key_count_int=\count280
+\g__tblr_data_column_key_count_int=\count281
+\g__tblr_data_cell_key_count_int=\count282
+\g__tblr_array_int=\count283
+\l__tblr_key_count_int=\count284
+\l__tblr_key_quotient_int=\count285
+\l__tblr_key_quotient_two_int=\count286
+\l__tblr_key_remainder_int=\count287
+\g__tblr_data_str_value_count_int=\count288
+\rulewidth=\dimen156
+\l__tblr_strut_dp_dim=\dimen157
+\l__tblr_strut_ht_dim=\dimen158
+\g__tblr_cell_wd_dim=\dimen159
+\g__tblr_cell_ht_dim=\dimen160
+\g__tblr_cell_head_dim=\dimen161
+\g__tblr_cell_foot_dim=\dimen162
+\l__column_target_dim=\dimen163
+\l__tblr_caption_box=\box57
+\l__tblr_caption_left_box=\box58
+\l__tblr_row_head_box=\box59
+\l__tblr_row_foot_box=\box60
+\l__tblr_row_head_foot_dim=\dimen164
+\tablewidth=\dimen165
+\l__tblr_table_firsthead_box=\box61
+\l__tblr_table_middlehead_box=\box62
+\l__tblr_table_lasthead_box=\box63
+\l__tblr_table_firstfoot_box=\box64
+\l__tblr_table_middlefoot_box=\box65
+\l__tblr_table_lastfoot_box=\box66
+\l__tblr_remain_height_dim=\dimen166
+\l__tblr_long_from_int=\count289
+\l__tblr_long_to_int=\count290
+\l__tblr_curr_i_int=\count291
+\l__tblr_prev_i_int=\count292
+\l__tblr_table_page_int=\count293
+\l__tblr_table_head_box=\box67
+\l__tblr_table_foot_box=\box68
+\l__tblr_table_head_foot_dim=\dimen167
+\l__tblr_table_head_body_foot_dim=\dimen168
+\l__tblr_table_box=\box69
+\l__tblr_table_hlines_box=\box70
+\l__tblr_hline_box=\box71
+\l__tblr_row_box=\box72
+\l__tblr_col_o_wd_dim=\dimen169
+\l__tblr_col_b_wd_dim=\dimen170
+\l__tblr_hline_leftskip_dim=\dimen171
+\l__tblr_hline_rightskip_dim=\dimen172
+\l__tblr_row_ht_dim=\dimen173
+\l__tblr_row_dp_dim=\dimen174
+\l__tblr_row_abovesep_dim=\dimen175
+\l__tblr_row_belowsep_dim=\dimen176
+\l__tblr_row_vlines_box=\box73
+\l__tblr_vline_box=\box74
+\l__tblr_cell_box=\box75
+\l__row_upper_dim=\dimen177
+\l__row_lower_dim=\dimen178
+\l__row_vpace_dim=\dimen179
+\l__tblr_vline_aboveskip_dim=\dimen180
+\l__tblr_vline_belowskip_dim=\dimen181
+\l__tblr_cell_wd_dim=\dimen182
+\l__tblr_cell_ht_dim=\dimen183
+\l__tblr_diag_box=\box76
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 6.
+
+
+[1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 2331 strings out of 473190
+ 57373 string characters out of 5715799
+ 443904 words of memory out of 5000000
+ 25652 multiletter control sequences out of 15000+600000
+ 562931 words of font info for 49 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 65i,6n,98p,207b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on main.pdf (1 page, 24222 bytes).
+PDF statistics:
+ 18 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

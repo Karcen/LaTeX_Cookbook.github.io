@@ -1,0 +1,199 @@
+{
+  "base": "file:///var/folders/5h/sz4crg_53c1154skg12yr5nm0000gn/T/atelier-language-release-6wcvmz3w/LaTeX-Atelier/",
+  "browser": "154.0.8037.98",
+  "mathjax": "3.2.1",
+  "checks": [
+    {
+      "name": "open index",
+      "passed": true
+    },
+    {
+      "name": "open encyclopedia",
+      "passed": true
+    },
+    {
+      "name": "open courses",
+      "passed": true
+    },
+    {
+      "name": "open reference",
+      "passed": true
+    },
+    {
+      "name": "open symbols",
+      "passed": true
+    },
+    {
+      "name": "open packages",
+      "passed": true
+    },
+    {
+      "name": "open classes",
+      "passed": true
+    },
+    {
+      "name": "open examples",
+      "passed": true
+    },
+    {
+      "name": "open templates",
+      "passed": true
+    },
+    {
+      "name": "open troubleshooting",
+      "passed": true
+    },
+    {
+      "name": "open playground",
+      "passed": true
+    },
+    {
+      "name": "open practice",
+      "passed": true
+    },
+    {
+      "name": "bilingual longtable article and reading location",
+      "passed": true
+    },
+    {
+      "name": "theme saves on reload",
+      "passed": true
+    },
+    {
+      "name": "article favorite saves",
+      "passed": true
+    },
+    {
+      "name": "global search ctexart",
+      "passed": true
+    },
+    {
+      "name": "global search standalone",
+      "passed": true
+    },
+    {
+      "name": "global search 黑板粗体",
+      "passed": true
+    },
+    {
+      "name": "global search blackboard bold",
+      "passed": true
+    },
+    {
+      "name": "global search mathcal",
+      "passed": true
+    },
+    {
+      "name": "global search %",
+      "passed": true
+    },
+    {
+      "name": "global search longtable",
+      "passed": true
+    },
+    {
+      "name": "global search citet",
+      "passed": true
+    },
+    {
+      "name": "global search citep",
+      "passed": true
+    },
+    {
+      "name": "global search Undefined control sequence",
+      "passed": true
+    },
+    {
+      "name": "dictionary search favorites and copy",
+      "passed": true
+    },
+    {
+      "name": "symbols actually render SVG",
+      "passed": true
+    },
+    {
+      "name": "all dictionary mathematics render without MathJax errors",
+      "passed": true
+    },
+    {
+      "name": "fourteen mathematical alphabet comparisons render",
+      "passed": true
+    },
+    {
+      "name": "learning progress survives reload",
+      "passed": true
+    },
+    {
+      "name": "math editor live rendering highlight pairing save and download",
+      "passed": true
+    },
+    {
+      "name": "math errors and HTML/link injection rejected",
+      "passed": true
+    },
+    {
+      "name": "document template and character experiment",
+      "passed": true
+    },
+    {
+      "name": "example .bib companions and actual PDF output",
+      "passed": true
+    },
+    {
+      "name": "exercise grading single",
+      "passed": true
+    },
+    {
+      "name": "exercise grading multiple",
+      "passed": true
+    },
+    {
+      "name": "exercise grading fill",
+      "passed": true
+    },
+    {
+      "name": "exercise grading boolean",
+      "passed": true
+    },
+    {
+      "name": "exercise grading debug",
+      "passed": true
+    },
+    {
+      "name": "exercise grading match",
+      "passed": true
+    },
+    {
+      "name": "exercise grading formula",
+      "passed": true
+    },
+    {
+      "name": "exercise grading scenario",
+      "passed": true
+    },
+    {
+      "name": "exercise grading task",
+      "passed": true
+    },
+    {
+      "name": "code tasks allow formatting and preserve literal text",
+      "passed": true
+    },
+    {
+      "name": "wrong answer explains the mistake",
+      "passed": true
+    },
+    {
+      "name": "mobile navigation and no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "reduced motion and keyboard search",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "passed": 47,
+  "total": 47
+}

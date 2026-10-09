@@ -1,0 +1,9 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx,subcaption}
+\begin{document}
+\begin{figure}[htbp]\centering
+\begin{subfigure}{.45\linewidth}\centering\rule{\linewidth}{25mm}\caption{First panel}\label{fig:a}\end{subfigure}\hfill
+\begin{subfigure}{.45\linewidth}\centering\rule{\linewidth}{25mm}\caption{Second panel}\label{fig:b}\end{subfigure}
+\caption{A two-panel illustration}\label{fig:both}\end{figure}
+Figure~\ref{fig:both} contains panels~\subref{fig:a} and~\subref{fig:b}.
+\end{document}

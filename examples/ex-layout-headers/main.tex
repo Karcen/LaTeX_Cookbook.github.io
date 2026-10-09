@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage[a4paper,margin=25mm,headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{Research notes}\fancyhead[R]{\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}}
+\begin{document}
+\section{Methods}The header shows the current section; the footer contains the page number.
+\newpage A second page keeps the same style.
+\end{document}

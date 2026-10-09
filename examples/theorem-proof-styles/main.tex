@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\begin{document}
+\section{A quadratic bound}
+\begin{definition}\label{def:nonnegative}
+A real number $x$ is nonnegative if $x\ge0$.
+\end{definition}
+\begin{lemma}\label{lem:square}
+For every real $x$, $x^2\ge0$.
+\end{lemma}
+\begin{proof}
+If $x\ge0$, the product $x\cdot x$ is nonnegative.
+If $x<0$, use $x^2=(-x)^2$.
+\end{proof}
+\begin{theorem}[A quadratic bound]\label{thm:bound}
+For every $x,a\in\mathbb{R}$, $x^2-2ax+a^2\ge0$.
+\end{theorem}
+\begin{proof}[Proof of the quadratic bound]
+By Lemma~\ref{lem:square},
+\begin{equation*}
+x^2-2ax+a^2=(x-a)^2\ge0.\qedhere
+\end{equation*}
+\end{proof}
+\begin{remark}
+Equality in Theorem~\ref{thm:bound} holds exactly when $x=a$.
+\end{remark}
+\end{document}

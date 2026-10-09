@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{pgfplots}\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=.85\linewidth,xlabel={$x$},ylabel={$f(x)$},grid=major,legend pos=north west]
+\addplot[blue,domain=-2:2,samples=80]{x^2};\addlegendentry{$x^2$}
+\addplot[teal,domain=-2:2]{x+1};\addlegendentry{$x+1$}
+\end{axis}\end{tikzpicture}
+\end{document}

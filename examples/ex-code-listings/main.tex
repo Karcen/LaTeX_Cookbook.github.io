@@ -1,0 +1,10 @@
+\documentclass{article}
+\usepackage{xcolor,listings}
+\lstset{language=Python,basicstyle=\ttfamily\small,keywordstyle=\color{blue},commentstyle=\color{teal},numbers=left,breaklines=true,frame=single,showstringspaces=false}
+\begin{document}
+\begin{lstlisting}[caption={A transparent calculation},label={lst:mean}]
+def mean(values):
+    return sum(values) / len(values)
+\end{lstlisting}
+Listing~\ref{lst:mean} assumes a nonempty input.
+\end{document}

@@ -1,0 +1,13 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,pdftitle={Reference demonstration},pdfauthor={A. Author}]{hyperref}
+\usepackage{bookmark}\usepackage[nameinlink,noabbrev]{cleveref}
+\begin{document}
+\tableofcontents
+\section{Model}\label{sec:model}
+\begin{equation}\label{eq:model}y=\alpha+\beta x\end{equation}
+See \cref{sec:model,eq:model}; page~\pageref{eq:model}.
+\href{https://www.latex-project.org/}{LaTeX Project}.
+\section*{Acknowledgements}\phantomsection\addcontentsline{toc}{section}{Acknowledgements}
+Thanks to the contributors.
+\end{document}

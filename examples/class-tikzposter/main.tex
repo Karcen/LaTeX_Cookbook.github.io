@@ -1,0 +1,12 @@
+\documentclass[20pt,a1paper,portrait]{tikzposter}
+\title{A research poster}\author{A. Researcher}\institute{Example University}\usetheme{Default}
+% Correct the titletextscale key setter in tikzposter 2.0.
+\makeatletter
+\define@key{title}{titletextscale}{\gdef\TP@titletextscale{#1}}
+\makeatother
+\begin{document}
+\maketitle
+\block{Research question}{What changes when information improves?}
+\begin{columns}\column{.5}\block{Model}{$y=\alpha+\beta x+\varepsilon$}
+\column{.5}\block{Results}{Describe the main finding.}\end{columns}
+\end{document}

@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{pgfplots}\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}\begin{axis}[width=.85\linewidth,ybar,bar width=18pt,
+ymin=0,ylabel={Count},symbolic x coords={A,B,C},xtick=data,nodes near coords]
+\addplot coordinates {(A,12) (B,18) (C,9)};
+\end{axis}\end{tikzpicture}
+\end{document}

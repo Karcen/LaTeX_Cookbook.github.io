@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{pgfplots}\pgfplotsset{compat=1.18}\usepgfplotslibrary{groupplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=16mm},width=.43\linewidth,height=5cm,xlabel={$x$}]
+\nextgroupplot[title={Linear}]\addplot[domain=0:2]{x};
+\nextgroupplot[title={Quadratic}]\addplot[domain=0:2]{x^2};
+\end{groupplot}\end{tikzpicture}
+\end{document}

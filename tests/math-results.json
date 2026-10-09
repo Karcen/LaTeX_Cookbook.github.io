@@ -1,0 +1,1537 @@
+[
+  {
+    "id": "core-command-49",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-55",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-57",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-58",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-59",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-60",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-61",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-62",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-64",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-69",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-70",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-71",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-72",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-73",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-74",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-75",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-76",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-77",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-78",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-79",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-80",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "core-command-81",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-alpha",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-beta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-gamma",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-delta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-epsilon",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varepsilon",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-zeta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-eta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-theta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-vartheta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-iota",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-kappa",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lambda",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mu",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nu",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-xi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-pi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varpi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rho",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varrho",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sigma",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varsigma",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-tau",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-upsilon",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-phi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varphi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-chi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-psi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-omega",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Gamma",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Delta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Theta",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Lambda",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Xi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Pi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Sigma",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Upsilon",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Phi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Psi",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Omega",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varkappa",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-digamma",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-aleph",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-hbar",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ell",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-wp",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Re",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Im",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-infty",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-partial",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nabla",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-prime",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-emptyset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-forall",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-exists",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-neg",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-top",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bot",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-angle",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-triangle",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-surd",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-flat",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-natural",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sharp",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-varnothing",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nexists",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-complement",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-eth",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-pm",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mp",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-times",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-div",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cdot",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ast",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-star",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-circ",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bullet",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-diamond",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cap",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-uplus",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqcap",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqcup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-vee",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-wedge",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-setminus",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-wr",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigtriangleup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigtriangledown",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-triangleleft",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-triangleright",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-oplus",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ominus",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-otimes",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-oslash",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-odot",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-dagger",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ddagger",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-amalg",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-geq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-neq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-equiv",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-approx",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sim",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-simeq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cong",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-asymp",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-propto",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ll",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-gg",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-prec",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-succ",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-preceq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-succeq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-in",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ni",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-notin",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-subset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-supset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-subseteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-supseteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqsubseteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqsupseteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-models",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-vdash",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-dashv",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-perp",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mid",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-parallel",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-smile",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-frown",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-doteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bowtie",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqsubset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqsupset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nleq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ngeq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nsubseteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nsupseteq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-subsetneq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-supsetneq",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leqslant",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-geqslant",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lesssim",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-gtrsim",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leftrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Leftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Rightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Leftrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mapsto",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-hookrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-hookleftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leftharpoonup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leftharpoondown",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rightharpoonup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rightharpoondown",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rightleftharpoons",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-uparrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-downarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-updownarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Uparrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Downarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Updownarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nearrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-searrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-swarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-nwarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-longrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-longleftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-longleftrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Longrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Longleftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Longleftrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-longmapsto",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-xrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-xleftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-twoheadrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-twoheadleftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rightleftarrows",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-leftrightarrows",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rightsquigarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sum",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-prod",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-coprod",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-int",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-oint",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigcap",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigcup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-biguplus",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigsqcup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigvee",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigwedge",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigoplus",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigotimes",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bigodot",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lim",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-limsup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-liminf",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sup",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-inf",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-max",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-min",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sin",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cos",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-tan",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-arcsin",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-arccos",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-arctan",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sinh",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cosh",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-tanh",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-log",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ln",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-exp",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-det",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-gcd",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ker",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-dim",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-arg",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Pr",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-iint",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-iiint",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-iiiint",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-idotsint",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-operatorname-Var",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-operatorname-Cov",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-operatorname-argmax",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-hat",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-widehat",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-bar",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-overline",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-underline",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-tilde",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-widetilde",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-vec",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-dot",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ddot",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-breve",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-check",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-acute",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-grave",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mathring",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-overbrace",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-underbrace",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ldots",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-cdots",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-vdots",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-ddots",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-frac",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-sqrt",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-langle",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rangle",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lceil",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rceil",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lfloor",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rfloor",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-backslash",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-Vert",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lvert",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rvert",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-lVert",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-rVert",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-overset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-underset",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-overrightarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-overleftarrow",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-dfrac",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-tfrac",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-binom",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-boxed",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-text",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-thinspace",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mediumspace",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-thickspace",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-negative-thinspace",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-quad",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-qquad",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mathbb-E",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mathbb-P",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mathrm-d",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mathrm-e",
+    "passed": true,
+    "error": ""
+  },
+  {
+    "id": "symbol-mathrm-i",
+    "passed": true,
+    "error": ""
+  }
+]

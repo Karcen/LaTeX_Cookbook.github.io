@@ -1,0 +1,3979 @@
+# Content index / 内容目录
+
+The data registry supplies the counts and entries in this index.
+本目录按数据注册表列出内容并统计数量。
+
+- 24 modules / 一级模块
+- 157 substantive encyclopedia entries / 百科条目
+- 571 dictionary records / 命令、环境与符号记录
+- 81 independent complete examples / 独立完整示例
+- 90 exercises / 交互练习
+- 29 course lessons in four learning paths / 四条路径的课时
+
+| Module / 模块 | Articles / 条目 | Examples / 示例 | Exercises / 练习 |
+| --- | ---: | ---: | ---: |
+| TeX 生态与编译 / TeX ecosystem & compilation | 4 | 1 | 1 |
+| 语法与第一篇文档 / Syntax & first documents | 3 | 1 | 7 |
+| 文档类 / Document classes | 19 | 20 | 2 |
+| 中文排版 / Chinese typesetting | 5 | 11 | 3 |
+| 特殊字符与转义 / Special characters & escaping | 6 | 1 | 6 |
+| 数学环境与结构 / Math environments & structures | 12 | 3 | 11 |
+| 数学字体与符号 / Math fonts & symbols | 6 | 2 | 13 |
+| 表格系统 / Tables | 12 | 7 | 9 |
+| 图片与浮动体 / Figures & floats | 6 | 3 | 3 |
+| 参考文献 / Bibliographies | 6 | 3 | 7 |
+| 目录、链接与引用 / Contents, links & references | 4 | 3 | 8 |
+| Beamer 学术报告 / Beamer presentations | 8 | 9 | 3 |
+| TikZ 图形 / TikZ graphics | 5 | 5 | 2 |
+| PGFPlots 数据图 / PGFPlots charts | 4 | 5 | 0 |
+| 页面与段落 / Pages & paragraphs | 8 | 4 | 0 |
+| 文本字体与颜色 / Text fonts & color | 3 | 2 | 0 |
+| 代码与特殊内容 / Code & special content | 5 | 4 | 1 |
+| 算法排版 / Algorithms | 2 | 2 | 1 |
+| 宏与 LaTeX3 / Macros & LaTeX3 | 7 | 4 | 3 |
+| 错误排查 / Troubleshooting | 19 | 0 | 6 |
+| 长文档结构 / Long documents | 5 | 4 | 0 |
+| 学术与专业模板 / Academic & professional writing | 4 | 10 | 1 |
+| 工程与可复现编译 / Projects & reproducible builds | 3 | 3 | 3 |
+| 可访问 PDF / Accessible PDFs | 1 | 1 | 0 |
+
+Examples may cover several modules; the total counts each example once. Dictionary records and encyclopedia articles have separate totals.
+示例可以覆盖多个模块，总数按独立示例统计。词典记录与百科条目分别计数。
+
+## TeX 生态与编译 / TeX ecosystem & compilation
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 语法与第一篇文档 / Syntax & first documents
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 文档类 / Document classes
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 中文排版 / Chinese typesetting
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 特殊字符与转义 / Special characters & escaping
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 数学环境与结构 / Math environments & structures
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 数学字体与符号 / Math fonts & symbols
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 表格系统 / Tables
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 图片与浮动体 / Figures & floats
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 参考文献 / Bibliographies
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 目录、链接与引用 / Contents, links & references
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## Beamer 学术报告 / Beamer presentations
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## TikZ 图形 / TikZ graphics
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## PGFPlots 数据图 / PGFPlots charts
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 页面与段落 / Pages & paragraphs
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 文本字体与颜色 / Text fonts & color
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 代码与特殊内容 / Code & special content
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 算法排版 / Algorithms
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 宏与 LaTeX3 / Macros & LaTeX3
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 错误排查 / Troubleshooting
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 长文档结构 / Long documents
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 学术与专业模板 / Academic & professional writing
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 工程与可复现编译 / Projects & reproducible builds
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## 可访问 PDF / Accessible PDFs
+
+- [TeX、LaTeX 与 LaTeX3 / TeX, LaTeX, and LaTeX3](encyclopedia.html#tex-ecosystem) (`tex-ecosystem`), 3 sections, example `first-document`
+- [发行版、编辑器与在线平台 / Distributions, editors, and online platforms](encyclopedia.html#distributions) (`distributions`), 3 sections, example `first-document`
+- [pdfLaTeX、XeLaTeX 与 LuaLaTeX / pdfLaTeX, XeLaTeX, and LuaLaTeX](encyclopedia.html#engines) (`engines`), 3 sections, example `chinese-fonts`
+- [工程文件与辅助文件 / Project and auxiliary files](encyclopedia.html#project-files) (`project-files`), 3 sections, example `bibliography-biblatex`
+- [最小工作示例与导言区 / Minimal working examples and preambles](encyclopedia.html#mwe) (`mwe`), 3 sections, example `first-document`
+- [命令、参数、环境与作用域 / Commands, arguments, environments, and scope](encyclopedia.html#commands-groups) (`commands-groups`), 3 sections, example `first-document`
+- [空格、注释与段落 / Spaces, comments, and paragraphs](encyclopedia.html#paragraphs) (`paragraphs`), 3 sections, example `special-characters`
+- [article：短篇文章与论文 / article: Articles and short papers](encyclopedia.html#article) (`article`), 3 sections, example `first-document`
+- [report：研究报告与章结构 / report: Reports with chapters](encyclopedia.html#report) (`report`), 3 sections, example `class-report`
+- [book：书籍与前置部分 / book: Books and front matter](encyclopedia.html#book) (`book`), 3 sections, example `class-book`
+- [letter：正式信件 / letter: Formal letters](encyclopedia.html#letter) (`letter`), 3 sections, example `class-letter`
+- [minimal：低层排版诊断 / minimal: Low-level diagnostic class](encyclopedia.html#minimal) (`minimal`), 3 sections, example `class-minimal`
+- [standalone：独立图形与公式 / standalone: Standalone figures and formulas](encyclopedia.html#standalone) (`standalone`), 5 sections, example `class-standalone`
+- [beamer：幻灯片文档类 / beamer: Presentation class](encyclopedia.html#beamer) (`beamer`), 3 sections, example `class-beamer`
+- [ctexart：中文文章类 / ctexart: Chinese article class](encyclopedia.html#ctexart) (`ctexart`), 5 sections, example `class-ctexart`
+- [ctexrep：中文报告类 / ctexrep: Chinese report class](encyclopedia.html#ctexrep) (`ctexrep`), 3 sections, example `class-ctexrep`
+- [ctexbook：中文书籍类 / ctexbook: Chinese book class](encyclopedia.html#ctexbook) (`ctexbook`), 3 sections, example `class-ctexbook`
+- [ctexbeamer：中文 Beamer 适配类 / ctexbeamer: Chinese Beamer adapter class](encyclopedia.html#ctexbeamer) (`ctexbeamer`), 3 sections, example `class-ctexbeamer`
+- [scrartcl：KOMA 文章类 / scrartcl: KOMA article class](encyclopedia.html#scrartcl) (`scrartcl`), 3 sections, example `class-scrartcl`
+- [scrreprt：KOMA 报告类 / scrreprt: KOMA report class](encyclopedia.html#scrreprt) (`scrreprt`), 3 sections, example `class-scrreprt`
+- [scrbook：KOMA 书籍类 / scrbook: KOMA book class](encyclopedia.html#scrbook) (`scrbook`), 3 sections, example `class-scrbook`
+- [scrlttr2：KOMA 信函类 / scrlttr2: KOMA letter class](encyclopedia.html#scrlttr2) (`scrlttr2`), 3 sections, example `class-scrlttr2`
+- [memoir：一体化长文档类 / memoir: Integrated long-document class](encyclopedia.html#memoir) (`memoir`), 3 sections, example `class-memoir`
+- [exam：试卷与答案类 / exam: Examinations and solutions](encyclopedia.html#exam) (`exam`), 3 sections, example `class-exam`
+- [moderncv：学术与职业简历 / moderncv: Academic and professional CVs](encyclopedia.html#moderncv) (`moderncv`), 3 sections, example `class-moderncv`
+- [tikzposter：大幅学术海报 / tikzposter: Large academic posters](encyclopedia.html#tikzposter) (`tikzposter`), 3 sections, example `class-tikzposter`
+- [ctex 宏包与中文框架 / The ctex package and Chinese framework](encyclopedia.html#ctex) (`ctex`), 3 sections, example `beamer-ctex-package`
+- [xeCJK：XeLaTeX 中文混排 / xeCJK: Chinese text with XeLaTeX](encyclopedia.html#xeCJK) (`xeCJK`), 3 sections, example `xeCJK-direct`
+- [fontspec：OpenType 文本字体 / fontspec: OpenType text fonts](encyclopedia.html#fontspec) (`fontspec`), 3 sections, example `chinese-fonts`
+- [unicode-math：OpenType 数学字体 / unicode-math: OpenType mathematics](encyclopedia.html#unicode-math) (`unicode-math`), 3 sections, example `unicode-math-fonts`
+- [中文标点、缩进与论文结构 / Chinese punctuation, indentation, and thesis structure](encyclopedia.html#chinese-typography) (`chinese-typography`), 3 sections, example `chinese-fonts`
+- [十个特殊字符与文本转义 / Ten special characters and text escaping](encyclopedia.html#escapes) (`escapes`), 3 sections, example `special-characters`
+- [% 注释与 % 百分号 / % comments and escaped percentages](encyclopedia.html#percent) (`percent`), 3 sections, example `special-characters`
+- [\verb：行内原样代码 / verb: literal inline code](encyclopedia.html#verb) (`verb`), 3 sections, example `special-characters`
+- [verbatim：原样代码块 / verbatim: literal code blocks](encyclopedia.html#verbatim) (`verbatim`), 3 sections, example `special-characters`
+- [\detokenize：标记转字符 / detokenize: tokens to characters](encyclopedia.html#detokenize) (`detokenize`), 3 sections, example `special-characters`
+- [\\、\newline 与 \par / Line breaks, newline, and par](encyclopedia.html#linebreaks) (`linebreaks`), 3 sections, example `special-characters`
+- [行内与行间数学 / Inline and display mathematics](encyclopedia.html#inline-display) (`inline-display`), 3 sections, example `math-environments`
+- [单行编号公式 / Single numbered equations](encyclopedia.html#equation) (`equation`), 3 sections, example `math-environments`
+- [align：按关系符对齐 / align: align at relations](encyclopedia.html#align) (`align`), 3 sections, example `math-environments`
+- [aligned：公式内部对齐块 / aligned: nested aligned blocks](encyclopedia.html#aligned) (`aligned`), 3 sections, example `math-environments`
+- [gather 与 multline / gather and multline](encyclopedia.html#gather-multline) (`gather-multline`), 3 sections, example `math-environments`
+- [split：单个公式的多行拆分 / split: split a single equation](encyclopedia.html#split) (`split`), 3 sections, example `math-environments`
+- [cases：分段函数 / cases: piecewise functions](encyclopedia.html#cases) (`cases`), 3 sections, example `math-environments`
+- [subequations：编号分组 / subequations: grouped numbering](encyclopedia.html#subequations) (`subequations`), 3 sections, example `math-environments`
+- [矩阵环境与定界符 / Matrices and delimiters](encyclopedia.html#matrices) (`matrices`), 3 sections, example `math-environments`
+- [array 与 smallmatrix / Math arrays and small matrices](encyclopedia.html#array-math) (`array-math`), 3 sections, example `math-environments`
+- [\mathbb：黑板粗体 / mathbb: blackboard bold](encyclopedia.html#mathbb) (`mathbb`), 5 sections, example `math-alphabet-comparison`
+- [\mathcal 与 \mathscr：书法字体 / mathcal and mathscr: calligraphic alphabets](encyclopedia.html#mathcal) (`mathcal`), 5 sections, example `math-alphabet-comparison`
+- [正体、斜体与等宽数学字族 / Roman, italic, and monospaced math alphabets](encyclopedia.html#math-alphabets) (`math-alphabets`), 3 sections, example `math-alphabet-comparison`
+- [\mathbf、\boldsymbol 与 \bm / mathbf, boldsymbol, and bm](encyclopedia.html#bold-math) (`bold-math`), 3 sections, example `math-alphabet-comparison`
+- [\text 与数学运算符 / Text and named math operators](encyclopedia.html#text-operators) (`text-operators`), 3 sections, example `math-alphabet-comparison`
+- [longtable：跨页表格完整机制 / longtable: multipage tables](encyclopedia.html#longtable) (`longtable`), 6 sections, example `table-longtable`
+- [tabular 与 table 的分工 / tabular and table have different roles](encyclopedia.html#tabular) (`tabular`), 3 sections, example `table-regression`
+- [tabularx：自动分配列宽 / tabularx: flexible column widths](encyclopedia.html#tabularx) (`tabularx`), 3 sections, example `table-tabularx`
+- [booktabs：三线表与局部线 / booktabs: publication-style rules](encyclopedia.html#booktabs) (`booktabs`), 3 sections, example `table-regression`
+- [array：段落列和自定义列 / array: paragraph and custom columns](encyclopedia.html#array-columns) (`array-columns`), 3 sections, example `table-tabularx`
+- [行合并与列合并 / Row spans and column spans](encyclopedia.html#multirow-multicolumn) (`multirow-multicolumn`), 3 sections, example `table-merged`
+- [makecell：单元格内多行标题 / makecell: multiline cell headings](encyclopedia.html#makecell) (`makecell`), 3 sections, example `table-regression`
+- [threeparttable：题注、表体与表注 / threeparttable: caption, body, and notes](encyclopedia.html#threeparttable) (`threeparttable`), 3 sections, example `table-regression`
+- [siunitx：数字、单位与小数点对齐 / siunitx: numbers, units, and decimal alignment](encyclopedia.html#siunitx) (`siunitx`), 3 sections, example `table-descriptive`
+- [tabularray：键值式表格 / tabularray: key-value tables](encyclopedia.html#tabularray) (`tabularray`), 3 sections, example `table-tabularray`
+- [xcolor 与 colortbl 的表格着色 / Table colors with xcolor and colortbl](encyclopedia.html#colortbl) (`colortbl`), 3 sections, example `table-descriptive`
+- [大型表格、横向页面与缩放 / Large tables, landscape pages, and scaling](encyclopedia.html#large-tables) (`large-tables`), 3 sections, example `table-longtable`
+- [浮动体位置与 [htbp]、[H] / Float placement: htbp and H](encyclopedia.html#float-placement) (`float-placement`), 5 sections, example `float-placement-demo`
+- [graphicx：缩放、裁剪与旋转 / graphicx: scaling, clipping, and rotation](encyclopedia.html#graphicx) (`graphicx`), 3 sections, example `float-subcaptions`
+- [caption：题注与标签 / caption: captions and labels](encyclopedia.html#caption) (`caption`), 3 sections, example `float-subcaptions`
+- [subcaption：现代子图 / subcaption: modern subfigures](encyclopedia.html#subcaption) (`subcaption`), 3 sections, example `float-subcaptions`
+- [wrapfig：绕排图片 / wrapfig: text-wrapped figures](encyclopedia.html#wrapfig) (`wrapfig`), 3 sections, example `float-placement-demo`
+- [placeins、floatrow 与 rotating / placeins, floatrow, and rotating](encyclopedia.html#float-tools) (`float-tools`), 3 sections, example `float-placement-demo`
+- [BibTeX：传统参考文献链 / BibTeX: the traditional bibliography chain](encyclopedia.html#bibtex) (`bibtex`), 5 sections, example `bibliography-natbib`
+- [.bib 条目、作者与字段 / .bib entries, authors, and fields](encyclopedia.html#bib-fields) (`bib-fields`), 3 sections, example `bibliography-natbib`
+- [natbib：作者—年份与数字引用 / natbib: author-year and numeric citations](encyclopedia.html#natbib) (`natbib`), 5 sections, example `bibliography-natbib`
+- [\citet 与 \citep：句法选择 / citet and citep: choosing citation grammar](encyclopedia.html#citet-citep) (`citet-citep`), 5 sections, example `bibliography-natbib`
+- [biblatex 与 Biber：现代文献系统 / biblatex and Biber: modern bibliographies](encyclopedia.html#biblatex) (`biblatex`), 5 sections, example `bibliography-biblatex`
+- [GB/T 7714：两条文献实现路线 / GB/T 7714: two implementation routes](encyclopedia.html#gb7714) (`gb7714`), 3 sections, example `bibliography-gb7714`
+- [hyperref：PDF 链接、书签与元数据 / hyperref: PDF links, bookmarks, and metadata](encyclopedia.html#hyperref) (`hyperref`), 5 sections, example `hyperref-cleveref`
+- [\label、\ref、\eqref 与 \pageref / label, ref, eqref, and pageref](encyclopedia.html#cross-references) (`cross-references`), 3 sections, example `hyperref-cleveref`
+- [cleveref 与 varioref：智能引用 / cleveref and varioref: smarter references](encyclopedia.html#cleveref) (`cleveref`), 3 sections, example `hyperref-cleveref`
+- [目录、图表目录与 PDF 书签 / Contents, lists, and PDF bookmarks](encyclopedia.html#contents-bookmarks) (`contents-bookmarks`), 3 sections, example `hyperref-cleveref`
+- [frame、标题与画幅 / Frames, titles, and aspect ratio](encyclopedia.html#beamer-frames) (`beamer-frames`), 5 sections, example `ex-beamer-report`
+- [主题、颜色主题与字体主题 / Themes, color themes, and font themes](encyclopedia.html#beamer-themes) (`beamer-themes`), 5 sections, example `ex-beamer-theme`
+- [block 与 columns / Blocks and columns](encyclopedia.html#beamer-blocks-columns) (`beamer-blocks-columns`), 3 sections, example `ex-beamer-report`
+- [overlay、pause、only 与 uncover / Overlays, pause, only, and uncover](encyclopedia.html#beamer-overlays) (`beamer-overlays`), 5 sections, example `ex-beamer-overlays`
+- [fragile frame 与原样代码 / Fragile frames and verbatim code](encyclopedia.html#beamer-fragile) (`beamer-fragile`), 3 sections, example `ex-beamer-fragile`
+- [讲者备注、讲义与页码 / Speaker notes, handouts, and frame numbers](encyclopedia.html#beamer-notes) (`beamer-notes`), 3 sections, example `ex-beamer-notes`
+- [自定义主题与学术报告结构 / Custom themes and research talk structure](encyclopedia.html#beamer-custom-theme) (`beamer-custom-theme`), 5 sections, example `ex-beamer-report`
+- [中文 Beamer 与字体设置 / Chinese Beamer and font configuration](encyclopedia.html#beamer-chinese) (`beamer-chinese`), 5 sections, example `ex-beamer-chinese`
+- [坐标、路径与箭头 / Coordinates, paths, and arrows](encyclopedia.html#tikz-paths) (`tikz-paths`), 3 sections, example `ex-tikz-paths`
+- [命名节点、锚点与相对定位 / Named nodes, anchors, and relative placement](encyclopedia.html#tikz-nodes) (`tikz-nodes`), 3 sections, example `ex-tikz-flow`
+- [流程图与决策树 / Flowcharts and decision trees](encyclopedia.html#tikz-flowcharts) (`tikz-flowcharts`), 3 sections, example `ex-tikz-tree`
+- [网络图与 Lua 图布局 / Network diagrams and Lua graph layouts](encyclopedia.html#tikz-networks) (`tikz-networks`), 3 sections, example `ex-tikz-network`
+- [图层、颜色与循环 / Layers, colors, and loops](encyclopedia.html#tikz-layers) (`tikz-layers`), 3 sections, example `ex-tikz-layers`
+- [axis、addplot 与兼容版本 / axis, addplot, and compatibility versions](encyclopedia.html#pgfplots-axis) (`pgfplots-axis`), 5 sections, example `ex-pgfplots-functions`
+- [数据、散点与误差棒 / Data, scatter plots, and error bars](encyclopedia.html#pgfplots-data) (`pgfplots-data`), 5 sections, example `ex-pgfplots-scatter`
+- [供需曲线与函数图 / Supply and demand with function plots](encyclopedia.html#pgfplots-economics) (`pgfplots-economics`), 3 sections, example `ex-pgfplots-supply`
+- [分类柱状图、图例与多子图 / Categorical bars, legends, and group plots](encyclopedia.html#pgfplots-multipanel) (`pgfplots-multipanel`), 3 sections, example `ex-pgfplots-group`
+- [geometry 与页边距 / geometry and page margins](encyclopedia.html#layout-geometry) (`layout-geometry`), 5 sections, example `ex-layout-geometry`
+- [fancyhdr 与页面样式 / fancyhdr and page styles](encyclopedia.html#layout-fancyhdr) (`layout-fancyhdr`), 5 sections, example `ex-layout-headers`
+- [titlesec 与章节格式 / titlesec and heading formats](encyclopedia.html#layout-headings) (`layout-headings`), 3 sections, example `ex-layout-headers`
+- [段落缩进、parskip 与行距 / Indentation, parskip, and line spacing](encyclopedia.html#layout-paragraphs) (`layout-paragraphs`), 3 sections, example `ex-layout-geometry`
+- [enumitem 与嵌套列表 / enumitem and nested lists](encyclopedia.html#layout-enumitem) (`layout-enumitem`), 3 sections, example `ex-layout-lists`
+- [twocolumn、multicol 与栏宽 / twocolumn, multicol, and column width](encyclopedia.html#layout-columns) (`layout-columns`), 3 sections, example `ex-layout-columns`
+- [newpage、clearpage 与页码 / newpage, clearpage, and page numbering](encyclopedia.html#layout-pages) (`layout-pages`), 3 sections, example `ex-academic-thesis`
+- [microtype 与排版诊断 / microtype and typesetting diagnostics](encyclopedia.html#layout-microtype) (`layout-microtype`), 3 sections, example `ex-text-fonts`
+- [文本字体族、字重与字号 / Text font families, weight, and size](encyclopedia.html#fonts-families) (`fonts-families`), 3 sections, example `ex-text-fonts`
+- [fontspec 与 OpenType 字体 / fontspec and OpenType fonts](encyclopedia.html#fonts-fontspec) (`fonts-fontspec`), 3 sections, example `ex-fontspec`
+- [xcolor、颜色模型与 textcomp / xcolor, color models, and textcomp](encyclopedia.html#fonts-color) (`fonts-color`), 3 sections, example `ex-text-fonts`
+- [listings 代码高亮 / Source highlighting with listings](encyclopedia.html#code-listings) (`code-listings`), 5 sections, example `ex-code-listings`
+- [minted 3 与外部高亮工具 / minted 3 and external highlighting](encyclopedia.html#code-minted) (`code-minted`), 5 sections, example `ex-code-minted`
+- [verbatim、fancyvrb 与原样文本 / verbatim, fancyvrb, and literal text](encyclopedia.html#code-verbatim) (`code-verbatim`), 3 sections, example `ex-beamer-fragile`
+- [tcolorbox 与 mdframed / tcolorbox and mdframed](encyclopedia.html#code-boxes) (`code-boxes`), 3 sections, example `ex-code-boxes`
+- [pdfpages、landscape 与 pdflscape / pdfpages, landscape, and pdflscape](encyclopedia.html#code-pdfpages) (`code-pdfpages`), 3 sections, example `ex-academic-poster`
+- [algorithm、algorithmicx 与 algpseudocode / algorithm, algorithmicx, and algpseudocode](encyclopedia.html#algorithm-pseudocode) (`algorithm-pseudocode`), 5 sections, example `ex-algorithm-pseudocode`
+- [algorithm2e 及语法冲突 / algorithm2e and syntax conflicts](encyclopedia.html#algorithm-algorithm2e) (`algorithm-algorithm2e`), 3 sections, example `ex-algorithm2e`
+- [newcommand、renewcommand 与 providecommand / newcommand, renewcommand, and providecommand](encyclopedia.html#programming-newcommand) (`programming-newcommand`), 5 sections, example `ex-programming-macros`
+- [NewDocumentCommand 参数接口 / The NewDocumentCommand argument interface](encyclopedia.html#programming-document-commands) (`programming-document-commands`), 3 sections, example `ex-programming-expl3`
+- [newenvironment 与 NewDocumentEnvironment / newenvironment and NewDocumentEnvironment](encyclopedia.html#programming-environments) (`programming-environments`), 3 sections, example `ex-programming-macros`
+- [def、let、展开与分组 / def, let, expansion, and grouping](encyclopedia.html#programming-lowlevel) (`programming-lowlevel`), 3 sections, example `ex-programming-macros`
+- [长度、计数器与条件判断 / Lengths, counters, and conditionals](encyclopedia.html#programming-counters) (`programming-counters`), 3 sections, example `ex-programming-macros`
+- [LaTeX3 / expl3 编程基础 / LaTeX3 / expl3 programming basics](encyclopedia.html#programming-expl3) (`programming-expl3`), 5 sections, example `ex-programming-expl3`
+- [自定义 .sty、.cls 与模板复用 / Custom .sty, .cls, and reusable templates](encyclopedia.html#programming-package-class) (`programming-package-class`), 5 sections, example `ex-custom-package`
+- [Undefined control sequence：未定义命令 / Undefined control sequence: unknown command](encyclopedia.html#error-undefined-command) (`error-undefined-command`), 6 sections
+- [Missing $ inserted：数学模式不匹配 / Missing $ inserted: math-mode mismatch](encyclopedia.html#error-missing-math) (`error-missing-math`), 6 sections
+- [Extra alignment tab：列数超出定义 / Extra alignment tab: too many columns](encyclopedia.html#error-alignment-tab) (`error-alignment-tab`), 6 sections
+- [File not found：缺失输入文件 / File not found: missing input](encyclopedia.html#error-file-not-found) (`error-file-not-found`), 6 sections
+- [Environment undefined：环境未定义 / Environment undefined: missing environment](encyclopedia.html#error-environment) (`error-environment`), 6 sections
+- [Option clash for package：重复选项 / Option clash for package: conflicting loads](encyclopedia.html#error-option-clash) (`error-option-clash`), 6 sections
+- [Missing begin document：导言区混入正文 / Missing begin document: body text in the preamble](encyclopedia.html#error-missing-document) (`error-missing-document`), 6 sections
+- [Overfull hbox：内容超过行宽 / Overfull hbox: material exceeds the line width](encyclopedia.html#error-overfull) (`error-overfull`), 6 sections
+- [Underfull hbox：行间空白过松 / Underfull hbox: a poorly filled line](encyclopedia.html#error-underfull) (`error-underfull`), 6 sections
+- [TeX capacity exceeded：资源耗尽 / TeX capacity exceeded: resource exhaustion](encyclopedia.html#error-capacity) (`error-capacity`), 6 sections
+- [fontspec 字体找不到 / A font cannot be found by fontspec](encyclopedia.html#error-font) (`error-font`), 6 sections
+- [图片路径和格式错误 / Image paths and format errors](encyclopedia.html#error-image-path) (`error-image-path`), 6 sections
+- [参考文献不显示 / Bibliography does not appear](encyclopedia.html#error-bibliography) (`error-bibliography`), 6 sections
+- [引用显示 ?? / A cross-reference displays ??](encyclopedia.html#error-reference) (`error-reference`), 6 sections
+- [公式编号重复或异常 / Duplicate or unexpected equation numbers](encyclopedia.html#error-equation-number) (`error-equation-number`), 6 sections
+- [中文乱码、Unicode 与字形缺失 / Chinese text, Unicode, and missing glyphs](encyclopedia.html#error-chinese) (`error-chinese`), 6 sections
+- [Beamer 内容溢出 / Beamer frame overflow](encyclopedia.html#error-beamer-overflow) (`error-beamer-overflow`), 6 sections
+- [宏包命令与环境冲突 / Package command and environment conflicts](encyclopedia.html#error-package-conflict) (`error-package-conflict`), 6 sections
+- [编译引擎与宏包不匹配 / Engine and package mismatch](encyclopedia.html#error-engine) (`error-engine`), 6 sections
+- [脚注、尾注与旁注 / Footnotes, endnotes, and margin notes](encyclopedia.html#structure-notes) (`structure-notes`), 3 sections, example `ex-structure-notes`
+- [索引、imakeidx 与排序 / Indexes, imakeidx, and sorting](encyclopedia.html#structure-index) (`structure-index`), 5 sections, example `ex-structure-index`
+- [术语表、缩略语与 glossaries / Glossaries and acronyms](encyclopedia.html#structure-glossary) (`structure-glossary`), 5 sections, example `ex-structure-glossary`
+- [附录、前置部分与后置部分 / Appendices, front matter, and back matter](encyclopedia.html#structure-appendix) (`structure-appendix`), 3 sections, example `ex-academic-thesis`
+- [大型书籍与技术手册 / Large books and technical manuals](encyclopedia.html#structure-manuals) (`structure-manuals`), 3 sections, example `ex-project-input`
+- [中文学位论文与复杂报告 / Chinese theses and substantial reports](encyclopedia.html#academic-thesis) (`academic-thesis`), 5 sections, example `ex-academic-thesis`
+- [英文期刊投稿与论文结构 / English journal submissions and paper structure](encyclopedia.html#academic-journal) (`academic-journal`), 3 sections, example `ex-project-input`
+- [学术简历与正式信件 / Academic CVs and formal letters](encyclopedia.html#academic-cv) (`academic-cv`), 3 sections, example `ex-academic-cv`
+- [试卷、答案与研究海报 / Examinations, solutions, and research posters](encyclopedia.html#academic-exams-posters) (`academic-exams-posters`), 3 sections, example `ex-academic-exam`
+- [input、include 与项目路径 / input, include, and project paths](encyclopedia.html#project-multifile) (`project-multifile`), 3 sections, example `ex-project-input`
+- [latexmk 与自动构建 / latexmk and automated builds](encyclopedia.html#project-latexmk) (`project-latexmk`), 5 sections, example `ex-project-input`
+- [Git、版本与可复现编译 / Git, versions, and reproducible builds](encyclopedia.html#project-reproducibility) (`project-reproducibility`), 5 sections, example `ex-project-input`
+- [可访问 PDF、语义与验证 / Accessible PDFs, semantics, and validation](encyclopedia.html#accessibility-pdf) (`accessibility-pdf`), 5 sections, example `ex-accessibility-structure`
+- [amsthm：定理、引理、定义与证明 / amsthm: theorems, lemmas, definitions, and proofs](encyclopedia.html#theorem-system) (`theorem-system`), 6 sections, example `theorem-proof-styles`
+- [定理计数器：共享编号、按节重置与引用 / Theorem counters: shared numbering, section resets, and references](encyclopedia.html#theorem-numbering) (`theorem-numbering`), 5 sections, example `theorem-shared-counters`
+- [数学符号词典：语义、字体与间距 / Mathematical symbols: meaning, alphabets, and spacing](encyclopedia.html#math-symbols) (`math-symbols`), 3 sections
+
+## Complete examples / 完整示例
+
+| ID | Title / 名称 | Engine | Actual compilation / 实际编译 |
+| --- | --- | --- | --- |
+| [first-document](examples/first-document/main.tex) | 第一篇文档 / First document | pdflatex | PASS |
+| [class-report](examples/class-report/main.tex) | 报告与章节 / Report chapters | pdflatex | PASS |
+| [class-book](examples/class-book/main.tex) | 书籍的前置与正文 / Book front matter | pdflatex | PASS |
+| [class-letter](examples/class-letter/main.tex) | 正式信件 / Formal letter | pdflatex | PASS |
+| [class-minimal](examples/class-minimal/main.tex) | minimal 的诊断用法 / Minimal diagnostic class | pdflatex | PASS |
+| [class-standalone](examples/class-standalone/main.tex) | 独立 TikZ 图片 / Standalone TikZ figure | pdflatex | PASS |
+| [class-beamer](examples/class-beamer/main.tex) | Beamer 文档类 / Beamer class | pdflatex | PASS |
+| [class-ctexart](examples/class-ctexart/main.tex) | ctexart 中文文档 / ctexart Chinese document | xelatex | PASS |
+| [class-ctexrep](examples/class-ctexrep/main.tex) | ctexrep 中文文档 / ctexrep Chinese document | xelatex | PASS |
+| [class-ctexbook](examples/class-ctexbook/main.tex) | ctexbook 中文文档 / ctexbook Chinese document | xelatex | PASS |
+| [class-ctexbeamer](examples/class-ctexbeamer/main.tex) | ctexbeamer 中文幻灯片 / Chinese ctexbeamer deck | xelatex | PASS |
+| [beamer-ctex-package](examples/beamer-ctex-package/main.tex) | Beamer 加载 ctex / Beamer with the ctex package | xelatex | PASS |
+| [class-scrartcl](examples/class-scrartcl/main.tex) | scrartcl 排版 / scrartcl typesetting | pdflatex | PASS |
+| [class-scrreprt](examples/class-scrreprt/main.tex) | scrreprt 排版 / scrreprt typesetting | pdflatex | PASS |
+| [class-scrbook](examples/class-scrbook/main.tex) | scrbook 排版 / scrbook typesetting | pdflatex | PASS |
+| [class-scrlttr2](examples/class-scrlttr2/main.tex) | KOMA 正式信函 / KOMA business letter | pdflatex | PASS |
+| [class-memoir](examples/class-memoir/main.tex) | memoir 手册 / Memoir manual | pdflatex | PASS |
+| [class-exam](examples/class-exam/main.tex) | 试卷与答案 / Exam and solutions | pdflatex | PASS |
+| [class-moderncv](examples/class-moderncv/main.tex) | 学术简历 / Academic CV | pdflatex | PASS |
+| [class-tikzposter](examples/class-tikzposter/main.tex) | 学术海报 / Academic poster | pdflatex | PASS |
+| [chinese-fonts](examples/chinese-fonts/main.tex) | 中文字体与标题 / Chinese fonts and headings | xelatex | PASS |
+| [xeCJK-direct](examples/xeCJK-direct/main.tex) | xeCJK 中文混排 / Direct xeCJK typesetting | xelatex | PASS |
+| [unicode-math-fonts](examples/unicode-math-fonts/main.tex) | Unicode 数学字体 / Unicode math fonts | lualatex | PASS |
+| [special-characters](examples/special-characters/main.tex) | 特殊字符完整示例 / Special characters | pdflatex | PASS |
+| [math-environments](examples/math-environments/main.tex) | 数学环境组合 / Math environments | pdflatex | PASS |
+| [math-alphabet-comparison](examples/math-alphabet-comparison/main.tex) | 数学字体对照 / Math alphabet comparison | pdflatex | PASS |
+| [table-regression](examples/table-regression/main.tex) | 经济学回归表 / Economics regression table | pdflatex | PASS |
+| [table-descriptive](examples/table-descriptive/main.tex) | 描述统计表 / Descriptive statistics | pdflatex | PASS |
+| [table-correlation](examples/table-correlation/main.tex) | 相关系数矩阵 / Correlation matrix | pdflatex | PASS |
+| [table-longtable](examples/table-longtable/main.tex) | 跨页数据表 / Multipage data table | pdflatex | PASS |
+| [table-tabularx](examples/table-tabularx/main.tex) | 自动列宽表格 / Flexible-width table | pdflatex | PASS |
+| [table-merged](examples/table-merged/main.tex) | 合并单元格 / Merged table cells | pdflatex | PASS |
+| [table-tabularray](examples/table-tabularray/main.tex) | tabularray 声明式表格 / Declarative tabularray table | pdflatex | PASS |
+| [float-subcaptions](examples/float-subcaptions/main.tex) | 双子图与引用 / Two subfigures and references | pdflatex | PASS |
+| [float-placement-demo](examples/float-placement-demo/main.tex) | 浮动体边界 / Float boundary | pdflatex | PASS |
+| [bibliography-natbib](examples/bibliography-natbib/main.tex) | natbib 与 BibTeX / Natbib and BibTeX | pdflatex | PASS |
+| [bibliography-biblatex](examples/bibliography-biblatex/main.tex) | biblatex 与 Biber / Biblatex and Biber | pdflatex | PASS |
+| [bibliography-gb7714](examples/bibliography-gb7714/main.tex) | GB/T 7714 文献表 / GB/T 7714 bibliography | xelatex | PASS |
+| [hyperref-cleveref](examples/hyperref-cleveref/main.tex) | 目录、书签和智能引用 / Contents, bookmarks, and smart references | pdflatex | PASS |
+| [ex-beamer-report](examples/ex-beamer-report/main.tex) | 完整经济学学术报告 / Complete economics research talk | pdflatex | PASS |
+| [ex-beamer-overlays](examples/ex-beamer-overlays/main.tex) | 逐步显示与稳定布局 / Overlays with stable layout | pdflatex | PASS |
+| [ex-beamer-fragile](examples/ex-beamer-fragile/main.tex) | Beamer 中展示代码 / Code in a fragile frame | pdflatex | PASS |
+| [ex-beamer-theme](examples/ex-beamer-theme/main.tex) | 轻量自定义主题 / A small custom theme | pdflatex | PASS |
+| [ex-beamer-notes](examples/ex-beamer-notes/main.tex) | 讲者备注与讲义 / Speaker notes and handouts | pdflatex | PASS |
+| [ex-beamer-chinese](examples/ex-beamer-chinese/main.tex) | 中文研究报告 / A Chinese research presentation | xelatex | PASS |
+| [ex-tikz-paths](examples/ex-tikz-paths/main.tex) | TikZ 坐标与路径 / TikZ coordinates and paths | pdflatex | PASS |
+| [ex-tikz-flow](examples/ex-tikz-flow/main.tex) | 研究流程图 / Research workflow diagram | pdflatex | PASS |
+| [ex-tikz-tree](examples/ex-tikz-tree/main.tex) | 简单决策树 / A simple decision tree | pdflatex | PASS |
+| [ex-tikz-network](examples/ex-tikz-network/main.tex) | 小型网络图 / A small network diagram | pdflatex | PASS |
+| [ex-tikz-layers](examples/ex-tikz-layers/main.tex) | 背景层与重复节点 / Background layers and repeated nodes | pdflatex | PASS |
+| [ex-pgfplots-functions](examples/ex-pgfplots-functions/main.tex) | 函数曲线与图例 / Function plots and legends | pdflatex | PASS |
+| [ex-pgfplots-supply](examples/ex-pgfplots-supply/main.tex) | 供给、需求与均衡 / Supply, demand, and equilibrium | pdflatex | PASS |
+| [ex-pgfplots-scatter](examples/ex-pgfplots-scatter/main.tex) | 散点与误差棒 / Scatter points and error bars | pdflatex | PASS |
+| [ex-pgfplots-bars](examples/ex-pgfplots-bars/main.tex) | 统计柱状图 / A statistical bar chart | pdflatex | PASS |
+| [ex-pgfplots-group](examples/ex-pgfplots-group/main.tex) | 对齐的多子图 / Aligned group plots | pdflatex | PASS |
+| [ex-layout-geometry](examples/ex-layout-geometry/main.tex) | 页边距与行距 / Margins and line spacing | pdflatex | PASS |
+| [ex-layout-headers](examples/ex-layout-headers/main.tex) | 页眉、页脚与章节标记 / Headers, footers, and marks | pdflatex | PASS |
+| [ex-layout-lists](examples/ex-layout-lists/main.tex) | 嵌套列表与标签 / Nested lists and labels | pdflatex | PASS |
+| [ex-layout-columns](examples/ex-layout-columns/main.tex) | 局部多栏文本 / Local multicolumn text | pdflatex | PASS |
+| [ex-text-fonts](examples/ex-text-fonts/main.tex) | 文本字体族与颜色 / Text font families and color | pdflatex | PASS |
+| [ex-fontspec](examples/ex-fontspec/main.tex) | 可移植的 OpenType 字体 / Portable OpenType fonts | xelatex | PASS |
+| [ex-code-listings](examples/ex-code-listings/main.tex) | listings 源码清单 / Source listings with listings | pdflatex | PASS |
+| [ex-code-minted](examples/ex-code-minted/main.tex) | minted 3 高亮示例 / Highlighting with minted 3 | pdflatex | PASS |
+| [ex-code-boxes](examples/ex-code-boxes/main.tex) | 可分页的提示框 / Breakable explanatory boxes | pdflatex | PASS |
+| [ex-algorithm-pseudocode](examples/ex-algorithm-pseudocode/main.tex) | algorithm 与 algpseudocode / algorithm with algpseudocode | pdflatex | PASS |
+| [ex-algorithm2e](examples/ex-algorithm2e/main.tex) | algorithm2e 独立语法 / The independent algorithm2e syntax | pdflatex | PASS |
+| [ex-programming-macros](examples/ex-programming-macros/main.tex) | 有参数的语义命令 / Semantic commands with arguments | pdflatex | PASS |
+| [ex-programming-expl3](examples/ex-programming-expl3/main.tex) | expl3 字符串列表接口 / An expl3 comma-list interface | pdflatex | PASS |
+| [ex-custom-package](examples/ex-custom-package/main.tex) | 复用的自定义 .sty / A reusable custom .sty package | pdflatex | PASS |
+| [ex-custom-class](examples/ex-custom-class/main.tex) | 基于 article 的自定义 .cls / A custom .cls based on article | pdflatex | PASS |
+| [ex-structure-notes](examples/ex-structure-notes/main.tex) | 脚注、尾注与旁注 / Footnotes, endnotes, and margin notes | pdflatex | PASS |
+| [ex-structure-index](examples/ex-structure-index/main.tex) | 一个可编译索引 / A compilable index | pdflatex | PASS |
+| [ex-structure-glossary](examples/ex-structure-glossary/main.tex) | 不需要外部索引程序的术语表 / A glossary without an external indexer | pdflatex | PASS |
+| [ex-academic-thesis](examples/ex-academic-thesis/main.tex) | 中文学位论文结构示例 / A Chinese thesis structure | xelatex | PASS |
+| [ex-academic-cv](examples/ex-academic-cv/main.tex) | 朴素学术简历 / A restrained academic CV | pdflatex | PASS |
+| [ex-academic-exam](examples/ex-academic-exam/main.tex) | 带分值与答案的试卷 / An examination with points and solutions | pdflatex | PASS |
+| [ex-academic-poster](examples/ex-academic-poster/main.tex) | A3 研究海报 / An A3 research poster | pdflatex | PASS |
+| [ex-project-input](examples/ex-project-input/main.tex) | 多文件研究报告 / A research report in multiple files | pdflatex | PASS |
+| [ex-accessibility-structure](examples/ex-accessibility-structure/main.tex) | 语义结构与 PDF 元数据 / Semantic structure and PDF metadata | pdflatex | PASS |
+| [theorem-proof-styles](examples/theorem-proof-styles/main.tex) | 定理样式、定义和行间公式证明 / Theorem styles, definitions, and a displayed proof | pdflatex | PASS |
+| [theorem-shared-counters](examples/theorem-shared-counters/main.tex) | 共享定理序列与独立习题编号 / Shared theorem sequence and independent exercises | pdflatex | PASS |
+
+## Practice types / 题型
+
+- `single`: 12
+- `multiple`: 12
+- `fill`: 12
+- `boolean`: 12
+- `debug`: 10
+- `match`: 8
+- `formula`: 8
+- `scenario`: 8
+- `task`: 8

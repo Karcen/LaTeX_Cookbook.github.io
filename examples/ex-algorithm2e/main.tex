@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[ruled,vlined]{algorithm2e}
+\begin{document}
+\begin{algorithm}
+\caption{Compute a sample mean}
+\KwIn{Nonempty vector $x_1,\ldots,x_n$}
+\KwOut{Sample mean}
+$s\gets 0$\;
+\For{$i\gets 1$ \KwTo $n$}{$s\gets s+x_i$\;}
+\Return{$s/n$}\;
+\end{algorithm}
+\end{document}

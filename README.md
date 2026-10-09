@@ -1,83 +1,79 @@
-# LaTeX Cookbook
+# LaTeX Atelier
 
-一个不用注册、可以本地打开的 LaTeX 学习网站。中文和 English 可随时切换。所有课程、练习、样式和渲染脚本都在压缩包里。
+中英文交互式 LaTeX 百科全书。网站、知识数据、数学渲染库和语法高亮库均为静态本地文件，阅读和练习不需要账号、网络或开发服务器。
 
-## 打开网站
+## 使用
 
-解压后，双击 **`index.html`**。导航栏可进入四个功能页：
+解压 `deliverables/LaTeX-Atelier.zip`，打开目录中的 **`index.html`**。也可以直接打开本仓库的 `index.html`。网站由普通 HTML/CSS/JavaScript 文件组成，可直接打开。
 
-| 文件 | 页面 | 可以做什么 |
-| --- | --- | --- |
-| `index.html` | 首页 / Home | 浏览六个学习单元、查看学习进度 |
-| `courses.html` | 学习路径 / Lessons | 十二节课程、示例代码、完成标记 |
-| `playground.html` | 实验室 / Playground | 实时排版公式、简化文档预览、示例模板、导出 `.tex` |
-| `practice.html` | 闯关练习 / Practice | 十二道选择题、即时反馈、本机最高成绩 |
-| `reference.html` | 命令速查 / Reference | 搜索 33 条命令、预览公式、复制、收藏 |
+| 入口 | 用途 |
+| --- | --- |
+| `encyclopedia.html` | 分主题百科、分级目录、页内目录、依赖、源码、相关条目与官方资料 |
+| `courses.html` | 四条学习路径：入门、中级、进阶与学术写作 |
+| `reference.html` | 中英文命令、环境、宏包与使用场景检索 |
+| `symbols.html` | 数学符号的 SVG 渲染、源码、依赖、复制与编辑 |
+| `packages.html` | 宏包与相关专题入口 |
+| `classes.html` | 可搜索的文档类比较表 |
+| `examples.html` | 完整源码、附属文件、本地编译状态、PDF 与第一页预览 |
+| `templates.html` | 文章、中文文档、报告、演示和专业模板 |
+| `troubleshooting.html` | 编译错误、Warning 与排版诊断的排查入口 |
+| `playground.html` | 公式实时渲染、结构教学预览、编辑与导出、特殊字符实验 |
+| `practice.html` | 九种题型、逐题解析、主题过滤与本地答题记录 |
 
-如果浏览器对本地文件施加额外限制，可以在解压目录运行：
+在导航栏切换 **中 / EN** 和浅色 / 深色主题。按 **/** 或 **Cmd/Ctrl + K** 搜索全部百科、词典和示例。收藏、学习进度、主题、语言、答题结果和实验室草稿保存在当前浏览器。跨设备使用时，各浏览器分别保存记录。浏览器隐私设置或 `file://` 存储策略可能限制持久保存，此时仍可阅读内容并使用当前会话中的交互。
+
+实验室支持行号、语法高亮、括号自动闭合和配对提示。**Tab** 插入缩进，**Cmd/Ctrl + Enter** 刷新，**Cmd/Ctrl + S** 导出 `.tex`。完整示例需要的 `.bib`、`.sty`、`.cls` 或子文件可在示例库分别下载；压缩包的 `examples/` 中已按目录配齐。
+
+## 渲染与编译
+
+公式模式使用本地 MathJax 渲染受支持的数学表达式。文档模式提供标题、段落、列表、公式和表格的教学预览。生成 PDF 时，导出源码并使用 TeX 引擎编译；TikZ、浮动位置、引用后端、目录和字体配置都由 TeX 环境处理。
+
+示例库中的 PDF 和 PNG 是构建阶段使用本机 TeX Live 实际编译生成的静态文件。`assets/js/compilation.js` 记录每份示例的实际编译状态。修改源码后，重新编译以更新 PDF。
+
+例如：
 
 ```bash
-python3 -m http.server 8000
+cd examples/example-id
+latexmk -pdf main.tex       # pdfLaTeX
+latexmk -xelatex main.tex   # XeLaTeX
+latexmk -lualatex main.tex  # LuaLaTeX
 ```
 
-再打开 `http://localhost:8000`。这只是本机静态文件服务，不需要后台、数据库或联网。
+按示例指定的引擎执行一条命令即可。`latexmk` 会协调需要的引用后端；索引、术语表或外部高亮工具的特殊要求写在对应专题和示例说明中。
 
-## 常用操作
+## 内容与维护
 
-- **中 / EN**：切换中英文界面与课程说明。
-- **月亮 / 太阳**：默认浅色；点击切换深色、浅色主题。选择会保存在浏览器中。
-- **/** 或 **Cmd/Ctrl + K**：打开快速跳转，搜索课程和页面。
-- **实验室**：左侧修改源码、右侧查看渲染；**Tab** 缩进，**Cmd/Ctrl + Enter** 立即刷新，**Cmd/Ctrl + S** 导出源码。
-- **课程进度**：在课程页点击“标记已学完”。完成情况、主题、语言、草稿、收藏和最佳分数保存在当前浏览器的 `localStorage` 中。换设备或清理站点数据后不会自动同步。
+`CONTENT_INDEX.md` 列出实际模块、条目、例子与练习统计。`QA_REPORT.md` 记录验证范围、结果和限制。`TECHNICAL_NOTES.md` 说明架构与数据格式。`LANGUAGE_REVIEW.md` 记录中英文文案的审读范围、改写例子和核对结果。
 
-## 预览范围
+内容位于 `assets/js/content-*.js`，界面逻辑独立于内容数据。脚本按 HTML 中的固定顺序加载，在 `window.ATELIER` 注册数据，不使用 `fetch` 或 ES 模块，因此可以在 `file://` 下运行。新增内容后执行：
 
-**数学模式**使用本地打包的 MathJax SVG 输出。适合练习分式、积分、上下标、矩阵、对齐公式和分段函数。
+```bash
+node tests/validate-content.cjs
+python3 scripts/compile-examples.py
+python3 scripts/build-docs.py
+python3 scripts/package-release.py
+```
 
-**文档模式**是教学用的结构预览器，可以显示常见标题、段落、文字强调、列表、部分数学环境，并为图表提供简化表示。它不是完整的 LaTeX 编译器，不会实际排版浮动体、生成目录或处理参考文献。
+需要更新页面公共脚本列表时运行 `python3 scripts/build-page-shells.py`。运行浏览器回归测试时，在开发环境中安装 Playwright：
 
-导出的 `.tex` 是标准文本源码。需要输出正式 PDF 时，用 TeX Live、MiKTeX 或 Overleaf 编译。涉及中文的文档可用 `ctex` 与 XeLaTeX；带图像和 `.bib` 的示例还需要相应资源文件。
+```bash
+node tests/browser-smoke.cjs
+```
 
-## 修改课程
+静态托管时上传发布目录的全部文件即可，支持 GitHub Pages 和普通静态服务器。需要本机 HTTP 模式时可运行 `python3 -m http.server 8000`，再打开 `http://localhost:8000`。服务器只提供静态文件。
 
-所有内容都在 `assets/js/data.js` 里：
+由 [Jiacheng Zheng](https://karcen.github.io/) 使用 ChatGPT 辅助开发。
 
-- `modules`：六个模块及其章节对应关系。
-- `lessons`：十二节中英双语课程。
-- `quizzes`：十二道练习题及答案说明。
-- `reference`：命令速查数据库。
-- `snippets`：实验室快捷模板。
+## English guide
 
-全站 footer 显示“由 [Jiacheng Zheng](https://karcen.github.io/) 使用 ChatGPT 辅助开发”（英文界面提供英文表述）。
+LaTeX Atelier is a bilingual interactive reference for LaTeX. Unzip the release and open **`index.html`**. All runtime scripts, styles, MathJax, and Prism are included locally. Articles and exercises run offline in the browser, without an account or a server.
 
-样式在 `assets/css/style.css`，公共交互在 `assets/js/app.js`，各页面对应同名脚本。没有构建步骤，也没有 Node.js、React 或服务器端代码依赖。
+The encyclopedia explains syntax, package dependencies, engines, failure modes, and practical workflows. Courses provide four learning paths. The command and symbol dictionaries support Chinese and English keywords. The example library includes complete source files, companion files, compilation status, and locally generated PDF previews. Exercises cover nine formats and explain the answers.
 
-## Libraries & design research
+Use **EN** for the full English edition. The theme button selects light or dark mode. Press **/** or **Cmd/Ctrl + K** for global search. Favorites, lesson completion, exercise results, preferences, and drafts are stored in this browser. Each browser keeps its own records. Privacy policies can limit persistent storage for local files.
 
-先筛过 GitHub 上的动效、设计与渲染项目，再按“直接打开、读起来舒服、维护成本低”的条件做取舍。
+The playground renders supported mathematics with MathJax. Document mode provides a teaching preview of selected syntax. Export the source and run the specified TeX engine to produce the full PDF. Library PDFs were compiled during release preparation. Recompile edited source to update them. Bibliography, package, class, and chapter files are supplied in each example directory.
 
-| 项目 | GitHub | 最终取舍 |
-| --- | --- | --- |
-| Anime.js | https://github.com/juliangarnier/anime | 研究了动效 API。本项目改用原生 CSS transitions / IntersectionObserver，减少离线依赖。 |
-| Animate.css | https://github.com/animate-css/animate.css | 参考现成动效思路；未打包其样式。 |
-| Open Props | https://github.com/argyleink/open-props | 参考设计 token 思路；颜色、间距和组件样式均为本项目自定义。 |
-| Pico CSS | https://github.com/picocss/pico | 考察了语义化 CSS；为保留编辑器与课程布局的视觉一致性，没有直接引入。 |
-| Lucide | https://github.com/lucide-icons/lucide | 图标视觉参考，页面采用精简、内联 SVG 图标。 |
-| MathJax | https://github.com/mathjax/MathJax | **实际使用**。本地打包 `tex-svg-full.js`，SVG 渲染无需下载网页字体。 |
-| Prism | https://github.com/PrismJS/prism | **实际使用**。本地打包源码示例的语法高亮。 |
-| Humanizer / 中文 Humanizer | https://github.com/blader/humanizer · https://github.com/jiji262/humanizer-chinese | 用于审阅课程文案：删掉空洞的“重要性”结论、机械排比、讲义腔过渡和无意义的免责声明。保留操作建议与必要的功能边界。 |
+Content is maintained in `assets/js/content-*.js`, separate from the interface. `CONTENT_INDEX.md` records the delivered scope, `TECHNICAL_NOTES.md` describes the architecture, and `QA_REPORT.md` records the checks and limitations. `LANGUAGE_REVIEW.md` documents the bilingual prose review with examples and verification results. The validation, compilation, and packaging scripts are optional maintenance tools. Deploy the release directory to any static host, including GitHub Pages.
 
-MathJax 和 Prism 的原始许可证见 `assets/licenses/`。页面内容与定制样式可以按需要编辑。
-
----
-
-# English quick start
-
-Unzip the archive and open **`index.html`** in a modern browser. The site has 12 lessons, a live equation playground, a simplified document preview, 12 practice questions, and a searchable 33-command reference. Switch to **EN** in the header to read the English edition.
-
-Everything runs in your browser. MathJax and Prism are included locally. Your lesson progress, favorites, editor drafts, theme, and quiz best score are saved on this device, with no account or synchronization.
-
-The equation playground renders mathematical notation as SVG. Document mode is a teaching preview, not a full TeX compiler. Export `.tex`, then compile with a proper TeX engine when you need a production PDF.
-
-
-The design starts in light mode and retains the chosen theme between visits. The bilingual footer credits [Jiacheng Zheng](https://karcen.github.io/) for development with assistance from ChatGPT.
+Developed by [Jiacheng Zheng](https://karcen.github.io/) with assistance from ChatGPT.

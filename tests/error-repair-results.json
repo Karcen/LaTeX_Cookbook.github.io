@@ -1,0 +1,135 @@
+[
+  {
+    "id": "error-undefined-command",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-undefined-command/main.log",
+    "source": "tests/error-repairs/error-undefined-command/main.tex"
+  },
+  {
+    "id": "error-missing-math",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-missing-math/main.log",
+    "source": "tests/error-repairs/error-missing-math/main.tex"
+  },
+  {
+    "id": "error-alignment-tab",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-alignment-tab/main.log",
+    "source": "tests/error-repairs/error-alignment-tab/main.tex"
+  },
+  {
+    "id": "error-file-not-found",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-file-not-found/main.log",
+    "source": "tests/error-repairs/error-file-not-found/main.tex"
+  },
+  {
+    "id": "error-environment",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-environment/main.log",
+    "source": "tests/error-repairs/error-environment/main.tex"
+  },
+  {
+    "id": "error-option-clash",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-option-clash/main.log",
+    "source": "tests/error-repairs/error-option-clash/main.tex"
+  },
+  {
+    "id": "error-missing-document",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-missing-document/main.log",
+    "source": "tests/error-repairs/error-missing-document/main.tex"
+  },
+  {
+    "id": "error-overfull",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-overfull/main.log",
+    "source": "tests/error-repairs/error-overfull/main.tex"
+  },
+  {
+    "id": "error-underfull",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-underfull/main.log",
+    "source": "tests/error-repairs/error-underfull/main.tex"
+  },
+  {
+    "id": "error-capacity",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-capacity/main.log",
+    "source": "tests/error-repairs/error-capacity/main.tex"
+  },
+  {
+    "id": "error-font",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-font/main.log",
+    "source": "tests/error-repairs/error-font/main.tex"
+  },
+  {
+    "id": "error-image-path",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-image-path/main.log",
+    "source": "tests/error-repairs/error-image-path/main.tex"
+  },
+  {
+    "id": "error-bibliography",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-bibliography/main.log",
+    "source": "tests/error-repairs/error-bibliography/main.tex"
+  },
+  {
+    "id": "error-reference",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-reference/main.log",
+    "source": "tests/error-repairs/error-reference/main.tex"
+  },
+  {
+    "id": "error-equation-number",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-equation-number/main.log",
+    "source": "tests/error-repairs/error-equation-number/main.tex"
+  },
+  {
+    "id": "error-chinese",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-chinese/main.log",
+    "source": "tests/error-repairs/error-chinese/main.tex"
+  },
+  {
+    "id": "error-beamer-overflow",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-beamer-overflow/main.log",
+    "source": "tests/error-repairs/error-beamer-overflow/main.tex"
+  },
+  {
+    "id": "error-package-conflict",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-package-conflict/main.log",
+    "source": "tests/error-repairs/error-package-conflict/main.tex"
+  },
+  {
+    "id": "error-engine",
+    "pass": true,
+    "issues": [],
+    "log": "tests/error-repairs/error-engine/main.log",
+    "source": "tests/error-repairs/error-engine/main.tex"
+  }
+]

@@ -1,0 +1,463 @@
+{
+  "checked": 76,
+  "available": 76,
+  "unavailable": [],
+  "results": [
+    {
+      "url": "https://ctan.org/pkg/algorithm2e",
+      "status": 200,
+      "final": "https://ctan.org/pkg/algorithm2e",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/algorithmicx",
+      "status": 200,
+      "final": "https://ctan.org/pkg/algorithmicx",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/amsfonts",
+      "status": 200,
+      "final": "https://ctan.org/pkg/amsfonts",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/amsmath",
+      "status": 200,
+      "final": "https://ctan.org/pkg/amsmath",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/amsthm",
+      "status": 200,
+      "final": "https://ctan.org/pkg/amsthm",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/array",
+      "status": 200,
+      "final": "https://ctan.org/pkg/array",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/beamer",
+      "status": 200,
+      "final": "https://ctan.org/pkg/beamer",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/biber",
+      "status": 200,
+      "final": "https://ctan.org/pkg/biber",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/biblatex",
+      "status": 200,
+      "final": "https://ctan.org/pkg/biblatex",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/biblatex-gb7714-2015",
+      "status": 200,
+      "final": "https://ctan.org/pkg/biblatex-gb7714-2015",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/bibtex",
+      "status": 200,
+      "final": "https://ctan.org/pkg/bibtex",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/bookmark",
+      "status": 200,
+      "final": "https://ctan.org/pkg/bookmark",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/booktabs",
+      "status": 200,
+      "final": "https://ctan.org/pkg/booktabs",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/caption",
+      "status": 200,
+      "final": "https://ctan.org/pkg/caption",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/cleveref",
+      "status": 200,
+      "final": "https://ctan.org/pkg/cleveref",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/ctex",
+      "status": 200,
+      "final": "https://ctan.org/pkg/ctex",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/elsarticle",
+      "status": 200,
+      "final": "https://ctan.org/pkg/elsarticle",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/endnotes",
+      "status": 200,
+      "final": "https://ctan.org/pkg/endnotes",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/enumitem",
+      "status": 200,
+      "final": "https://ctan.org/pkg/enumitem",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/exam",
+      "status": 200,
+      "final": "https://ctan.org/pkg/exam",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/fancyhdr",
+      "status": 200,
+      "final": "https://ctan.org/pkg/fancyhdr",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/fancyvrb",
+      "status": 200,
+      "final": "https://ctan.org/pkg/fancyvrb",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/fontspec",
+      "status": 200,
+      "final": "https://ctan.org/pkg/fontspec",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/gbt7714",
+      "status": 200,
+      "final": "https://ctan.org/pkg/gbt7714",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/geometry",
+      "status": 200,
+      "final": "https://ctan.org/pkg/geometry",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/glossaries",
+      "status": 200,
+      "final": "https://ctan.org/pkg/glossaries",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/graphicx",
+      "status": 200,
+      "final": "https://ctan.org/pkg/graphicx",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/hyperref",
+      "status": 200,
+      "final": "https://ctan.org/pkg/hyperref",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/imakeidx",
+      "status": 200,
+      "final": "https://ctan.org/pkg/imakeidx",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/koma-script",
+      "status": 200,
+      "final": "https://ctan.org/pkg/koma-script",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/latex-base",
+      "status": 200,
+      "final": "https://ctan.org/pkg/latex-base",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/latexmk",
+      "status": 200,
+      "final": "https://ctan.org/pkg/latexmk",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/listings",
+      "status": 200,
+      "final": "https://ctan.org/pkg/listings",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/longtable",
+      "status": 200,
+      "final": "https://ctan.org/pkg/longtable",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/makecell",
+      "status": 200,
+      "final": "https://ctan.org/pkg/makecell",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/mathrsfs",
+      "status": 200,
+      "final": "https://ctan.org/pkg/mathrsfs",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/memoir",
+      "status": 200,
+      "final": "https://ctan.org/pkg/memoir",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/microtype",
+      "status": 200,
+      "final": "https://ctan.org/pkg/microtype",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/moderncv",
+      "status": 200,
+      "final": "https://ctan.org/pkg/moderncv",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/multicol",
+      "status": 200,
+      "final": "https://ctan.org/pkg/multicol",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/multirow",
+      "status": 200,
+      "final": "https://ctan.org/pkg/multirow",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/natbib",
+      "status": 200,
+      "final": "https://ctan.org/pkg/natbib",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/pdflscape",
+      "status": 200,
+      "final": "https://ctan.org/pkg/pdflscape",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/pdfpages",
+      "status": 200,
+      "final": "https://ctan.org/pkg/pdfpages",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/pgf",
+      "status": 200,
+      "final": "https://ctan.org/pkg/pgf",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/placeins",
+      "status": 200,
+      "final": "https://ctan.org/pkg/placeins",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/setspace",
+      "status": 200,
+      "final": "https://ctan.org/pkg/setspace",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/siunitx",
+      "status": 200,
+      "final": "https://ctan.org/pkg/siunitx",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/standalone",
+      "status": 200,
+      "final": "https://ctan.org/pkg/standalone",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/subcaption",
+      "status": 200,
+      "final": "https://ctan.org/pkg/subcaption",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/tabularray",
+      "status": 200,
+      "final": "https://ctan.org/pkg/tabularray",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/tabularx",
+      "status": 200,
+      "final": "https://ctan.org/pkg/tabularx",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/tcolorbox",
+      "status": 200,
+      "final": "https://ctan.org/pkg/tcolorbox",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/threeparttable",
+      "status": 200,
+      "final": "https://ctan.org/pkg/threeparttable",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/tikzposter",
+      "status": 200,
+      "final": "https://ctan.org/pkg/tikzposter",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/titlesec",
+      "status": 200,
+      "final": "https://ctan.org/pkg/titlesec",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/tocloft",
+      "status": 200,
+      "final": "https://ctan.org/pkg/tocloft",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/unicode-math",
+      "status": 200,
+      "final": "https://ctan.org/pkg/unicode-math",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/varioref",
+      "status": 200,
+      "final": "https://ctan.org/pkg/varioref",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/wrapfig",
+      "status": 200,
+      "final": "https://ctan.org/pkg/wrapfig",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/xcolor",
+      "status": 200,
+      "final": "https://ctan.org/pkg/xcolor",
+      "available": true
+    },
+    {
+      "url": "https://ctan.org/pkg/xecjk",
+      "status": 200,
+      "final": "https://ctan.org/pkg/xecjk",
+      "available": true
+    },
+    {
+      "url": "https://docs.miktex.org/",
+      "status": 200,
+      "final": "https://docs.miktex.org/",
+      "available": true
+    },
+    {
+      "url": "https://latex3.github.io/tagging-project/",
+      "status": 200,
+      "final": "https://latex3.github.io/tagging-project/",
+      "available": true
+    },
+    {
+      "url": "https://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf",
+      "status": 200,
+      "final": "https://mirror.kku.ac.th/CTAN/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf",
+      "available": true
+    },
+    {
+      "url": "https://mirrors.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf",
+      "status": 200,
+      "final": "https://mirror.kku.ac.th/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf",
+      "available": true
+    },
+    {
+      "url": "https://mirrors.ctan.org/macros/latex/required/l3kernel/interface3.pdf",
+      "status": 200,
+      "final": "https://mirror.kku.ac.th/CTAN/macros/latex/required/l3kernel/interface3.pdf",
+      "available": true
+    },
+    {
+      "url": "https://mirrors.ibiblio.org/pub/mirrors/CTAN/macros/latex/contrib/minted/minted.pdf",
+      "status": 200,
+      "final": "https://mirrors.ibiblio.org/pub/mirrors/CTAN/macros/latex/contrib/minted/minted.pdf",
+      "available": true
+    },
+    {
+      "url": "https://tug.org/texlive/doc.html",
+      "status": 200,
+      "final": "https://tug.org/texlive/doc.html",
+      "available": true
+    },
+    {
+      "url": "https://tug.org/texlive/doc/texlive-en/texlive-en.html",
+      "status": 200,
+      "final": "https://tug.org/texlive/doc/texlive-en/texlive-en.html",
+      "available": true
+    },
+    {
+      "url": "https://www.ams.org/arc/tex/amsmath/amsldoc.pdf",
+      "status": 200,
+      "final": "https://www.ams.org/arc/tex/amsmath/amsldoc.pdf",
+      "available": true
+    },
+    {
+      "url": "https://www.ams.org/tex/amslatex.html",
+      "status": 200,
+      "final": "https://www.ams.org/arc/resources/amslatex-about.html",
+      "available": true
+    },
+    {
+      "url": "https://www.latex-project.org/help/documentation/",
+      "status": 200,
+      "final": "https://www.latex-project.org/help/documentation/",
+      "available": true
+    },
+    {
+      "url": "https://www.latex-project.org/help/documentation/clsguide.pdf",
+      "status": 200,
+      "final": "https://www.latex-project.org/help/documentation/clsguide.pdf",
+      "available": true
+    },
+    {
+      "url": "https://www.latex-project.org/help/documentation/fntguide.pdf",
+      "status": 200,
+      "final": "https://www.latex-project.org/help/documentation/fntguide.pdf",
+      "available": true
+    },
+    {
+      "url": "https://www.latex-project.org/help/documentation/usrguide.pdf",
+      "status": 200,
+      "final": "https://www.latex-project.org/help/documentation/usrguide.pdf",
+      "available": true
+    }
+  ]
+}

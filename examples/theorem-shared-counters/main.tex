@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\begin{document}
+\section{First section}
+\begin{theorem}\label{thm:first}
+For a real $x$, $x^2\ge0$.
+\end{theorem}
+\begin{lemma}\label{lem:first}
+For a real $x$, $x^2+1>0$.
+\end{lemma}
+\begin{exercise}\label{ex:first}
+Find the minimum of $x^2+1$ over the real numbers.
+\end{exercise}
+The shared sequence gives \cref{thm:first,lem:first};
+\cref{ex:first} belongs to an independent exercise sequence.
+\section{Second section}
+\begin{theorem}\label{thm:second}
+For a real $x$, $(x-1)^2\ge0$.
+\end{theorem}
+\begin{exercise}\label{ex:second}
+Find the minimum of $(x-1)^2$.
+\end{exercise}
+Both counters reset in the new section:
+\cref{thm:second,ex:second}.
+\end{document}

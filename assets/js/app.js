@@ -1,21 +1,22 @@
-/* LaTeX Cookbook — shared navigation, localization, storage, UI primitives. */
+/* LaTeX Atelier — shared navigation, localization, storage, UI primitives. */
 (() => {
   'use strict';
   const D = window.LATEX_DATA;
   const PAGES = [
-    {id:'home',href:'index.html',zh:'首页',en:'Home',icon:'home'},
+    {id:'encyclopedia',href:'encyclopedia.html',zh:'百科全书',en:'Encyclopedia',icon:'book-open'},
     {id:'courses',href:'courses.html',zh:'学习路径',en:'Lessons',icon:'book-open'},
     {id:'playground',href:'playground.html',zh:'交互实验室',en:'Playground',icon:'code'},
     {id:'practice',href:'practice.html',zh:'闯关练习',en:'Practice',icon:'check-circle'},
-    {id:'reference',href:'reference.html',zh:'命令速查',en:'Reference',icon:'search'}
+    {id:'reference',href:'reference.html',zh:'命令与符号',en:'Reference',icon:'search'},
+    {id:'examples',href:'examples.html',zh:'示例库',en:'Examples',icon:'layers'}
   ];
   const copy = {
     tagline:{zh:'把想法写成公式',en:'Write your ideas as formulas'},
     home:{zh:'首页',en:'Home'},courses:{zh:'学习路径',en:'Lessons'},playground:{zh:'交互实验室',en:'Playground'},practice:{zh:'闯关练习',en:'Practice'},reference:{zh:'命令速查',en:'Reference'},
     theme:{zh:'切换主题',en:'Toggle theme'},switchToLight:{zh:'切换到浅色模式',en:'Switch to light mode'},switchToDark:{zh:'切换到深色模式',en:'Switch to dark mode'},search:{zh:'快速跳转',en:'Quick search'},searchPlaceholder:{zh:'搜索课程、页面或命令…',en:'Search lessons, pages, or commands…'},
-    footerLine:{zh:'写一行，看看它长什么样。',en:'Write a line and see how it looks.'},
+    footerLine:{zh:'查一个命令，理解一种机制。',en:'Look up a command. Understand how it works.'},
     footerCreditBefore:{zh:'由 ',en:'Developed by '},
-    footerCreditAfter:{zh:' 使用 ChatGPT 辅助开发',en:' with assistance from ChatGPT'},
+    footerCreditAfter:{zh:' 使用 ChatGPT 辅助开发',en:' with assistance from ChatGPT.'},
     footerNote:{zh:'纯前端 · 离线可用 · 进度仅保存在本机',en:'Static files only · Works offline · Progress stays on this device'},
     builtFor:{zh:'用一点好奇心，学会 LaTeX。',en:'Learn LaTeX with a little curiosity.'},
     continue:{zh:'继续学习',en:'Continue learning'},start:{zh:'开始学习',en:'Start learning'},explore:{zh:'查看全部课程',en:'Explore all lessons'},
@@ -27,7 +28,7 @@
     all:{zh:'全部',en:'All'},math:{zh:'数学公式',en:'Math'},document:{zh:'文档结构',en:'Document'},layout:{zh:'图表排版',en:'Layout'},refs:{zh:'引用文献',en:'References'},workflow:{zh:'写作效率',en:'Workflow'},
     preview:{zh:'实时预览',en:'Live preview'},code:{zh:'LaTeX 源码',en:'LaTeX source'},
     download:{zh:'导出 .tex',en:'Export .tex'},reset:{zh:'重置',en:'Reset'},empty:{zh:'没有匹配的结果。换个关键词试试。',en:'No matches. Try another search.'},
-    editorReady:{zh:'数学预览已就绪',en:'Math preview ready'},limited:{zh:'此处只预览常见文档结构；完整 PDF 请用 TeX 引擎编译。',en:'This preview handles common document structures. Compile full PDFs in a TeX engine.'},
+    editorReady:{zh:'数学预览已就绪',en:'Math preview ready'},limited:{zh:'这里展示常见文档结构；导出源码后，用 TeX 引擎生成完整 PDF。',en:'Preview common document structures here, then export the source and compile the full PDF with a TeX engine.'},
     totalProgress:{zh:'总学习进度',en:'Overall progress'},lessonComplete:{zh:'课时已完成',en:'lessons complete'},
     pleaseChoose:{zh:'先选一个答案。',en:'Choose an answer first.'},check:{zh:'检查答案',en:'Check answer'},nextQuestion:{zh:'下一题',en:'Next question'},retry:{zh:'重新练习',en:'Try again'},
     favorites:{zh:'已收藏',en:'Favorites'},allCommands:{zh:'全部命令',en:'All commands'},
@@ -79,20 +80,21 @@
   const val=obj => typeof obj==='string'?obj:(obj && (obj[lang]||obj.zh||obj.en))||'';
   const tr=k=>val(copy[k]||k);
   function progress(){const done=getStorage('done',[]);return Array.isArray(done)?done:[];}
-  function completion(){return progress().length;}
+  function completion(){return D.lessons.filter(l=>isDone(l.id)).length;}
   function isDone(id){return progress().includes(id);}
   function toggleDone(id){const s=new Set(progress());s.has(id)?s.delete(id):s.add(id);setStorage('done',[...s]);window.dispatchEvent(new CustomEvent('progresschange'));return s.has(id);}
   function pageId(){return document.body.dataset.page||'home';}
   function renderNav(){const node=document.getElementById('site-header');if(!node)return;
-    const current=pageId();
-    node.innerHTML=`<div class="nav-shell container"><a class="brand" href="index.html" aria-label="LaTeX Cookbook home"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>cookbook</small></span></a><nav class="nav-links" aria-label="Main navigation">${PAGES.map(p=>`<a class="nav-link ${current===p.id?'is-current':''}" ${current===p.id?'aria-current="page"':''} href="${p.href}">${val(p)}</a>`).join('')}</nav><div class="nav-actions"><button id="global-search" class="icon-button" aria-label="${tr('search')}" title="${tr('search')} · /">${ico('search',19)}</button><button id="theme-toggle" class="icon-button" aria-label="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" title="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" aria-pressed="${theme==='dark'}">${ico(theme==='dark'?'sun':'moon',19)}</button><div class="lang-switch" role="group" aria-label="Language"><button class="lang-opt ${lang==='zh'?'active':''}" data-lang="zh" aria-pressed="${lang==='zh'}">中</button><button class="lang-opt ${lang==='en'?'active':''}" data-lang="en" aria-pressed="${lang==='en'}">EN</button></div></div></div>`;
+    const current=['symbols','packages','classes','troubleshooting'].includes(pageId())?'reference':pageId()==='templates'?'examples':pageId();
+    node.innerHTML=`<div class="nav-shell container"><a class="brand" href="index.html" aria-label="LaTeX Atelier home"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>atelier</small></span></a><button id="nav-menu" class="icon-button mobile-menu" aria-label="${lang==='zh'?'打开导航':'Open navigation'}" aria-expanded="false">${ico('menu')}</button><nav id="main-nav" class="nav-links" aria-label="Main navigation">${PAGES.map(p=>`<a class="nav-link ${current===p.id?'is-current':''}" ${current===p.id?'aria-current="page"':''} href="${p.href}">${val(p)}</a>`).join('')}</nav><div class="nav-actions"><button id="global-search" class="icon-button" aria-label="${tr('search')}" title="${tr('search')} · /">${ico('search',19)}</button><button id="theme-toggle" class="icon-button" aria-label="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" title="${theme==='dark'?tr('switchToLight'):tr('switchToDark')}" aria-pressed="${theme==='dark'}">${ico(theme==='dark'?'sun':'moon',19)}</button><div class="lang-switch" role="group" aria-label="Language"><button class="lang-opt ${lang==='zh'?'active':''}" data-lang="zh" aria-pressed="${lang==='zh'}">中</button><button class="lang-opt ${lang==='en'?'active':''}" data-lang="en" aria-pressed="${lang==='en'}">EN</button></div></div></div>`;
     node.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
     document.getElementById('global-search')?.addEventListener('click',openPalette);
+    document.getElementById('nav-menu')?.addEventListener('click',e=>{const open=e.currentTarget.getAttribute('aria-expanded')!=='true';e.currentTarget.setAttribute('aria-expanded',String(open));document.getElementById('main-nav').classList.toggle('open',open);});
     document.getElementById('theme-toggle')?.addEventListener('click',()=>setTheme(theme==='light'?'dark':'light'));
   }
-  function renderFooter(){const node=document.getElementById('site-footer');if(!node)return;node.innerHTML=`<div class="container footer-main"><div><a class="brand footer-brand" href="index.html"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>cookbook</small></span></a><p class="footer-sentence">${tr('footerLine')}</p></div><div class="footer-links">${PAGES.slice(1).map(p=>`<a href="${p.href}">${val(p)} ${ico('arrow',14)}</a>`).join('')}</div></div><div class="container footer-bottom"><span>© 2026 LaTeX Cookbook · Learn by writing.</span><div class="footer-meta"><span class="footer-credit">${tr('footerCreditBefore')}<a class="footer-author" href="https://karcen.github.io/" target="_blank" rel="noopener noreferrer">Jiacheng Zheng</a>${tr('footerCreditAfter')}</span><span class="footer-note">${tr('footerNote')}</span></div></div>`;}
+  function renderFooter(){const node=document.getElementById('site-footer');if(!node)return;node.innerHTML=`<div class="container footer-main"><div><a class="brand footer-brand" href="index.html"><span class="brand-icon">\\</span><span class="brand-name">latex<span class="brand-dot">.</span><small>atelier</small></span></a><p class="footer-sentence">${tr('footerLine')}</p></div><div class="footer-links">${PAGES.slice(1).map(p=>`<a href="${p.href}">${val(p)} ${ico('arrow',14)}</a>`).join('')}</div></div><div class="container footer-bottom"><span>© 2026 LaTeX Atelier · Learn by writing.</span><div class="footer-meta"><span class="footer-credit">${tr('footerCreditBefore')}<a class="footer-author" href="https://karcen.github.io/" target="_blank" rel="noopener noreferrer">Jiacheng Zheng</a>${tr('footerCreditAfter')}</span><span class="footer-note">${tr('footerNote')}</span></div></div>`;}
   function translateStatic(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=tr(el.dataset.i18n);});document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{el.placeholder=tr(el.dataset.i18nPlaceholder);});document.querySelectorAll('[data-zh][data-en]').forEach(el=>{el.textContent=lang==='zh'?el.dataset.zh:el.dataset.en;});}
-  function setLanguage(next){if(next===lang)return;lang=next;setStorage('language',lang);renderNav();renderFooter();translateStatic();window.dispatchEvent(new CustomEvent('languagechange',{detail:{lang}}));}
+  function setLanguage(next){if(next===lang)return;const scroll=window.scrollY;const section=[...document.querySelectorAll('.article-section[id]')].reverse().find(el=>el.getBoundingClientRect().top<=130);const sectionOffset=section?.getBoundingClientRect().top;const sectionId=section?.id;const focused=document.activeElement?.id;const selection=document.activeElement?.selectionStart;lang=next;setStorage('language',lang);renderNav();renderFooter();translateStatic();window.dispatchEvent(new CustomEvent('languagechange',{detail:{lang}}));requestAnimationFrame(()=>{const anchor=sectionId&&document.getElementById(sectionId);window.scrollTo({top:anchor?window.scrollY+anchor.getBoundingClientRect().top-sectionOffset:scroll,behavior:'instant'});const target=focused&&document.getElementById(focused);if(target){target.focus({preventScroll:true});if(typeof selection==='number'&&target.setSelectionRange)try{target.setSelectionRange(selection,selection)}catch{}}});}
   function syncThemeChrome(){const tag=document.querySelector('meta[name="theme-color"]');if(tag)tag.content=theme==='dark'?'#111d1d':'#f6f7f2';}
   function setTheme(next){if(!['light','dark'].includes(next))return;theme=next;document.documentElement.dataset.theme=theme;setStorage('theme',theme);syncThemeChrome();renderNav();window.dispatchEvent(new CustomEvent('themechange',{detail:{theme}}));}
   function toast(message){let toastEl=document.querySelector('.toast');if(!toastEl){toastEl=document.createElement('div');toastEl.className='toast';toastEl.setAttribute('role','status');toastEl.setAttribute('aria-live','polite');document.body.appendChild(toastEl);} toastEl.innerHTML=`${ico('check',16)} <span>${esc(message)}</span>`;toastEl.classList.add('show');clearTimeout(toastEl._timer);toastEl._timer=setTimeout(()=>toastEl.classList.remove('show'),2400);}
@@ -101,22 +103,34 @@
   function bindCopyButtons(root=document){root.querySelectorAll('.code-panel').forEach(panel=>{const b=panel.querySelector('.code-copy');if(b&&!b.dataset.bound){b.dataset.bound='1';b.addEventListener('click',()=>clipboard(panel.querySelector('code').textContent));}});}
   function highlight(root=document){if(window.Prism){root.querySelectorAll('code.language-latex').forEach(el=>Prism.highlightElement(el));}}
   function renderInlineLatex(html){return html;}
-  let palette;
-  function createPalette(){palette=document.createElement('div');palette.id='command-palette';palette.className='palette-overlay';palette.hidden=true;palette.innerHTML=`<div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="palette-label"><label id="palette-label" class="sr-only">${tr('search')}</label><div class="palette-field">${ico('search',20)}<input type="search" id="palette-input" autocomplete="off" spellcheck="false" placeholder="${tr('searchPlaceholder')}"/><kbd>ESC</kbd></div><div class="palette-results" id="palette-results"></div><div class="palette-help">${ico('keyboard',14)} <span>↑ ↓ to move · Enter to open</span></div></div>`;document.body.appendChild(palette);
+  let palette,previousFocus;
+  function createPalette(){palette=document.createElement('div');palette.id='command-palette';palette.className='palette-overlay';palette.hidden=true;palette.innerHTML=`<div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="palette-label"><label id="palette-label" class="sr-only">${tr('search')}</label><div class="palette-field">${ico('search',20)}<input type="search" id="palette-input" autocomplete="off" spellcheck="false" placeholder="${tr('searchPlaceholder')}"/><kbd>ESC</kbd></div><div class="palette-results" id="palette-results"></div><div class="palette-help">${ico('keyboard',14)} <span>${lang==='zh'?'↑ ↓ 选择 · Enter 打开 · Esc 关闭':'↑ ↓ to move · Enter to open · Esc to close'}</span></div></div>`;document.body.appendChild(palette);
     palette.addEventListener('mousedown',e=>{if(e.target===palette)closePalette()});
+    palette.addEventListener('keydown',e=>{if(e.key!=='Tab'||e.target.id==='palette-input')return;e.preventDefault();const nodes=[...palette.querySelectorAll('input,a')];const ix=nodes.indexOf(document.activeElement);nodes[(ix+(e.shiftKey?-1:1)+nodes.length)%nodes.length]?.focus();});
     palette.querySelector('#palette-input').addEventListener('input',()=>drawPalette());
-    palette.querySelector('#palette-input').addEventListener('keydown',e=>{const all=[...palette.querySelectorAll('.palette-result')];let ix=all.findIndex(a=>a.classList.contains('selected'));if(e.key==='ArrowDown'){e.preventDefault();ix=(ix+1)%Math.max(1,all.length);selectPalette(all,ix);}if(e.key==='ArrowUp'){e.preventDefault();ix=(ix-1+all.length)%Math.max(1,all.length);selectPalette(all,ix);}if(e.key==='Enter'){const a=all.find(a=>a.classList.contains('selected'))||all[0];if(a)location.href=a.href;}});
+    palette.querySelector('#palette-input').addEventListener('keydown',e=>{const all=[...palette.querySelectorAll('.palette-result')];let ix=all.findIndex(a=>a.classList.contains('selected'));if(e.key==='ArrowDown'){e.preventDefault();ix=(ix+1)%Math.max(1,all.length);selectPalette(all,ix);}if(e.key==='ArrowUp'){e.preventDefault();ix=(ix-1+all.length)%Math.max(1,all.length);selectPalette(all,ix);}if(e.key==='Tab'){e.preventDefault();const nodes=[palette.querySelector('input'),...all];const current=nodes.indexOf(document.activeElement);nodes[(current+(e.shiftKey?-1:1)+nodes.length)%nodes.length]?.focus();}if(e.key==='Enter'){const a=all.find(a=>a.classList.contains('selected'))||all[0];if(a)location.href=a.href;}});
   }
   function selectPalette(nodes,ix){nodes.forEach((node,i)=>node.classList.toggle('selected',i===ix));nodes[ix]?.scrollIntoView({block:'nearest'});}
-  function openPalette(){if(!palette)createPalette();palette.hidden=false;drawPalette();palette.querySelector('input').focus();document.body.classList.add('dialog-open');}
-  function closePalette(){if(!palette)return;palette.hidden=true;document.body.classList.remove('dialog-open');}
-  function drawPalette(){const q=(palette.querySelector('input').value||'').toLowerCase().trim();const items=[...PAGES.map(p=>({title:val(p),sub:lang==='zh'?'页面':'Page',href:p.href,icon:p.icon,searchText:[p.zh,p.en].join(' ')})),...D.lessons.map(l=>({title:val(l.title),sub:lang==='zh'?'课程':'Lesson',href:'courses.html#'+l.id,icon:'book-open',searchText:[l.id,l.title.zh,l.title.en].join(' ')})),...D.reference.map(r=>({title:val(r.title)+' · '+r.command,sub:lang==='zh'?'命令':'Command',href:'reference.html?q='+encodeURIComponent(r.command),icon:'code',searchText:[r.id,r.command,r.title.zh,r.title.en].join(' ')}))].filter(i=>(i.title+' '+i.sub+' '+i.searchText).toLowerCase().includes(q)).slice(0,11);
-    const target=palette.querySelector('#palette-results');target.innerHTML=items.length?items.map((i,j)=>`<a class="palette-result ${j===0?'selected':''}" href="${esc(i.href)}">${ico(i.icon,17)}<span>${esc(i.title)}</span><small>${esc(i.sub)}</small>${ico('arrow',15)}</a>`).join(''):`<div class="palette-empty">${tr('empty')}</div>`;}
+  function openPalette(){previousFocus=document.activeElement;if(!palette)createPalette();palette.hidden=false;drawPalette();palette.querySelector('input').focus();document.body.classList.add('dialog-open');}
+  function closePalette(){if(!palette)return;palette.hidden=true;document.body.classList.remove('dialog-open');previousFocus?.focus?.();}
+  function searchItems(q=''){
+    const C=window.ATELIER;
+    const items=[...PAGES.map(p=>({title:val(p),sub:lang==='zh'?'页面':'Page',href:p.href,icon:p.icon,text:p.zh+' '+p.en})),
+      ...C.entries.map(e=>({title:val(e.title),sub:lang==='zh'?'百科条目':'Article',href:'encyclopedia.html#'+e.id,icon:'book-open',text:JSON.stringify(e)})),
+      ...C.dictionary.map(r=>({title:val(r.title)+' '+r.command,sub:lang==='zh'?'词典':'Dictionary',href:'reference.html?q='+encodeURIComponent(r.command),icon:'code',text:JSON.stringify(r)})),
+      ...C.examples.map(x=>({title:val(x.title),sub:lang==='zh'?'完整示例':'Example',href:'examples.html#'+x.id,icon:'layers',text:JSON.stringify(x)}))];
+    const query=q.trim().toLowerCase();const terms=query.split(/\s+/).filter(Boolean);
+    return items.filter(i=>terms.every(t=>(i.text+' '+i.title).toLowerCase().includes(t))).map(i=>({...i,rank:i.title.toLowerCase().includes(query)?0:1})).sort((a,b)=>a.rank-b.rank);
+  }
+  function drawPalette(){const q=palette.querySelector('input').value||'';const items=searchItems(q).slice(0,18);
+    palette.querySelector('#palette-results').innerHTML=items.length?items.map((i,j)=>`<a class="palette-result ${j===0?'selected':''}" href="${esc(i.href)}">${ico(i.icon,17)}<span>${esc(i.title)}</span><small>${esc(i.sub)}</small>${ico('arrow',15)}</a>`).join(''):`<div class="palette-empty">${tr('empty')}</div>`;
+  }
   async function typeset(el){if(!window.MathJax)return;await window.MathJax.startup.promise;try{window.MathJax.typesetClear([el]);await window.MathJax.typesetPromise([el]);}catch(err){console.warn('MathJax typeset:',err);}}
-  async function texToNode(tex,display=true){await window.MathJax.startup.promise;return window.MathJax.tex2svgPromise(tex,{display});}
+  async function texToNode(tex,display=true){if(String(tex).length>20000)throw new Error(lang==='zh'?'公式超过 20,000 字符，请拆分。':'Split expressions longer than 20,000 characters.');if(/\\(?:href|htmlClass|htmlId|htmlStyle|class|cssId|style|require)\b/.test(tex))throw new Error(lang==='zh'?'公式预览不接受链接、HTML 样式或外部扩展命令。':'The math preview does not accept links, HTML styles, or external extensions.');await window.MathJax.startup.promise;return window.MathJax.tex2svgPromise(tex,{display});}
   function animateEntries(root=document){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const els=[...root.querySelectorAll('[data-reveal]')];const obs=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('revealed');obs.unobserve(entry.target);}}},{threshold:.09,rootMargin:'0px 0px -24px 0px'});els.forEach((el,i)=>{el.style.setProperty('--reveal-delay',`${Math.min((i%7)*45,225)}ms`);obs.observe(el);});}
   function init(){document.documentElement.dataset.theme=theme;syncThemeChrome();renderNav();renderFooter();translateStatic();document.addEventListener('keydown',e=>{const tag=(e.target.tagName||'').toLowerCase();if((e.key==='/'&& !['input','textarea'].includes(tag))||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();openPalette();} if(e.key==='Escape')closePalette();});window.addEventListener('languagechange',()=>{if(palette&&!palette.hidden){palette.remove();palette=null;openPalette();}});}
   const api={data:D,pages:PAGES,get lang(){return lang;},get theme(){return theme;},t:tr,v:val,esc,ico,getStorage,setStorage,progress,completion,isDone,toggleDone,toast,clipboard,makeCode,bindCopyButtons,highlight,typeset,texToNode,animateEntries,openPalette,setLanguage};
+  api.catalog=window.ATELIER;api.searchItems=searchItems;api.download=(text,name)=>{const u=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),2000);};
   window.Cookbook=api;
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

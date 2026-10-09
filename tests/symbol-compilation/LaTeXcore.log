@@ -1,0 +1,388 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.14)  9 OCT 2026 07:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/tmp/atelier-symbol-final-Mjh88v/LaTeXcore.tex
+(/tmp/atelier-symbol-final-Mjh88v/LaTeXcore.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count270
+\l__pdf_internal_box=\box52
+)
+No file LaTeXcore.aux.
+\openout1 = `LaTeXcore.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+CHECK:symbol-alpha
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+CHECK:symbol-beta
+CHECK:symbol-gamma
+CHECK:symbol-delta
+CHECK:symbol-epsilon
+CHECK:symbol-varepsilon
+CHECK:symbol-zeta
+CHECK:symbol-eta
+CHECK:symbol-theta
+CHECK:symbol-vartheta
+CHECK:symbol-iota
+CHECK:symbol-kappa
+CHECK:symbol-lambda
+
+
+[1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+CHECK:symbol-mu
+CHECK:symbol-nu
+CHECK:symbol-xi
+CHECK:symbol-pi
+CHECK:symbol-varpi
+CHECK:symbol-rho
+CHECK:symbol-varrho
+CHECK:symbol-sigma
+CHECK:symbol-varsigma
+CHECK:symbol-tau
+CHECK:symbol-upsilon
+CHECK:symbol-phi
+
+
+[2]
+CHECK:symbol-varphi
+CHECK:symbol-chi
+CHECK:symbol-psi
+CHECK:symbol-omega
+CHECK:symbol-Gamma
+CHECK:symbol-Delta
+CHECK:symbol-Theta
+CHECK:symbol-Lambda
+CHECK:symbol-Xi
+CHECK:symbol-Pi
+CHECK:symbol-Sigma
+
+
+[3]
+CHECK:symbol-Upsilon
+CHECK:symbol-Phi
+CHECK:symbol-Psi
+CHECK:symbol-Omega
+CHECK:symbol-aleph
+CHECK:symbol-hbar
+CHECK:symbol-ell
+CHECK:symbol-wp
+CHECK:symbol-Re
+CHECK:symbol-Im
+CHECK:symbol-infty
+CHECK:symbol-partial
+
+
+[4]
+CHECK:symbol-nabla
+CHECK:symbol-prime
+CHECK:symbol-emptyset
+CHECK:symbol-forall
+CHECK:symbol-exists
+CHECK:symbol-neg
+CHECK:symbol-top
+CHECK:symbol-bot
+CHECK:symbol-angle
+CHECK:symbol-triangle
+CHECK:symbol-surd
+
+
+[5]
+CHECK:symbol-flat
+CHECK:symbol-natural
+CHECK:symbol-sharp
+CHECK:symbol-pm
+CHECK:symbol-mp
+CHECK:symbol-times
+CHECK:symbol-div
+CHECK:symbol-cdot
+CHECK:symbol-ast
+CHECK:symbol-star
+CHECK:symbol-circ
+CHECK:symbol-bullet
+
+
+[6]
+CHECK:symbol-diamond
+CHECK:symbol-cap
+CHECK:symbol-cup
+CHECK:symbol-uplus
+CHECK:symbol-sqcap
+CHECK:symbol-sqcup
+CHECK:symbol-vee
+CHECK:symbol-wedge
+CHECK:symbol-setminus
+CHECK:symbol-wr
+CHECK:symbol-bigtriangleup
+
+
+[7]
+CHECK:symbol-bigtriangledown
+CHECK:symbol-triangleleft
+CHECK:symbol-triangleright
+CHECK:symbol-oplus
+CHECK:symbol-ominus
+CHECK:symbol-otimes
+CHECK:symbol-oslash
+CHECK:symbol-odot
+CHECK:symbol-dagger
+CHECK:symbol-ddagger
+CHECK:symbol-amalg
+CHECK:symbol-leq
+
+
+[8]
+CHECK:symbol-geq
+CHECK:symbol-neq
+CHECK:symbol-equiv
+CHECK:symbol-approx
+CHECK:symbol-sim
+CHECK:symbol-simeq
+CHECK:symbol-cong
+CHECK:symbol-asymp
+CHECK:symbol-propto
+CHECK:symbol-ll
+CHECK:symbol-gg
+
+
+[9]
+CHECK:symbol-prec
+CHECK:symbol-succ
+CHECK:symbol-preceq
+CHECK:symbol-succeq
+CHECK:symbol-in
+CHECK:symbol-ni
+CHECK:symbol-notin
+CHECK:symbol-subset
+CHECK:symbol-supset
+CHECK:symbol-subseteq
+CHECK:symbol-supseteq
+CHECK:symbol-sqsubseteq
+
+
+[10]
+CHECK:symbol-sqsupseteq
+CHECK:symbol-models
+CHECK:symbol-vdash
+CHECK:symbol-dashv
+CHECK:symbol-perp
+CHECK:symbol-mid
+CHECK:symbol-parallel
+CHECK:symbol-smile
+CHECK:symbol-frown
+CHECK:symbol-doteq
+CHECK:symbol-bowtie
+
+
+[11]
+CHECK:symbol-leftarrow
+CHECK:symbol-rightarrow
+CHECK:symbol-leftrightarrow
+CHECK:symbol-Leftarrow
+CHECK:symbol-Rightarrow
+CHECK:symbol-Leftrightarrow
+CHECK:symbol-mapsto
+CHECK:symbol-hookrightarrow
+CHECK:symbol-hookleftarrow
+CHECK:symbol-leftharpoonup
+CHECK:symbol-leftharpoondown
+CHECK:symbol-rightharpoonup
+
+
+[12]
+CHECK:symbol-rightharpoondown
+CHECK:symbol-rightleftharpoons
+CHECK:symbol-uparrow
+CHECK:symbol-downarrow
+CHECK:symbol-updownarrow
+CHECK:symbol-Uparrow
+CHECK:symbol-Downarrow
+CHECK:symbol-Updownarrow
+CHECK:symbol-nearrow
+CHECK:symbol-searrow
+CHECK:symbol-swarrow
+
+
+[13]
+CHECK:symbol-nwarrow
+CHECK:symbol-longrightarrow
+CHECK:symbol-longleftarrow
+CHECK:symbol-longleftrightarrow
+CHECK:symbol-Longrightarrow
+CHECK:symbol-Longleftarrow
+CHECK:symbol-Longleftrightarrow
+CHECK:symbol-longmapsto
+CHECK:symbol-sum
+CHECK:symbol-prod
+CHECK:symbol-coprod
+
+
+[14]
+CHECK:symbol-int
+CHECK:symbol-oint
+CHECK:symbol-bigcap
+CHECK:symbol-bigcup
+CHECK:symbol-biguplus
+CHECK:symbol-bigsqcup
+CHECK:symbol-bigvee
+CHECK:symbol-bigwedge
+CHECK:symbol-bigoplus
+
+
+[15]
+CHECK:symbol-bigotimes
+CHECK:symbol-bigodot
+CHECK:symbol-lim
+CHECK:symbol-limsup
+CHECK:symbol-liminf
+CHECK:symbol-sup
+CHECK:symbol-inf
+CHECK:symbol-max
+CHECK:symbol-min
+CHECK:symbol-sin
+CHECK:symbol-cos
+
+
+[16]
+CHECK:symbol-tan
+CHECK:symbol-arcsin
+CHECK:symbol-arccos
+CHECK:symbol-arctan
+CHECK:symbol-sinh
+CHECK:symbol-cosh
+CHECK:symbol-tanh
+CHECK:symbol-log
+CHECK:symbol-ln
+CHECK:symbol-exp
+CHECK:symbol-det
+CHECK:symbol-gcd
+
+
+[17]
+CHECK:symbol-ker
+CHECK:symbol-dim
+CHECK:symbol-arg
+CHECK:symbol-Pr
+CHECK:symbol-hat
+CHECK:symbol-widehat
+CHECK:symbol-bar
+CHECK:symbol-overline
+CHECK:symbol-underline
+CHECK:symbol-tilde
+CHECK:symbol-widetilde
+
+
+[18]
+CHECK:symbol-vec
+CHECK:symbol-dot
+CHECK:symbol-ddot
+CHECK:symbol-breve
+CHECK:symbol-check
+CHECK:symbol-acute
+CHECK:symbol-grave
+CHECK:symbol-mathring
+CHECK:symbol-overbrace
+CHECK:symbol-underbrace
+CHECK:symbol-ldots
+
+
+[19]
+CHECK:symbol-cdots
+CHECK:symbol-vdots
+CHECK:symbol-ddots
+CHECK:symbol-frac
+CHECK:symbol-sqrt
+CHECK:symbol-langle
+CHECK:symbol-rangle
+CHECK:symbol-lceil
+CHECK:symbol-rceil
+CHECK:symbol-lfloor
+
+
+[20]
+CHECK:symbol-rfloor
+CHECK:symbol-backslash
+CHECK:symbol-Vert
+CHECK:symbol-overrightarrow
+CHECK:symbol-overleftarrow
+CHECK:symbol-thinspace
+CHECK:symbol-mediumspace
+CHECK:symbol-thickspace
+CHECK:symbol-negative-thinspace
+CHECK:symbol-quad
+CHECK:symbol-qquad
+CHECK:symbol-mathrm-d
+
+
+[21]
+CHECK:symbol-mathrm-e
+CHECK:symbol-mathrm-i
+
+
+[22] (/tmp/atelier-symbol-final-Mjh88v/LaTeXcore.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 433 strings out of 473190
+ 8514 string characters out of 5715799
+ 400074 words of memory out of 5000000
+ 23769 multiletter control sequences out of 15000+600000
+ 558837 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,11n,50p,177b,109s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on /tmp/atelier-symbol-final-Mjh88v/LaTeXcore.pdf (22 pages, 132
+747 bytes).
+PDF statistics:
+ 115 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

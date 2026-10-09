@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{pgfplots}\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}\begin{axis}[width=.85\linewidth,xlabel={Dose},ylabel={Response},grid=major]
+\addplot+[only marks,error bars/.cd,y dir=both,y explicit]
+coordinates {(1,2) +- (0,.3) (2,3.2) +- (0,.4) (3,3.8) +- (0,.2)};
+\end{axis}\end{tikzpicture}
+\end{document}

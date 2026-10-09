@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{texgyretermes-regular.otf}[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf]
+\setsansfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf]
+\setmonofont{texgyrecursor-regular.otf}[BoldFont=texgyrecursor-bold.otf,ItalicFont=texgyrecursor-italic.otf]
+\begin{document}
+\section{Unicode typography}
+Text contains café, naïve, and Ω. \textsf{Sans serif} and \texttt{monospaced} fonts are set independently.
+
+Text font selection does not set the mathematical font: $\alpha+\beta=\gamma$.
+\end{document}

@@ -1,0 +1,11 @@
+\documentclass{article}
+\ExplSyntaxOn
+\cs_new_protected:Npn \atelier_list:n #1
+  { \clist_map_inline:nn {#1} { \texttt{##1}\quad } }
+\NewDocumentCommand{\AtelierList}{m}{\atelier_list:n{#1}}
+\ExplSyntaxOff
+\begin{document}
+\section{Generated labels}
+\AtelierList{alpha,beta,gamma}
+\AtelierList{data,model,results}
+\end{document}

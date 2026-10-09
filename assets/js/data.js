@@ -10,9 +10,9 @@ window.LATEX_DATA = (() => {
   ];
   const lessons = [
     { id:'start', module:'foundation', minutes:6, kind:'document', title:{zh:'你的第一份 LaTeX 文档',en:'Your first LaTeX document'},
-      lead:{zh:'先不用背命令。打开一个最小的例子，看清导言区、正文和编译器的分工。',en:'You do not need to memorize commands yet. Start with a small file and see where the preamble, the body, and the compiler each fit.'},
+      lead:{zh:'从最小示例开始，了解导言区、正文和编译器的分工。',en:'Start with a small file and see how the preamble, document body, and compiler fit together.'},
       concept:{zh:'LaTeX 是一套排版系统：你写内容和结构，编译器负责排版。英文文档可从 article 开始；有中文时，推荐 XeLaTeX 搭配 ctex。',en:'LaTeX is a typesetting system. You describe content and structure; the compiler handles the page. Start with article for English, or ctex with XeLaTeX for Chinese.'},
-      bullets:{zh:['\\documentclass 选择文档类型。','\\begin{document} 与 \\end{document} 圈定正文。','文档预览只是学习辅助；真正的 PDF 需要完整的 TeX 引擎编译。'],en:['\\documentclass selects the document type.','\\begin{document} and \\end{document} mark the document body.','The browser preview is for practice; producing a real PDF requires a TeX engine.']},
+      bullets:{zh:['\\documentclass 选择文档类型。','\\begin{document} 与 \\end{document} 圈定正文。','浏览器预览用于练习文档结构，完整的 TeX 引擎负责生成 PDF。'],en:['\\documentclass selects the document type.','\\begin{document} and \\end{document} mark the document body.','Use the browser preview to practice document structure and a TeX engine to produce the PDF.']},
       code:String.raw`\documentclass{article}
 \title{My first note}
 \author{A. Student}
@@ -25,7 +25,7 @@ Hello, LaTeX!
     { id:'structure', module:'foundation', minutes:7, kind:'document', title:{zh:'标题、段落与文本样式',en:'Sections, paragraphs & emphasis'},
       lead:{zh:'写作时先组织层级，再处理字体。这样后面改版式才不会牵一发动全身。',en:'Set up the hierarchy first and adjust typography later, so formatting changes stay local.'},
       concept:{zh:'\\section、\\subsection 形成标题层级。用空行分段；粗体和斜体分别交给 \\textbf、\\emph。',en:'\\section and \\subsection create hierarchy. A blank line starts a paragraph; \\textbf and \\emph add emphasis.'},
-      bullets:{zh:['不要用空格或连续回车模拟排版。','用语义命令标识标题，目录才能自动生成。','\\tableofcontents 会生成目录（通常需要重复编译）。'],en:['Do not arrange a page with spaces or repeated Enter presses.','Use section commands so the table of contents can be generated.','\\tableofcontents creates a contents page (usually after another compile).']},
+      bullets:{zh:['用空行分段，用标题命令组织层级；列宽、缩进和间距交给相应的排版命令。','用语义命令标识标题，目录才能自动生成。','\\tableofcontents 会生成目录（通常需要重复编译）。'],en:['Use blank lines for paragraphs and commands for headings. Set column widths, indentation, and spacing with the corresponding typesetting commands.','Use section commands so the table of contents can be generated.','\\tableofcontents creates a contents page (usually after another compile).']},
       code:String.raw`\section{Background}
 This is the first paragraph.
 
@@ -49,12 +49,12 @@ Use \emph{emphasis} sparingly.`,
 f(x)&=x^2+2x+1\\
 &=(x+1)^2
 \end{aligned}`,
-      tip:{zh:'MathJax 可以渲染这些数学环境，但它不是完整的 TeX 编译器。',en:'MathJax renders these math environments, though it does not compile full TeX documents.'},
+      tip:{zh:'MathJax 可以渲染这些数学环境，方便检查公式的对齐效果。',en:'MathJax renders these environments so you can inspect equation alignment.'},
       task:{zh:'把上面的等式改成三行推导，仍然沿等号对齐。',en:'Extend the derivation to three lines while keeping the equals signs aligned.'}},
     { id:'figures', module:'layout', minutes:8, kind:'document', title:{zh:'插图与浮动体',en:'Figures & floats'},
       lead:{zh:'LaTeX 会尽量为图片找合适的位置。浮动体就是这个机制的一部分。',en:'LaTeX finds suitable places for figures. Floats are part of that layout system.'},
       concept:{zh:'加载 graphicx 后，用 \\includegraphics 插图；\\caption 添加题注。htbp 是位置偏好，不是强制坐标。',en:'Load graphicx to insert images and add captions with \\caption. Placement options such as htbp are preferences, not exact coordinates.'},
-      bullets:{zh:['图片应放在项目目录中，文件名尽量简单。','图题、标签一般放在 figure 环境里。','本网站不会加载你的真实图片；请用本地 TeX 项目编译检查。'],en:['Keep image files in your project and use simple filenames.','Place captions and labels inside the figure environment.','This site does not load your image files; check the real placement in a local TeX project.']},
+      bullets:{zh:['图片应放在项目目录中，文件名尽量简单。','图题、标签一般放在 figure 环境里。','预览用占位框表示图片；在本地 TeX 项目中检查实际图片与排版位置。'],en:['Keep image files in your project and use simple filenames.','Place captions and labels inside the figure environment.','The preview represents images with placeholders. Check the images and their placement in a local TeX project.']},
       code:String.raw`\usepackage{graphicx} % in the preamble
 
 \begin{figure}[htbp]
@@ -68,7 +68,7 @@ f(x)&=x^2+2x+1\\
     { id:'tables', module:'layout', minutes:10, kind:'document', title:{zh:'做一张干净的表格',en:'Build a clean table'},
       lead:{zh:'好的表格先有清楚的列，再考虑横线。学术写作里，少量规则线往往更好读。',en:'Make the columns clear first, then decide about rules. In academic tables, a few horizontal lines usually read better.'},
       concept:{zh:'tabular 指定列格式，& 分列，\\\\ 换行。booktabs 提供更克制的三线表命令。',en:'tabular defines column alignment; & separates cells and \\\\ ends a row. booktabs provides cleaner horizontal rules.'},
-      bullets:{zh:['列格式 l、c、r 对应左、中、右对齐。','使用 booktabs 之前要在导言区加载宏包。','较宽的表可考虑 tabularx，避免用空格硬撑。'],en:['Column specs l, c, and r mean left, center, and right.','Load booktabs in the preamble before using its rules.','For wider tables, consider tabularx instead of padding with spaces.']},
+      bullets:{zh:['列格式 l、c、r 对应左、中、右对齐。','使用 booktabs 之前要在导言区加载宏包。','较宽的表可考虑 tabularx，由环境分配列宽。'],en:['Column specs l, c, and r mean left, center, and right.','Load booktabs in the preamble before using its rules.','For wider tables, consider tabularx to allocate column widths.']},
       code:String.raw`\usepackage{booktabs} % preamble
 
 \begin{tabular}{lrr}
@@ -79,7 +79,7 @@ A & 0.42 & 0.08 \\
 B & 0.31 & 0.07 \\
 \bottomrule
 \end{tabular}`,
-      tip:{zh:'不要把每个单元格都画上边框。先让列对齐，表格自然就整齐了。',en:'Avoid putting a box around every cell. Once the columns line up, the table looks tidy.'},
+      tip:{zh:'先对齐各列，再用少量横线区分表头和正文，减少单元格边框。',en:'Align the columns and use a few horizontal rules to separate the header from the body, keeping cell borders to a minimum.'},
       task:{zh:'添加第三行模型 C，并为它填写估计值和标准误。',en:'Add a third row for model C with an estimate and a standard error.'}},
     { id:'crossref', module:'references', minutes:7, kind:'document', title:{zh:'编号与交叉引用',en:'Labels & cross-references'},
       lead:{zh:'章节顺序会改，图表编号也会变。让 LaTeX 处理这些编号，自己只写标签。',en:'Sections move and figure numbers change. Let LaTeX maintain the numbers and refer to stable labels.'},
@@ -119,7 +119,7 @@ A classic result \parencite{knuth1984}.
     { id:'macros', module:'workflow', minutes:8, kind:'document', title:{zh:'自定义命令，少写重复代码',en:'Write less with custom commands'},
       lead:{zh:'一篇文档里会反复出现同样的记号。给它一个名字，修改就只需改一处。',en:'If the same symbol appears throughout a document, name it once. A later change then takes one edit.'},
       concept:{zh:'\\newcommand{\\E}{\\mathbb{E}} 可以定义期望算子。带参数的宏用 [1]、#1 接收内容。',en:'\\newcommand{\\E}{\\mathbb{E}} defines an expectation symbol. Use [1] and #1 for one-argument macros.'},
-      bullets:{zh:['命令名不要和已有命令冲突。','把常用宏放在导言区或单独的 macros.tex。','宏用于表达重复语义，不必为每个字母造命令。'],en:['Avoid redefining existing commands accidentally.','Keep shared macros in the preamble or a macros.tex file.','Create macros for repeated meaning, not every single letter.']},
+      bullets:{zh:['为新宏选择尚未占用的命令名。','把常用宏放在导言区或单独的 macros.tex。','为反复出现的语义结构定义宏，集中维护这些结构的写法。'],en:['Use an unused command name for a new macro.','Keep shared macros in the preamble or a macros.tex file.','Define macros for notation or structures you repeat throughout the document.']},
       code:String.raw`\usepackage{amsfonts}
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\vect}[1]{\boldsymbol{#1}}
@@ -129,9 +129,9 @@ A classic result \parencite{knuth1984}.
       tip:{zh:'宏命令需先定义后使用；你的浏览器数学预览也支持常见的 \\newcommand。',en:'Define a macro before using it. The math preview also understands common \\newcommand definitions.'},
       task:{zh:'定义一个 \\Var 命令来表示方差。',en:'Define a \\Var macro for the variance operator.'}},
     { id:'chinese', module:'workflow', minutes:9, kind:'document', title:{zh:'中英文混排与 XeLaTeX',en:'Chinese text with XeLaTeX'},
-      lead:{zh:'写中文论文时，字体和引擎的选择要先定下来。不要等正文完成后再返工。',en:'For Chinese documents, settle on the engine and font setup early rather than retrofitting them at the end.'},
+      lead:{zh:'写中文论文前，先确定编译引擎和字体配置。',en:'Choose the engine and font setup before drafting a Chinese document.'},
       concept:{zh:'ctexart 提供中文文章的开箱即用配置；XeLaTeX 通常是中英混排的稳妥选择。',en:'ctexart provides a practical starting point for Chinese articles, and XeLaTeX handles multilingual text well.'},
-      bullets:{zh:['保存 UTF-8 编码的 .tex 文件。','指定 XeLaTeX 编译器，不要误选 pdfLaTeX。','字体依赖操作系统和模板，本教程不预设某个具体字体。'],en:['Save the .tex file in UTF-8.','Select the XeLaTeX engine rather than pdfLaTeX.','Font availability depends on the machine and template.']},
+      bullets:{zh:['保存 UTF-8 编码的 .tex 文件。','本课文档使用 XeLaTeX 编译。','字体是否可用取决于操作系统和模板设置。'],en:['Save the .tex file in UTF-8.','Compile this lesson’s document with XeLaTeX.','Font availability depends on the machine and template.']},
       code:String.raw`\documentclass[UTF8,12pt]{ctexart}
 \usepackage{amsmath}
 \title{一份简短的研究笔记}
@@ -142,7 +142,7 @@ A classic result \parencite{knuth1984}.
   \mathbb{E}[X] = \sum_i p_i x_i
 \]
 \end{document}`,
-      tip:{zh:'本地完整编译推荐 TeX Live + XeLaTeX；浏览器预览只模拟部分文本结构。',en:'For full compilation, use TeX Live with XeLaTeX. The browser only previews selected document features.'},
+      tip:{zh:'使用 TeX Live 搭配 XeLaTeX 生成完整 PDF。',en:'Use TeX Live with XeLaTeX to produce the full PDF.'},
       task:{zh:'修改标题，并添加一个带有英文术语的中文段落。',en:'Change the title and add a Chinese paragraph containing an English term.'}},
     { id:'debug', module:'shipping', minutes:10, kind:'document', title:{zh:'读懂常见报错',en:'Read common error messages'},
       lead:{zh:'报错往往指向某个符号，但真正的原因可能在前几行，所以先往上翻。',en:'The error may point to one line while the cause sits a few lines earlier, so read the lines above it.'},
@@ -174,7 +174,7 @@ The value is $x_1$.
 │   └── results.tex
 └── figures/
     └── figure1.pdf`,
-      tip:{zh:'导出 .tex 后仍需在 TeX Live、MiKTeX 或 Overleaf 中编译成 PDF。',en:'After exporting .tex, compile it using TeX Live, MiKTeX, or Overleaf.'},
+      tip:{zh:'导出 .tex 后，在 TeX Live、MiKTeX 或 Overleaf 中编译成 PDF。',en:'After exporting .tex, compile it using TeX Live, MiKTeX, or Overleaf.'},
       task:{zh:'给你自己的项目画一个目录结构，保证每个资源都能被找到。',en:'Sketch your own folder structure so every project asset has a clear home.'}}
   ];
   const quizzes = [

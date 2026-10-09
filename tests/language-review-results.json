@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-09",
+  "skills": [
+    "Humanizer 3.1.0",
+    "Humanizer-zh (2026-09-23)",
+    "Anti-defensive writing"
+  ],
+  "reviewed": {
+    "modules": {
+      "reviewed": 24,
+      "changedRecords": 2,
+      "changedFields": 4
+    },
+    "entries": {
+      "reviewed": 157,
+      "changedRecords": 126,
+      "changedFields": 429
+    },
+    "dictionary": {
+      "reviewed": 571,
+      "changedRecords": 125,
+      "changedFields": 247
+    },
+    "examples": {
+      "reviewed": 81,
+      "changedRecords": 10,
+      "changedFields": 18
+    },
+    "exercises": {
+      "reviewed": 90,
+      "changedRecords": 34,
+      "changedFields": 80
+    },
+    "lessons": {
+      "reviewed": 29,
+      "changedRecords": 25,
+      "changedFields": 70
+    }
+  },
+  "changedProseFields": 848,
+  "protectedDifferences": [],
+  "structureDifferences": [],
+  "protectedSha256Before": "647d77d66df9c63d6d3cde8c7b62c894fed9b1910c9b4c36603b1008742ed5a4",
+  "protectedSha256After": "647d77d66df9c63d6d3cde8c7b62c894fed9b1910c9b4c36603b1008742ed5a4",
+  "compiledArtifactFilesChecked": 252,
+  "changedCompiledArtifactFiles": [],
+  "proseTokenFlags": [
+    {
+      "path": "catalog.entries.94.sections.1.body.en",
+      "kind": "numbers",
+      "removed": [],
+      "added": [
+        "95"
+      ],
+      "before": "only marks removes connecting lines. error bars/.cd selects the error-bar key family; y dir=both and y explicit request explicit vertical errors in both directions. A symmetric error follows a coordinate as +- (0,.3). Its statistical meaning comes from the study, not from the drawing syntax.",
+      "after": "only marks removes connecting lines. error bars/.cd selects the error-bar key family; y dir=both and y explicit request explicit vertical errors in both directions. Write a symmetric error after a coordinate as +- (0,.3). The study defines its meaning, including whether it is a 95% confidence interval; state that definition in the caption.",
+      "review": "The 95% example already appears in the Chinese explanation; the English now matches it."
+    },
+    {
+      "path": "catalog.entries.129.sections.4.body.zh",
+      "kind": "commands",
+      "removed": [],
+      "added": [
+        "\\linewidth"
+      ],
+      "before": "该文档保留必要依赖并移除本条的错误来源。使用 pdflatex 编译；交叉引用条目需要再次编译。",
+      "after": "修复稿用宽度为 .8\\linewidth 的 parbox，让文字在局部宽度内断行。使用 pdflatex 编译。",
+      "review": "The width and command match the unchanged repaired source. This example has no cross-reference requiring another run."
+    },
+    {
+      "path": "catalog.entries.129.sections.4.body.zh",
+      "kind": "numbers",
+      "removed": [],
+      "added": [
+        "8"
+      ],
+      "before": "该文档保留必要依赖并移除本条的错误来源。使用 pdflatex 编译；交叉引用条目需要再次编译。",
+      "after": "修复稿用宽度为 .8\\linewidth 的 parbox，让文字在局部宽度内断行。使用 pdflatex 编译。",
+      "review": "The width and command match the unchanged repaired source. This example has no cross-reference requiring another run."
+    },
+    {
+      "path": "catalog.entries.129.sections.4.body.en",
+      "kind": "commands",
+      "removed": [],
+      "added": [
+        "\\linewidth"
+      ],
+      "before": "The document retains required dependencies and removes this trigger. Compile with pdflatex; cross-references need another run.",
+      "after": "A parbox of width .8\\linewidth lets the text wrap within the local width. Compile with pdflatex.",
+      "review": "The width and command match the unchanged repaired source. This example has no cross-reference requiring another run."
+    },
+    {
+      "path": "catalog.entries.129.sections.4.body.en",
+      "kind": "numbers",
+      "removed": [],
+      "added": [
+        "8"
+      ],
+      "before": "The document retains required dependencies and removes this trigger. Compile with pdflatex; cross-references need another run.",
+      "after": "A parbox of width .8\\linewidth lets the text wrap within the local width. Compile with pdflatex.",
+      "review": "The width and command match the unchanged repaired source. This example has no cross-reference requiring another run."
+    }
+  ],
+  "proseTokenReviewPassed": true,
+  "authoredJavaScriptSyntaxPassed": true,
+  "interfaceReview": "Interface and original-course edits independently checked against the preceding release; a contradictory paragraph-spacing sentence was corrected before final verification.",
+  "browser": {
+    "browser-results.json": {
+      "passed": 47,
+      "total": 47,
+      "runtimeErrors": 0,
+      "failedRequests": 0
+    },
+    "browser-release-results.json": {
+      "passed": 47,
+      "total": 47,
+      "runtimeErrors": 0,
+      "failedRequests": 0
+    }
+  }
+}

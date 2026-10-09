@@ -1,2 +1,15 @@
 .chrome-smoke/
 .DS_Store
+deliverables/
+__pycache__/
+examples/**/*.aux
+examples/**/*.bcf
+examples/**/*.run.xml
+examples/**/*.toc
+examples/**/*.nav
+examples/**/*.snm
+examples/**/*.fdb_latexmk
+examples/**/*.fls
+examples/**/*.out
+examples/**/*.xdv
+examples/**/missfont.log

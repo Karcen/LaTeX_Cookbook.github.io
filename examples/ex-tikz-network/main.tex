@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[every node/.style={circle,draw,fill=teal!10,minimum size=8mm}]
+\node (a) at (0,1){A};\node (b) at (2,2){B};
+\node (c) at (4,1){C};\node (d) at (2,0){D};
+\draw (a)--(b)--(c)--(d)--(a);\draw (b)--(d);
+\end{tikzpicture}
+\end{document}
