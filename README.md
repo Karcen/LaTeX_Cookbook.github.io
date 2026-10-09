@@ -1,10 +1,12 @@
-# LaTeX Atelier
+# latex.cookbook
 
 中英文交互式 LaTeX 百科全书。网站、知识数据、数学渲染库和语法高亮库均为静态本地文件，阅读和练习不需要账号、网络或开发服务器。
 
+首页顶部展示两张“让 LaTeX 再次伟大”海报，点击图片可在新标签页查看原图。图片随网站保存在 `assets/images/` 中。
+
 ## 使用
 
-解压 `deliverables/LaTeX-Atelier.zip`，打开目录中的 **`index.html`**。也可以直接打开本仓库的 `index.html`。网站由普通 HTML/CSS/JavaScript 文件组成，可直接打开。
+解压 `deliverables/LaTeX-Cookbook.zip`，打开目录中的 **`index.html`**。也可以直接打开本仓库的 `index.html`。网站由普通 HTML/CSS/JavaScript 文件组成，可直接打开。
 
 | 入口 | 用途 |
 | --- | --- |
@@ -66,7 +68,7 @@ node tests/browser-smoke.cjs
 
 ## English guide
 
-LaTeX Atelier is a bilingual interactive reference for LaTeX. Unzip the release and open **`index.html`**. All runtime scripts, styles, MathJax, and Prism are included locally. Articles and exercises run offline in the browser, without an account or a server.
+latex.cookbook is a bilingual interactive reference for LaTeX. Unzip the release and open **`index.html`**. All runtime scripts, styles, MathJax, and Prism are included locally. Articles and exercises run offline in the browser, without an account or a server.
 
 The encyclopedia explains syntax, package dependencies, engines, failure modes, and practical workflows. Courses provide four learning paths. The command and symbol dictionaries support Chinese and English keywords. The example library includes complete source files, companion files, compilation status, and locally generated PDF previews. Exercises cover nine formats and explain the answers.
 

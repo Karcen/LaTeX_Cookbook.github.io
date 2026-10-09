@@ -2,7 +2,7 @@
 
 ## Architecture / 架构
 
-The release is a multipage static site. Classic scripts register content synchronously, and HTML files open directly in the browser. All runtime data, scripts, rendering libraries, and fonts are local. The repository itself contains deployable files; `deliverables/LaTeX-Atelier/` is a clean copy for hosting.
+The release is a multipage static site. Classic scripts register content synchronously, and HTML files open directly in the browser. All runtime data, scripts, rendering libraries, and fonts are local. The repository itself contains deployable files; `deliverables/LaTeX-Cookbook/` is a clean copy for hosting.
 
 网站采用多页静态架构，由普通脚本同步注册内容。数据、脚本和渲染库随网站提供，使用本机字体；源码与发布文件均可直接打开。
 

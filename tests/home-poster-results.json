@@ -1,0 +1,247 @@
+{
+  "passed": 6,
+  "total": 6,
+  "errors": [],
+  "checks": [
+    {
+      "width": 1440,
+      "lang": "zh",
+      "title": "让 LaTeX 再次伟大",
+      "footer": "让 LaTeX 再次伟大",
+      "brand": "latex.cookbook",
+      "headingCount": 1,
+      "captions": [
+        "查看原图",
+        "查看原图"
+      ],
+      "images": [
+        {
+          "src": "assets/images/latex-white-house.png",
+          "natural": [
+            1086,
+            1448
+          ],
+          "display": [
+            339.296875,
+            451.71875
+          ],
+          "loaded": true
+        },
+        {
+          "src": "assets/images/make-latex-great-again.png",
+          "natural": [
+            1254,
+            1254
+          ],
+          "display": [
+            339.3125,
+            339.3125
+          ],
+          "loaded": true
+        }
+      ],
+      "overflow": false,
+      "firstPosterBottom": 622.3125
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "title": "MAKE LATEX GREAT AGAIN",
+      "footer": "MAKE LATEX GREAT AGAIN",
+      "brand": "latex.cookbook",
+      "headingCount": 1,
+      "captions": [
+        "View full image",
+        "View full image"
+      ],
+      "images": [
+        {
+          "src": "assets/images/latex-white-house.png",
+          "natural": [
+            1086,
+            1448
+          ],
+          "display": [
+            339.296875,
+            451.71875
+          ],
+          "loaded": true
+        },
+        {
+          "src": "assets/images/make-latex-great-again.png",
+          "natural": [
+            1254,
+            1254
+          ],
+          "display": [
+            339.3125,
+            339.3125
+          ],
+          "loaded": true
+        }
+      ],
+      "overflow": false,
+      "firstPosterBottom": 622.3125
+    },
+    {
+      "width": 390,
+      "lang": "zh",
+      "title": "让 LaTeX 再次伟大",
+      "footer": "让 LaTeX 再次伟大",
+      "brand": "latex.cookbook",
+      "headingCount": 1,
+      "captions": [
+        "查看原图",
+        "查看原图"
+      ],
+      "images": [
+        {
+          "src": "assets/images/latex-white-house.png",
+          "natural": [
+            1086,
+            1448
+          ],
+          "display": [
+            154,
+            204.65625
+          ],
+          "loaded": true
+        },
+        {
+          "src": "assets/images/make-latex-great-again.png",
+          "natural": [
+            1254,
+            1254
+          ],
+          "display": [
+            154,
+            154
+          ],
+          "loaded": true
+        }
+      ],
+      "overflow": false,
+      "firstPosterBottom": 546.03125
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "title": "MAKE LATEX GREAT AGAIN",
+      "footer": "MAKE LATEX GREAT AGAIN",
+      "brand": "latex.cookbook",
+      "headingCount": 1,
+      "captions": [
+        "View full image",
+        "View full image"
+      ],
+      "images": [
+        {
+          "src": "assets/images/latex-white-house.png",
+          "natural": [
+            1086,
+            1448
+          ],
+          "display": [
+            154,
+            204.65625
+          ],
+          "loaded": true
+        },
+        {
+          "src": "assets/images/make-latex-great-again.png",
+          "natural": [
+            1254,
+            1254
+          ],
+          "display": [
+            154,
+            154
+          ],
+          "loaded": true
+        }
+      ],
+      "overflow": false,
+      "firstPosterBottom": 591.03125
+    },
+    {
+      "width": 320,
+      "lang": "zh",
+      "title": "让 LaTeX 再次伟大",
+      "footer": "让 LaTeX 再次伟大",
+      "brand": "latex.cookbook",
+      "headingCount": 1,
+      "captions": [
+        "查看原图",
+        "查看原图"
+      ],
+      "images": [
+        {
+          "src": "assets/images/latex-white-house.png",
+          "natural": [
+            1086,
+            1448
+          ],
+          "display": [
+            119,
+            158
+          ],
+          "loaded": true
+        },
+        {
+          "src": "assets/images/make-latex-great-again.png",
+          "natural": [
+            1254,
+            1254
+          ],
+          "display": [
+            119,
+            119
+          ],
+          "loaded": true
+        }
+      ],
+      "overflow": false,
+      "firstPosterBottom": 544.375
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "title": "MAKE LATEX GREAT AGAIN",
+      "footer": "MAKE LATEX GREAT AGAIN",
+      "brand": "latex.cookbook",
+      "headingCount": 1,
+      "captions": [
+        "View full image",
+        "View full image"
+      ],
+      "images": [
+        {
+          "src": "assets/images/latex-white-house.png",
+          "natural": [
+            1086,
+            1448
+          ],
+          "display": [
+            119,
+            158
+          ],
+          "loaded": true
+        },
+        {
+          "src": "assets/images/make-latex-great-again.png",
+          "natural": [
+            1254,
+            1254
+          ],
+          "display": [
+            119,
+            119
+          ],
+          "loaded": true
+        }
+      ],
+      "overflow": false,
+      "firstPosterBottom": 659.5625
+    }
+  ]
+}

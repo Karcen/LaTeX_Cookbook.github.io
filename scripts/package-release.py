@@ -1,7 +1,7 @@
 """Produce a deployable static folder and a self-contained archive, without developer setup."""
 import shutil,zipfile,sys
 from pathlib import Path
-R=Path(__file__).resolve().parent.parent;OUT=R/'deliverables';SITE=OUT/'LaTeX-Atelier';OUT.mkdir(exist_ok=True)
+R=Path(__file__).resolve().parent.parent;OUT=R/'deliverables';SITE=OUT/'LaTeX-Cookbook';OUT.mkdir(exist_ok=True)
 if SITE.exists():shutil.rmtree(SITE)
 SITE.mkdir()
 for file in R.glob('*.html'):shutil.copy2(file,SITE/file.name)
@@ -15,9 +15,9 @@ for file in (SITE/'examples').rglob('*'):
 if '--site-only' not in sys.argv:
  for name in ['scripts','tests','.github']:shutil.copytree(R/name,SITE/name,ignore=shutil.ignore_patterns('__pycache__','exported-equation.tex'))
  shutil.copy2(R/'.gitignore',SITE/'.gitignore')
- archive=OUT/'LaTeX-Atelier.zip'
+ archive=OUT/'LaTeX-Cookbook.zip'
  with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=8) as z:
   for file in SITE.rglob('*'):
-   if file.is_file():z.write(file,Path('LaTeX-Atelier')/file.relative_to(SITE))
+   if file.is_file():z.write(file,Path('LaTeX-Cookbook')/file.relative_to(SITE))
  print(archive,archive.stat().st_size)
 print(SITE)

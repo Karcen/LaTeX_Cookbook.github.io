@@ -88,6 +88,8 @@ Browser version: 154.0.8037.98; bundled MathJax: 3.2.1.
 - PASS: mobile navigation and no horizontal page overflow
 - PASS: reduced motion and keyboard search
 
+Homepage poster checks: 6 / 6 combinations passed across 1440px, 390px and 320px widths in both languages. Both supplied images load locally at their original proportions. The title and footer use the requested slogan, the English slogan is uppercase, captions read only View full image / 查看原图, and the displayed brand is latex.cookbook. No horizontal page overflow was found. Light and dark screenshots are retained in tests/poster-*.png; details are in tests/home-poster-results.json.
+
 Checks include every page, both languages, theme persistence, article/command favorites, multilingual global search and acceptance queries, SVG notation, lesson progress, editor highlighting/pairing/drafts, invalid math, rejected link injection, template switching, character syntax, `.tex` and `.bib` downloads, correct grading in all nine formats, incorrect-answer feedback, mobile navigation/layout, reduced motion, and keyboard search. Desktop and mobile screenshots are saved in `tests/`.
 
 ## References / 官方资料
