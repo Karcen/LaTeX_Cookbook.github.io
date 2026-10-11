@@ -3,23 +3,28 @@
  let cleanupCampaign=()=>{};
  function draw(){cleanupCampaign();const next=A.data.lessons.find(l=>!A.isDone(l.id))||A.data.lessons[0];
  root.innerHTML=`<div class="container"><section class="campaign-hero" aria-labelledby="campaign-title">
- <div class="campaign-copy">
-  <h1 id="campaign-title">${W(`<span class="campaign-title-line">让 ${A.latexLogo()}</span><span class="campaign-title-line">再次伟大</span>`,`<span class="campaign-title-line">MAKE ${A.latexLogo()}</span><span class="campaign-title-line">GREAT AGAIN</span>`)}</h1>
+ <div class="campaign-scene">
+  <div class="campaign-depth">
+  <h1 id="campaign-title" class="campaign-title">
+   <span class="campaign-title-make">${W('让','MAKE')}</span>
+   <span class="campaign-title-logo">${A.latexLogo()}</span>
+   <span class="campaign-title-again">${W('再次伟大','GREAT AGAIN')}</span>
+  </h1>
+   <a class="campaign-poster campaign-poster-white" href="assets/images/latex-white-house.png" target="_blank" rel="noopener noreferrer" aria-label="${W('查看乳胶白宫海报原图（新标签页）','View the LaTeX White House poster in a new tab')}">
+    <img src="assets/images/latex-white-house.png" width="1086" height="1448" alt="${W('乳胶白宫海报：Make LaTeX Great Again。','LaTeX White House poster: Make LaTeX Great Again.')}" decoding="async">
+   </a>
+   <a class="campaign-poster campaign-poster-blue" href="assets/images/make-latex-great-again.png" target="_blank" rel="noopener noreferrer" aria-label="${W('查看竞选风海报原图（新标签页）','View the Make LaTeX Great Again campaign poster in a new tab')}">
+    <img src="assets/images/make-latex-great-again.png" width="1254" height="1254" alt="${W('红蓝竞选风海报：特朗普与星条旗。','Red and blue campaign poster with Donald Trump and the American flag.')}" decoding="async">
+   </a>
+   <div class="campaign-person-layer">
+    <img class="campaign-person" src="assets/images/trump-pointing.png" width="1600" height="1600" fetchpriority="high" alt="${W('特朗普从海报前方探出身，伸手指向左侧的 LaTeX 标志。','Donald Trump emerges in front of the posters, pointing toward the LaTeX logo on the left.')}">
+   </div>
+  </div>
+ </div>
+ <div class="campaign-details">
   <p>${W('在实验室编辑源码，或沿学习路径写出第一篇文档。','Edit source in the playground, or follow a learning path to write your first document.')}</p>
   <a class="btn campaign-cta" href="playground.html">${W('打开 LaTeX 实验室','Open the LaTeX playground')}</a>
  </div>
- <figure class="campaign-portrait">
-  <a class="campaign-scene" href="assets/images/trump-pointing.png" target="_blank" rel="noopener noreferrer" aria-label="${W('查看特朗普人像原图（新标签页）','View the Donald Trump portrait in a new tab')}">
-   <div class="campaign-depth">
-    <div class="campaign-backdrop" aria-hidden="true"></div>
-    <img class="campaign-person" src="assets/images/trump-pointing.png" width="1600" height="1600" fetchpriority="high" alt="${W('特朗普身穿深蓝西装、系红色领带，伸手指向观众。','Donald Trump in a navy suit and red tie, pointing toward the viewer.')}">
-   </div>
-  </a>
-  <figcaption>
-   <a href="assets/images/latex-white-house.png" target="_blank" rel="noopener noreferrer">${W('乳胶白宫海报 ↗','White House poster ↗')}<span class="sr-only">${W('（新标签页）',' (new tab)')}</span></a>
-   <a href="assets/images/make-latex-great-again.png" target="_blank" rel="noopener noreferrer">${W('竞选风海报 ↗','Campaign poster ↗')}<span class="sr-only">${W('（新标签页）',' (new tab)')}</span></a>
-  </figcaption>
- </figure>
 </section><section class="atelier-hero"><div><p class="hero-label">LaTeX Cookbook</p><h2 class="home-guide-title">${W('LaTeX 的使用手册<br>与实验桌。','A field guide to LaTeX.<br>A desk to experiment.')}</h2><p class="article-lead">${W('查文档类、理解公式、排好图表。沿学习路径写第一篇文档，或直接找到眼前问题的答案。','Look up a class, understand an equation, or build a table. Follow a learning path or find an answer to the problem in front of you.')}</p><div class="hero-search"><label class="search-field">${A.ico('search',22)}<input id="home-search" type="search" placeholder="${W('试试：ctexart、黑板粗体、longtable、Missing $','Try ctexart, blackboard bold, longtable, Missing $')}" aria-label="${W('全站搜索','Search the entire site')}"><kbd>⌘ K</kbd></label><div id="home-results" class="home-results" hidden></div></div><div class="article-actions"><a class="btn btn-primary" href="courses.html#${next.id}">${A.completion()?A.t('continue'):A.t('start')}</a><a class="btn btn-outline" href="encyclopedia.html">${W('浏览百科全书','Browse the encyclopedia')}</a></div></div><aside class="desk-demo"><div class="desk-caption">${W('同一个字母，不同的语义','One letter, different meanings')}</div><div class="font-samples">${[['\\mathbb{R}','\\mathbb'],['\\mathcal{R}','\\mathcal'],['\\mathrm{R}','\\mathrm'],['\\mathbf{R}','\\mathbf']].map(([tex,cmd])=>`<a href="reference.html?q=${encodeURIComponent(cmd)}"><div data-math="${A.esc(tex)}"></div><code>${A.esc(cmd)}</code></a>`).join('')}</div><pre class="desk-code">${A.esc(String.raw`\usepackage{amsmath,amssymb}
 \[
   f : \mathbb{R} \to \mathbb{R},
@@ -44,10 +49,10 @@
    if(frame)return;
    frame=requestAnimationFrame(()=>{
     frame=0;scene.classList.add('is-tracking');
-    scene.style.setProperty('--portrait-rx',(-3-y*5).toFixed(2)+'deg');
-    scene.style.setProperty('--portrait-ry',(-7+x*7).toFixed(2)+'deg');
-    scene.style.setProperty('--portrait-x',(x*8).toFixed(2)+'px');
-    scene.style.setProperty('--portrait-y',(y*5).toFixed(2)+'px');
+    scene.style.setProperty('--portrait-rx',(-y*2).toFixed(2)+'deg');
+    scene.style.setProperty('--portrait-ry',(x*2).toFixed(2)+'deg');
+    scene.style.setProperty('--portrait-x',(x*4).toFixed(2)+'px');
+    scene.style.setProperty('--portrait-y',(y*3).toFixed(2)+'px');
    });
   };
   scene.addEventListener('pointermove',move);
