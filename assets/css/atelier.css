@@ -26,11 +26,23 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
 
 .font-comparison td:nth-child(2){font-size:28px;min-width:80px;text-align:center}.font-comparison th,.font-comparison td{padding:10px 14px}.font-comparison td code{font-size:12px}
 
-/* Supplied campaign posters retain their full proportions and remain local/offline. */
-.campaign-hero{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:36px;padding:32px 38px;margin-bottom:30px;background:#0b2349;color:#fff;border-radius:16px}
-.campaign-copy{min-width:0}.campaign-copy h1{font-size:clamp(34px,3.8vw,54px);font-weight:650;line-height:1.25;letter-spacing:-.025em;margin:0 0 20px;color:#fff}.campaign-copy p{font-size:15px;line-height:1.8;margin:0 0 24px;color:#e1e9f5;max-width:380px}
+/* The TeX logo uses a raised A and lowered E, without a font or renderer download. */
+.latex-logo{display:inline-block;font-family:'Times New Roman',Times,serif;font-weight:400;font-style:normal;letter-spacing:0;text-indent:0;white-space:nowrap;line-height:1;text-transform:none}
+.latex-logo-a{position:relative;top:-.25em;font-size:.75em;margin-left:-.36em;margin-right:-.15em}
+.latex-logo-e{position:relative;top:.22em;margin-left:-.16em;margin-right:-.1em}
+/* A local transparent portrait sits in front of a recessed campaign backdrop. */
+.campaign-hero{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:24px;padding:38px 44px 26px;margin-bottom:30px;background:#0b2349;color:#fff;border-radius:16px}
+.campaign-copy{position:relative;z-index:1;min-width:0;padding-block:16px}.campaign-copy h1{font-family:var(--sans);font-size:clamp(36px,4.3vw,60px);font-weight:850;line-height:1.12;letter-spacing:-.045em;margin:0 0 26px;color:#fff}.campaign-title-line{display:block;white-space:nowrap}.campaign-copy h1 .latex-logo{font-size:1.13em}.campaign-copy p{font-size:15px;line-height:1.8;margin:0 0 24px;color:#e1e9f5;max-width:380px}
 .campaign-cta{background:#c8122b;color:#fff;border:1px solid #e84558}.campaign-cta:hover{background:#a80f24;color:#fff}.campaign-hero a:focus-visible{outline:3px solid #fff;outline-offset:5px}
-.campaign-posters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:16px;min-width:0}.campaign-posters figure{margin:0;min-width:0}.campaign-posters a{display:block;border-radius:6px}.campaign-posters img{display:block;width:100%;height:auto;border:1px solid #ffffff55;border-radius:6px}.campaign-posters figcaption{font-size:11px;line-height:1.6;color:#d8e3f4;margin-top:10px;text-align:center;overflow-wrap:anywhere}
-@media(max-width:900px){.campaign-hero{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;padding:26px}.campaign-copy h1{font-size:36px}.campaign-copy p{font-size:14px}.campaign-posters{gap:12px}}
-@media(max-width:650px){.campaign-hero{grid-template-columns:1fr;gap:24px;padding:24px 20px;margin-bottom:20px}.campaign-copy h1{font-size:36px;margin-bottom:14px}.campaign-copy p{margin-bottom:18px;max-width:none}.campaign-posters{align-items:start}.campaign-posters figcaption{font-size:10px}}
+.campaign-portrait{min-width:0;margin:0}.campaign-scene{--portrait-rx:-3deg;--portrait-ry:-7deg;--portrait-x:0px;--portrait-y:0px;display:block;position:relative;aspect-ratio:1.14;perspective:1100px;border-radius:12px}
+.campaign-depth{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--portrait-rx)) rotateY(var(--portrait-ry));transition:transform .3s ease-out;pointer-events:none}
+.campaign-backdrop{position:absolute;inset:12% 5% 3% 12%;border:1px solid #ffffff45;border-radius:10px;background:linear-gradient(145deg,#173e70,#081b38);box-shadow:12px 18px 0 #06152e,16px 23px 0 #ffffff20,0 28px 45px #020b1d88;transform:translateZ(-45px);overflow:hidden}
+.campaign-backdrop::before{content:'★ ★ ★ ★ ★';position:absolute;inset:9% 6% auto;color:#edf2ff;font-size:clamp(18px,2vw,28px);letter-spacing:.3em;white-space:nowrap;opacity:.7}
+.campaign-backdrop::after{content:'';position:absolute;inset:48% -30% -30%;background:repeating-linear-gradient(0deg,#c8122b 0 22px,#f4f3ed 22px 44px);transform:rotate(-24deg);opacity:.85}
+.campaign-person{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 14px 10px #020b1d88);transform:translate3d(var(--portrait-x),var(--portrait-y),65px);transform-origin:center bottom;transition:transform .3s ease-out}
+.campaign-scene.is-tracking .campaign-depth,.campaign-scene.is-tracking .campaign-person{transition:none}
+.campaign-portrait figcaption{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-top:22px;font-size:11px;line-height:1.6;color:#d8e3f4}.campaign-portrait figcaption a{text-decoration:underline;text-underline-offset:3px}.campaign-portrait figcaption a:hover{color:#fff}
+@media(max-width:1000px){.campaign-hero{gap:20px;padding:28px}.campaign-copy h1{font-size:clamp(32px,4.2vw,46px)}.campaign-copy p{font-size:14px}}
+@media(max-width:700px){.campaign-hero{grid-template-columns:1fr;gap:18px;padding:26px 22px 22px;margin-bottom:20px}.campaign-copy{padding:0}.campaign-copy h1{font-size:clamp(32px,7.5vw,48px);margin-bottom:20px}.campaign-copy p{margin-bottom:18px;max-width:460px}.campaign-portrait{width:100%;max-width:440px;justify-self:center}.campaign-portrait figcaption{margin-top:18px}}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){.campaign-depth{transform:none}.campaign-person{transform:translateZ(65px)}}
 @media(max-width:360px){.nav-shell{gap:4px}.brand{gap:6px}.brand-icon{width:26px;height:28px;font-size:22px}.brand-name{font-size:16px}.brand-name small{font-size:10px}.nav-actions .icon-button,#nav-menu{width:28px}}
