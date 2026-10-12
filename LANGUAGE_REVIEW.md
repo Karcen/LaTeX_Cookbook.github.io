@@ -1,5 +1,19 @@
 # 中英文文案审查记录 / Bilingual prose review
 
+## 2026-10-12 教学升级审读
+
+这次审读围绕读者实际要完成的操作：先说要解决什么问题，再说明代码放在哪里、要改哪一行以及编译后应看到什么。Humanizer-zh、Humanizer 和 Anti-defensive writing 用于修改重复、抽象和模板化表达；My SKILL.md 的 B、E、F 模式用于组织分步教学、保留技术含义和核验运行结果。LaTeX 数学与表格技能用于记号、环境、列格式和编译链的核对。
+
+本轮补充 77 篇三步讲解（共 231 步）、29 份课程任务参考答案、24 道练习和 5 个完整示例。按原注册表逐字段比较，796 个既有中英文文案字段发生变化。新增讲解单独统计，不计入这个数字。
+
+文案复核保留了宏包依赖、引擎要求、数学条件和引用后端。教学表格的数字标明为虚构示例；完整文献示例演示引用结构。课程答案补全了目录与资源路径，跨页表头按原三列示例编写，并保留了参考文献中 TeX 的大小写保护。
+
+原有源码和公式字段的实质差异为 0。10 个条目的完整示例入口改为新加入的渐进示例；原例仍保留在示例库中。原有 243 个源码、PDF 和预览文件的 SHA-256 均与升级前一致。新例的 PDF 通过实际 TeX 编译生成。
+
+检查记录见 tests/teaching-review-results.json、tests/content-results.json 和 tests/teaching-browser-results.json。
+
+## 2026-10-09 审读记录
+
 审查日期：2026-10-09。
 
 本轮使用 `/Users/karcenzheng/Downloads/humanizer` 中的全部技能：Humanizer 3.1.0、Humanizer-zh（2026-09-23）和 Anti-defensive writing。目录内共有四份 `SKILL.md`，其中 Anti-defensive writing 的两份文件内容相同，按同一套规则执行。

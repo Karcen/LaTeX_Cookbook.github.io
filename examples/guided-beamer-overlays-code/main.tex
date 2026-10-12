@@ -1,0 +1,34 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+\title{Read a table before polishing it}
+\author{Course reader}
+\date{}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{A three-step check}
+\begin{frame}[t]{What must the reader be able to tell?}
+\begin{enumerate}
+\item<1-> Which quantities each column contains.
+\item<2-> Which units the numbers use.
+\item<3-> Whether notes explain any markers.
+\end{enumerate}
+\vspace{1em}
+\uncover<2->{Reserve the space for this note so the layout stays steady.}
+\end{frame}
+
+\begin{frame}[fragile]{Read the source literally}
+These numbers are invented teaching data.
+\begin{verbatim}
+\begin{tabular}{lr}
+Task & Time (min) \\
+Draft & 9.50 \\
+Review & 12.25 \\
+\end{tabular}
+\end{verbatim}
+The ampersand separates cells. The double backslash ends a row.
+\end{frame}
+\end{document}

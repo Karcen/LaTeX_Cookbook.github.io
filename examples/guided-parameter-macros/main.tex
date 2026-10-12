@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\newcommand{\AtelierReals}{\ensuremath{\mathbb{R}}}
+\newcommand{\AtelierPartial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\AtelierNote}[2][Note]{\textbf{#1:} #2}
+\NewDocumentCommand{\AtelierNorm}{s m}{%
+ \IfBooleanTF{#1}{\left\lVert #2\right\rVert}{\lVert #2\rVert}}
+\ExplSyntaxOn
+\cs_new_protected:Npn \atelier_items:n #1
+ {
+  \begin{itemize}
+  \clist_map_inline:nn {#1} {\item ##1}
+  \end{itemize}
+ }
+\NewDocumentCommand{\AtelierItems}{m}{\atelier_items:n {#1}}
+\ExplSyntaxOff
+\begin{document}
+\title{A guided macro example}
+\author{}
+\date{}
+\maketitle
+\section{Give notation a name}
+The set of real numbers is \AtelierReals.
+Inside mathematics the same command works: $x\in\AtelierReals$.
+
+Let $U(c,s)=\log c+s$ with $c>0$. The first and second arguments
+of the partial-derivative macro are the function and its variable:
+\[
+\AtelierPartial{U}{c}=\frac{1}{c},
+\qquad
+\AtelierPartial{U}{s}=1.
+\]
+
+\section{Use an optional label}
+\AtelierNote{The first argument has a default value.}
+
+\AtelierNote[Input]{An explicit label replaces that default.}
+
+\section{Read a star}
+Let $x$ and $y$ be vectors in the same space.
+The unstarred norm has ordinary delimiters:
+\[
+\AtelierNorm{x+y}.
+\]
+The starred call sizes delimiters to the taller argument:
+\[
+\AtelierNorm*{\frac{x+y}{2}}.
+\]
+The star state is argument one; the norm's content is argument two.
+
+\section{Map a comma list}
+The public command below passes a comma list to an internal function:
+\AtelierItems{Input,Calculation,Output}
+Inside the enclosing function definition, the current list item
+uses a doubled parameter marker. Removing one input word should
+remove one list item without changing the function.
+\end{document}

@@ -1,0 +1,25 @@
+{
+  "baselineCommit": "2ab7de93fbc082e658bc5f4046a98904ac0cf0bb",
+  "reviewDate": "2026-10-12",
+  "guidedArticles": 77,
+  "walkthroughSteps": 231,
+  "workedLessons": 29,
+  "newExercises": 24,
+  "newExamples": 5,
+  "changedExistingProseFields": 796,
+  "protectedDifferences": [],
+  "existingArtifactFilesChecked": 243,
+  "artifactDifferences": [],
+  "exampleLinkChanges": [
+    "beamer: example",
+    "tabular: example",
+    "tabularx: example",
+    "siunitx: example",
+    "hyperref: example",
+    "cross-references: example",
+    "cleveref: example",
+    "beamer-frames: example",
+    "beamer-overlays: example",
+    "beamer-fragile: example"
+  ]
+}

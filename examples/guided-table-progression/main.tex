@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{booktabs,siunitx,tabularx,array}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+\section*{A table, built in three steps}
+All numbers below are invented teaching data for a typesetting lesson.
+
+\subsection*{1. Understand rows and columns}
+The first column is left aligned; the second is right aligned.
+\begin{center}
+\begin{tabular}{lr}
+Task & Time (min) \\
+Draft & 9.50 \\
+Review & 12.25 \\
+\end{tabular}
+\end{center}
+
+\subsection*{2. Separate the heading and align decimals}
+The S column parses numbers. Braces protect its text heading.
+\begin{center}
+\begin{tabular}{lS[table-format=2.2]}
+\toprule
+Task & {Time (min)} \\
+\midrule
+Draft & 9.50 \\
+Review & 12.25 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{3. Add a description without overflowing}
+The description receives the remaining width and wraps.
+\begin{table}[htbp]
+\centering
+\caption{Invented tasks and times}\label{tab:tasks}
+\begin{tabularx}{\linewidth}{@{}lY S[table-format=2.2]@{}}
+\toprule
+Task & Description & {Time (min)} \\
+\midrule
+Draft & Write a short introduction that states the question before explaining the background. & 9.50 \\
+Review & Check that captions name units, references resolve, and the table fits its container. & 12.25 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+Table~\ref{tab:tasks} keeps the descriptions readable.
+Change one description and recompile to see the X column reflow.
+\end{document}

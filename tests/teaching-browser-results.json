@@ -1,0 +1,334 @@
+{
+  "base": "file:///Users/karcenzheng/Documents/GitHub/LaTeX_Cookbook.github.io/",
+  "browser": "154.0.8037.98",
+  "checks": [
+    {
+      "name": "four task-based home paths and preserved campaign",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer start zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer structure zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer math-inline zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer math-align zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer figures zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer tables zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer crossref zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer citation zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer macros zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer chinese zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer debug zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer project zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-ctexart zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-mathbb zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-cases zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-tabularx zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-longtable zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-natbib zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-hyperref zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-standalone zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-beamer zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-tikz-paths zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-pgfplots-axis zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-programming-newcommand zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-programming-expl3 zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-report zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-threeparttable zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-gb7714 zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-memoir zh",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer start en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer structure en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer math-inline en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer math-align en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer figures en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer tables en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer crossref en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer citation en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer macros en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer chinese en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer debug en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer project en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-ctexart en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-mathbb en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-cases en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-tabularx en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-longtable en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-natbib en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-hyperref en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-standalone en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-beamer en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-tikz-paths en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-pgfplots-axis en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-programming-newcommand en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-programming-expl3 en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-report en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-threeparttable en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-gb7714 en",
+      "passed": true
+    },
+    {
+      "name": "course walkthrough and worked answer course-memoir en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump mwe zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump ctexart zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump align zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump mathbb zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump theorem-system zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump longtable zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump biblatex zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump beamer-fragile zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump programming-expl3 zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump project-latexmk zh",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump mwe en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump ctexart en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump align en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump mathbb en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump theorem-system en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump longtable en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump biblatex en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump beamer-fragile en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump programming-expl3 en",
+      "passed": true
+    },
+    {
+      "name": "article walkthrough, answer and section jump project-latexmk en",
+      "passed": true
+    },
+    {
+      "name": "all new exercises have working correct and wrong feedback",
+      "passed": true
+    },
+    {
+      "name": "phone layout and keyboard disclosure",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "passed": 81,
+  "total": 81
+}

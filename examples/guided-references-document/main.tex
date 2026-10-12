@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,booktabs,siunitx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\hypersetup{pdftitle={A guided reference document},pdfauthor={Course reader}}
+\begin{document}
+\tableofcontents
+\section{Question}\label{sec:question}
+How can a reader find an equation, a table, and the source of a command?
+The details are in \cref{sec:method}; the arithmetic is in \cref{eq:average}.
+The LaTeX Project provides official documentation \cite{latex-project}.
+
+\section{Method}\label{sec:method}
+Let $t_1$ and $t_2$ be the two task times in minutes.
+The symbol $\bar t$ denotes their arithmetic mean:
+\begin{equation}\label{eq:average}
+\bar t=\frac{t_1+t_2}{2}.
+\end{equation}
+The values in \cref{tab:times} are invented teaching data.
+They demonstrate alignment and references.
+\begin{table}[htbp]
+\centering
+\caption{Invented task times}\label{tab:times}
+\begin{tabular}{lS[table-format=2.2]}
+\toprule
+Task & {Time (min)} \\
+\midrule
+Draft & 9.50 \\
+Review & 12.25 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\Cref{eq:average} is on page~\pageref{eq:average}.
+Return to \cref{sec:question} or read
+\href{https://www.latex-project.org/help/documentation/}{the official documentation}.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{latex-project}
+The LaTeX Project.
+\emph{Documentation}.
+\url{https://www.latex-project.org/help/documentation/}.
+\end{thebibliography}
+\end{document}

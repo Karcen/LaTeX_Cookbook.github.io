@@ -1,5 +1,13 @@
 # Technical notes / 技术说明
 
+## Guided teaching additions
+
+The three content-teaching topic scripts load after catalog.js and augment existing entries with a bilingual teaching object: a goal, three walkthrough steps, and a question/answer/reason self-check. content-teaching-courses.js links these guides to all 29 lessons and adds worked task solutions. Existing identifiers and preference storage are retained.
+
+teaching.js renders guides, native details disclosures, and exercise links. A practice URL can use question=<exercise-id> to open a particular question within its module. Both the file:// website and the packaged static release include the synchronous teaching scripts.
+
+The content validator checks teaching fields and pathway references. tests/teaching-smoke.cjs verifies reading, disclosure, language, question grading, mobile, and keyboard flows. New example compilation is recorded alongside the existing results; original source/PDF/preview hashes are compared in tests/teaching-review-results.json.
+
 ## Architecture / 架构
 
 The release is a multipage static site. Classic scripts register content synchronously, and HTML files open directly in the browser. All runtime data, scripts, rendering libraries, and fonts are local. The repository itself contains deployable files; `deliverables/LaTeX-Cookbook/` is a clean copy for hosting.

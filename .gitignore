@@ -8,6 +8,7 @@ examples/**/*.run.xml
 examples/**/*.toc
 examples/**/*.nav
 examples/**/*.snm
+examples/**/*.vrb
 examples/**/*.fdb_latexmk
 examples/**/*.fls
 examples/**/*.out

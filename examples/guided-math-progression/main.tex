@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}[section]
+\DeclareMathOperator{\Revenue}{Rev}
+\DeclareMathOperator{\Cost}{Cost}
+\begin{document}
+\title{A guided mathematics example}
+\author{}
+\date{}
+\maketitle
+\section{Define the notation}
+Let $q\in\mathbb{R}$ denote a nonnegative output quantity.
+The unit price is $p\ge0$. The cost parameters satisfy $a>0$ and
+$b>0$. This is a hypothetical model for practising notation.
+
+\section{Group the related equations}
+Revenue and cost are given by
+\begin{subequations}\label{eq:model}
+\begin{align}
+\Revenue(q)&=pq,\label{eq:revenue}\\
+\Cost(q)&=aq+bq^2.\label{eq:cost}
+\end{align}
+\end{subequations}
+System~\eqref{eq:model} contains the revenue equation
+\eqref{eq:revenue} and the cost equation~\eqref{eq:cost}.
+
+Define profit $\Pi(q)$ as revenue minus cost. One derivation has
+one number:
+\begin{equation}\label{eq:profit}
+\begin{aligned}
+\Pi(q)&=\Revenue(q)-\Cost(q)\\
+&=pq-(aq+bq^2)\\
+&=(p-a)q-bq^2.
+\end{aligned}
+\end{equation}
+The equals signs in \eqref{eq:profit} line up at the alignment markers.
+
+\section{Write a boundary condition}
+For an interior optimum the derivative satisfies
+\[
+\Pi'(q)=p-a-2bq=0.
+\]
+Since $\Pi''(q)=-2b<0$ and $q\ge0$, the maximizing quantity is
+\[
+q^*=\begin{cases}
+\dfrac{p-a}{2b}&\text{if }p>a,\\[3pt]
+0&\text{if }p\le a.
+\end{cases}
+\]
+The two conditions cover the boundary $p=a$ exactly once.
+
+\begin{proposition}\label{prop:nonnegative-cost}
+For every $q\ge0$, the cost in \eqref{eq:cost} is nonnegative.
+\end{proposition}
+\begin{proof}
+The assumptions imply $aq\ge0$ and $bq^2\ge0$.
+Their sum is nonnegative.
+\end{proof}
+Proposition~\ref{prop:nonnegative-cost} follows from the stated signs,
+rather than from any typesetting command.
+\end{document}

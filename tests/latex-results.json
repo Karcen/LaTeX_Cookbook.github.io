@@ -727,5 +727,50 @@
     "reason": "",
     "reasonZh": "",
     "status": "compiled"
+  },
+  "guided-math-progression": {
+    "compiled": true,
+    "preview": true,
+    "engine": "pdflatex",
+    "warnings": [],
+    "reason": "",
+    "reasonZh": "",
+    "status": "compiled"
+  },
+  "guided-parameter-macros": {
+    "compiled": true,
+    "preview": true,
+    "engine": "pdflatex",
+    "warnings": [],
+    "reason": "",
+    "reasonZh": "",
+    "status": "compiled"
+  },
+  "guided-table-progression": {
+    "compiled": true,
+    "preview": true,
+    "engine": "pdflatex",
+    "warnings": [],
+    "reason": "",
+    "reasonZh": "",
+    "status": "compiled"
+  },
+  "guided-references-document": {
+    "compiled": true,
+    "preview": true,
+    "engine": "pdflatex",
+    "warnings": [],
+    "reason": "",
+    "reasonZh": "",
+    "status": "compiled"
+  },
+  "guided-beamer-overlays-code": {
+    "compiled": true,
+    "preview": true,
+    "engine": "pdflatex",
+    "warnings": [],
+    "reason": "",
+    "reasonZh": "",
+    "status": "compiled"
   }
 }

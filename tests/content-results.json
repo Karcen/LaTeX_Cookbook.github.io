@@ -3,10 +3,12 @@
     "modules": 24,
     "entries": 157,
     "dictionary": 571,
-    "examples": 81,
-    "exercises": 90
+    "examples": 86,
+    "exercises": 114
   },
   "lessonCount": 29,
+  "guidedArticleCount": 77,
+  "workedLessonCount": 29,
   "pages": 12,
   "errors": [],
   "warnings": []
