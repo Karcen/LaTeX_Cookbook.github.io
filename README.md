@@ -14,7 +14,7 @@
 
 ## 使用
 
-解压 `deliverables/LaTeX-Cookbook.zip`，打开目录中的 **`index.html`**。也可以直接打开本仓库的 `index.html`。网站由普通 HTML/CSS/JavaScript 文件组成，可直接打开。
+从 GitHub 的 **Code → Download ZIP** 下载仓库并解压，打开根目录中的 **`index.html`**。也可以直接访问 [在线网站](https://karcen.github.io/LaTeX_Cookbook.github.io/)。网站由普通 HTML/CSS/JavaScript 文件组成，可直接打开。
 
 | 入口 | 用途 |
 | --- | --- |
