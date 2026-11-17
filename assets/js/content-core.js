@@ -10,6 +10,26 @@ D.entries.push({id,module,title:bi(zh,en),summary:bi(sz,se),level:'intermediate'
 }
 function example(id,zh,en,dz,de,engine,code,modules,files){D.examples.push({id,title:bi(zh,en),description:bi(dz,de),engine,code,modules,...(files?{files}:{})});}
 const doc=(body,preamble='',cls='article',opts='11pt')=>`\\documentclass[${opts}]{${cls}}\n${preamble}\n\\begin{document}\n${body}\n\\end{document}\n`;
+example('make-latex-great-again','Make LaTex Great Again：第二份文档','Make LaTex Great Again: a second document','保留 Hello, LaTeX!，练习标题、段落、居中、字号与局部加粗。','Keep Hello, LaTeX! and practice titles, paragraphs, centering, size, and local bold text.','pdflatex',R`\documentclass[11pt,a4paper]{article}
+\title{Make LaTex Great Again}
+\author{A. Student}
+\date{}
+
+\begin{document}
+\maketitle
+Hello, LaTeX!
+
+\begin{center}
+  {\LARGE\bfseries Make LaTex Great Again\par}
+\end{center}
+
+\section{My first change}
+I can write a title, start a new paragraph, and emphasize a phrase.
+
+\textbf{Make LaTex Great Again} starts with one working document.
+This sentence returns to normal weight.
+\end{document}
+`,['ecosystem','syntax','classes']);
 example('first-document','第一篇文档','First document','标题、摘要、章节与行内公式。','A title, abstract, section, and inline formula.','pdflatex',doc(R`\title{A first document}
 \author{Jiacheng Zheng}
 \date{}

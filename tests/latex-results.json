@@ -772,5 +772,14 @@
     "reason": "",
     "reasonZh": "",
     "status": "compiled"
+  },
+  "make-latex-great-again": {
+    "compiled": true,
+    "preview": true,
+    "engine": "pdflatex",
+    "warnings": [],
+    "reason": "",
+    "reasonZh": "",
+    "status": "compiled"
   }
 }

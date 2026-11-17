@@ -7,7 +7,8 @@
   let request=0,timeout,currentTemplate=sample?.id||'';
   const tabs=document.getElementById('mode-tabs');const work=document.getElementById('workbench');const snippets=document.getElementById('snippets');const actions=document.getElementById('workbench-actions');const info=document.getElementById('work-info');
   function inlineMarkup(raw){let s=A.esc(raw);
-    s=s.replace(/\\textbf\{([^{}]*)\}/g,'<strong>$1</strong>')
+    s=s.replace(/\{\\(LARGE|Large|large)\\bfseries\s+([^{}]*?)(?:\\par)?\}/g,(_,size,text)=>`<span style="font-size:${{LARGE:'1.7',Large:'1.44',large:'1.2'}[size]}em;font-weight:700">${text}</span>`)
+      .replace(/\\textbf\{([^{}]*)\}/g,'<strong>$1</strong>')
       .replace(/\\(?:textit|emph)\{([^{}]*)\}/g,'<em>$1</em>')
       .replace(/\\underline\{([^{}]*)\}/g,'<u>$1</u>')
       .replace(/\\texttt\{([^{}]*)\}/g,'<code>$1</code>')
@@ -51,6 +52,8 @@
       if(trim.startsWith('\\item')){flush();if(!list){list='ul';out.push('<ul>');}out.push('<li>'+inlineMarkup(trim.replace(/^\\item\s*/,''))+'</li>');continue;}
       if(trim==='\\tableofcontents'){flush();out.push('<p style="color:var(--muted)">'+(A.lang==='zh'?'〔目录将在编译后生成〕':'[Table of contents appears after compilation]')+'</p>');continue;}
       if(trim==='\\printbibliography'){flush();out.push('<p style="color:var(--muted)">'+(A.lang==='zh'?'〔参考文献将在编译后生成〕':'[Bibliography appears after compilation]')+'</p>');continue;}
+      if(trim==='\\begin{center}'){flush();flushList();out.push('<div style="text-align:center">');continue;}
+      if(trim==='\\end{center}'){flush();flushList();out.push('</div>');continue;}
       if(trim.startsWith('\\begin{')||trim.startsWith('\\end{')){flush();continue;}
       para.push(trim);
     }

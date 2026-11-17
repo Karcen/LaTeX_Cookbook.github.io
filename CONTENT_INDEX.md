@@ -6,7 +6,7 @@ The data registry supplies the counts and entries in this index.
 - 24 modules / 一级模块
 - 157 substantive encyclopedia entries / 百科条目
 - 571 dictionary records / 命令、环境与符号记录
-- 86 independent complete examples / 独立完整示例
+- 87 independent complete examples / 独立完整示例
 - 114 exercises / 交互练习
 - 29 course lessons in four learning paths / 四条路径的课时
 - 77 three-step walkthroughs / 分步操作讲解
@@ -14,9 +14,9 @@ The data registry supplies the counts and entries in this index.
 
 | Module / 模块 | Articles / 条目 | Examples / 示例 | Exercises / 练习 |
 | --- | ---: | ---: | ---: |
-| TeX 生态与编译 / TeX ecosystem & compilation | 4 | 1 | 2 |
-| 语法与第一篇文档 / Syntax & first documents | 3 | 1 | 8 |
-| 文档类 / Document classes | 19 | 20 | 2 |
+| TeX 生态与编译 / TeX ecosystem & compilation | 4 | 2 | 2 |
+| 语法与第一篇文档 / Syntax & first documents | 3 | 2 | 8 |
+| 文档类 / Document classes | 19 | 21 | 2 |
 | 中文排版 / Chinese typesetting | 5 | 11 | 4 |
 | 特殊字符与转义 / Special characters & escaping | 6 | 1 | 7 |
 | 数学环境与结构 / Math environments & structures | 12 | 5 | 15 |
@@ -275,6 +275,7 @@ Examples may cover several modules; the total counts each example once. Dictiona
 
 | ID | Title / 名称 | Engine | Actual compilation / 实际编译 |
 | --- | --- | --- | --- |
+| [make-latex-great-again](examples/make-latex-great-again/main.tex) | Make LaTex Great Again：第二份文档 / Make LaTex Great Again: a second document | pdflatex | PASS |
 | [first-document](examples/first-document/main.tex) | 第一篇文档 / First document | pdflatex | PASS |
 | [class-report](examples/class-report/main.tex) | 报告与章节 / Report chapters | pdflatex | PASS |
 | [class-book](examples/class-book/main.tex) | 书籍的前置与正文 / Book front matter | pdflatex | PASS |

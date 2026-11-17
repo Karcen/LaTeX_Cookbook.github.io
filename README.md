@@ -6,9 +6,9 @@
 
 ## 怎么开始学
 
-第一次使用时，打开学习路径里的“你的第一份 LaTeX 文档”。先运行原示例，再一次只改一处：标题、段落或公式。每课都有三步操作、一个动手任务和可展开的参考答案；做完后对照 PDF 或预览检查结果。
+第一次使用时，打开学习路径里的“你的第一份 LaTeX 文档”。先运行 Hello, LaTeX!，再运行新增的 “Make LaTex Great Again” 完整示例，比较标题、居中、字号和加粗。入门课补充了代码位置、参数含义与常见错误；每课都有三步操作、保存与编译说明、一个动手任务和可展开的参考答案。一次只改一处，做完后对照 PDF 或预览检查结果。
 
-遇到具体问题，可以直接查百科。77 篇常用条目提供分步操作和自检题，说明代码的插入位置、依赖和预期输出。练习库现有 114 道题，选择题解释各选项，代码题说明接受的写法。示例库有 86 份完整源码与实际编译的 PDF，新增渐进数学、参数宏、表格、交叉引用和 Beamer 示例。
+遇到具体问题，可以直接查百科。77 篇常用条目提供分步操作和自检题，说明代码的插入位置、依赖和预期输出。练习库现有 114 道题，选择题解释各选项，代码题说明接受的写法。示例库有 87 份完整源码与实际编译的 PDF，新增渐进数学、参数宏、表格、交叉引用和 Beamer 示例。
 
 数学模式可以在实验室直接试；完整文档导出后按指定引擎编译。参考文献或图片示例还需要附属文件，先从完整示例下载并放在同一目录，再运行编译链。
 
@@ -79,7 +79,7 @@ node tests/teaching-smoke.cjs
 
 latex.cookbook is a bilingual interactive reference for LaTeX. Unzip the release and open **`index.html`**. All runtime scripts, styles, MathJax, and Prism are included locally. Articles and exercises run offline in the browser, without an account or a server.
 
-The encyclopedia explains syntax, package dependencies, engines, failure modes, and practical workflows. Courses provide four learning paths. The command and symbol dictionaries support Chinese and English keywords. The example library includes complete source files, companion files, compilation status, and locally generated PDF previews. Exercises cover nine formats and explain the answers.
+The encyclopedia explains syntax, package dependencies, engines, failure modes, and practical workflows. Courses provide four learning paths, with source-placement explanations for the beginner lessons and save, compile, and troubleshooting instructions in every lesson. The first lesson keeps Hello, LaTeX! and adds a complete Make LaTex Great Again example for titles, paragraphs, centering, size, and bold text. The command and symbol dictionaries support Chinese and English keywords. The example library includes complete source files, companion files, compilation status, and locally generated PDF previews. Exercises cover nine formats and explain the answers.
 
 Use **EN** for the full English edition. The theme button selects light or dark mode. Press **/** or **Cmd/Ctrl + K** for global search. Favorites, lesson completion, exercise results, preferences, and drafts are stored in this browser. Each browser keeps its own records. Privacy policies can limit persistent storage for local files.
 

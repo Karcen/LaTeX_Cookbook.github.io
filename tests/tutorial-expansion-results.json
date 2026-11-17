@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-17",
+  "checks": 68,
+  "runtimeErrors": [],
+  "browser": "156.0.8078.4",
+  "scope": [
+    "29 lessons in Chinese and English, with worked answers",
+    "Second example navigation, source loading, and PDF link",
+    "Centered bold size preview and live size edit",
+    "Desktop and mobile horizontal overflow checks"
+  ],
+  "newExampleCompilation": {
+    "id": "make-latex-great-again",
+    "engine": "pdflatex",
+    "passed": true,
+    "pages": 1
+  }
+}

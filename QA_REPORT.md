@@ -2,6 +2,15 @@
 
 Verification date: 2026-10-12 (Asia/Shanghai).
 
+## 教程增补验证（2026-11-17）
+
+12 节入门课新增代码位置、语法含义与常见错误说明，全部 29 节课新增保存、编译与结果核对指引。第一课保留 Hello, LaTeX!，增加 Make LaTex Great Again 完整示例及字号修改任务；当前示例总数为 87。
+
+- 新示例使用本机 pdfLaTeX 实际编译，生成一页 PDF 和预览；无编译警告，并核对了 PDF 文字与排版。此前 86 份示例保留原有编译记录。
+- 内容验证通过：0 错误、0 警告；JavaScript 语法与差异空白检查通过。
+- Chromium 浏览器检查 68 项通过，涵盖全部课程的中英文页面与答案展开、新示例跳转、PDF 链接、居中与局部字号预览、实时修改，以及 1440 / 390 像素下的页面溢出检查；无运行时错误。
+- 增补结果保存在 tests/tutorial-expansion-results.json。以下章节为原有版本的验证记录。
+
 ## Teaching content / 教学内容
 
 The registry contains 24 topics, 157 articles, 571 dictionary records, 86 complete examples, 114 exercises, and 29 lessons.
